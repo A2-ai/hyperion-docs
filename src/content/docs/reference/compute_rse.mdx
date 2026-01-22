@@ -1,0 +1,60 @@
+---
+title: "Compute relative standard error (RSE%) for parameter estimates"
+description: "Calculates the RSE% based on the specified transformation and parameter type."
+pagefind: true
+---
+
+## Description
+
+Calculates the RSE% based on the specified transformation and parameter type. For LogNormal Omega/Sigma, uses `sqrt(exp(se^2) - 1) * 100`. For other transforms, uses `⁠se / |estimate| * 100⁠`.
+
+## Usage
+
+```r
+compute_rse(estimate, se, param_type, transform = "identity")
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>estimate</code></td>
+<td>The parameter estimate(s), can be a vector</td>
+</tr>
+<tr>
+<td><code>se</code></td>
+<td>The standard error(s) of the estimate(s), can be a vector</td>
+</tr>
+<tr>
+<td><code>param_type</code></td>
+<td>Parameter type(s), can be a vector: "Theta", "Omega", or "Sigma"</td>
+</tr>
+<tr>
+<td><code>transform</code></td>
+<td>Transformation type(s), can be a vector: "LogNormal", "AddErr", "Proportional", or "Identity". Defaults to "Identity".</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+RSE as a percentage (vector)
+
+## Examples
+
+```r
+## Not run: 
+compute_rse(1.5, 0.2, "Theta")
+df %>% mutate(rse = compute_rse(estimate, stderr, kind))
+
+## End(Not run)
+```

@@ -1,0 +1,47 @@
+---
+title: "Parses lst file for run details and heuristics"
+description: "Parses lst file for run details and heuristics"
+pagefind: true
+---
+
+## Description
+
+Parses lst file for run details and heuristics
+
+## Usage
+
+```r
+get_run_info(path)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>path to model file, model output directory, lst file or metadata json file.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+list of data.frames of run details and run heuristics
+
+## Examples
+
+```r
+## Not run: 
+get_run_info("model/nonmem/run001/run001.lst")
+
+## End(Not run)
+```

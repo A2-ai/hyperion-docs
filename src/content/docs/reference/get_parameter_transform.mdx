@@ -1,0 +1,46 @@
+---
+title: "Get parameterization (transform) for parameters by name"
+description: "Get parameterization (transform) for parameters by name"
+pagefind: true
+---
+
+## Description
+
+Get parameterization (transform) for parameters by name
+
+## Usage
+
+```r
+get_parameter_transform(model_comments, names, kind = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_comments</code></td>
+<td>A ModelComments object</td>
+</tr>
+<tr>
+<td><code>names</code></td>
+<td>Character vector of parameter names. Can be user-defined names (e.g., "CL", "V", "OM1") or NONMEM names (e.g., "THETA1", "OMEGA(1,1)"), or a mix of both.</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>Optional character. Filter by parameter kind ("THETA", "OMEGA", or "SIGMA"). If NULL, searches all kinds.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Character vector of parameterization values (e.g., "LogNormal", "Identity", "Proportional"). Returns NA for names not found.

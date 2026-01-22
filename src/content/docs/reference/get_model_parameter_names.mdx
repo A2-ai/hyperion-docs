@@ -1,0 +1,49 @@
+---
+title: "Gets parameter names from model for display purposes"
+description: "Gets parameter names from model for display purposes"
+pagefind: true
+---
+
+## Description
+
+Gets parameter names from model for display purposes
+
+## Usage
+
+```r
+get_model_parameter_names(model)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>hyperion_nonmem_model object from read_model()</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Named character vector with NONMEM names as names and user-friendly names as values
+
+## Examples
+
+```r
+## Not run: 
+model <- read_model("run001.mod")
+param_names <- get_model_parameter_names(model)
+omega_names <- param_names[grepl("^OMEGA", names(param_names))]
+
+## End(Not run)
+```

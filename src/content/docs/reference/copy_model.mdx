@@ -1,0 +1,94 @@
+---
+title: "Copies model file to new model file"
+description: "Copies model file to new model file"
+pagefind: true
+---
+
+## Description
+
+Copies model file to new model file
+
+## Usage
+
+```r
+copy_model(
+  from,
+  to,
+  overwrite = FALSE,
+  ext_file = NULL,
+  update = "none",
+  jitter = NULL,
+  jitter_excluded = NULL,
+  seed = NULL,
+  description = NULL,
+  no_metadata = FALSE
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>from</code></td>
+<td>path to model file to copy or hyperion_nonmem_model object</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>path to model file to write to</td>
+</tr>
+<tr>
+<td><code>overwrite</code></td>
+<td>boolean, wheter to overwrite existing model. Default FALSE</td>
+</tr>
+<tr>
+<td><code>ext_file</code></td>
+<td>path to ext file to use for parameter estimates</td>
+</tr>
+<tr>
+<td><code>update</code></td>
+<td>character or character vector specifying which parameters to update from ext file. Options: "all", "none", "theta", "omega", "sigma". Examples: "all" or c("theta", "omega")</td>
+</tr>
+<tr>
+<td><code>jitter</code></td>
+<td>numeric value or named numeric vector for parameter jittering using uniform distribution. Each parameter value is multiplied by a random factor between (1 - jitter%) and (1 + jitter%) with boundary enforcement. Examples: 0.1 (10% jitter on all params) or c("theta" = 0.05, "omega" = 0.1)</td>
+</tr>
+<tr>
+<td><code>jitter_excluded</code></td>
+<td>character or character vector of parameter names to exclude from jittering. Examples: "THETA1" or c("THETA1", "OMEGA(1,1)")</td>
+</tr>
+<tr>
+<td><code>seed</code></td>
+<td>integer for random number generator seed to ensure reproducible jittering</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Description of model in metadata file</td>
+</tr>
+<tr>
+<td><code>no_metadata</code></td>
+<td>boolean, if true, does not create metadatafile, default FALSE</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+path to new model file (invisible) todo
+
+## Examples
+
+```r
+## Not run: 
+copy_model(from = "model/nonmem/run001.mod", to = "model/nonmem/run002.mod")
+
+## End(Not run)
+```

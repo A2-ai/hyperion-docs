@@ -1,0 +1,32 @@
+---
+title: "hyperion"
+description: "Hyperion is an R interface to the pharos CLI for"
+template: splash
+pagefind: true
+hero:
+  tagline: "Hyperion is an R interface to the pharos CLI for"
+  actions:
+    - text: "Get Started"
+      link: "./articles/readme/"
+      icon: right-arrow
+      variant: primary
+    - text: "View on GitHub"
+      link: "https://github.com/A2-ai/hyperion"
+      icon: external
+      variant: minimal
+---
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Quick links
+
+<CardGrid stagger>
+  <Card title="Model Interaction" icon="document">
+    hyperion has several functions for interacting with NONMEM models
+    [Learn more >](./reference/read_model/)
+  </Card>
+  <Card title="Parameter Tables" icon="seti:csv">
+    hyperion can create model parameter tables
+    [Learn more >](./articles/parameter-tables/)
+  </Card>
+</CardGrid>
+

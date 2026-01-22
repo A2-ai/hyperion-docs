@@ -1,0 +1,88 @@
+---
+title: "Submits a NONMEM model to SGE for execution"
+description: "This function submits a NONMEM model file to a SGE cluster for execution, allowing for parallel processing and job queue management."
+pagefind: true
+---
+
+## Description
+
+This function submits a NONMEM model file to a SGE cluster for execution, allowing for parallel processing and job queue management. The function handles job configuration, resource allocation, and job submission through pharos
+
+## Usage
+
+```r
+submit_model_to_sge(
+  model,
+  overwrite = FALSE,
+  dry_run = FALSE,
+  run_in_output_dir = FALSE,
+  ncpu = 1,
+  clean_level = 1,
+  parafile = NULL,
+  template = NULL
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>Path to the NONMEM model file, or character vector of model paths/patterns (required)</td>
+</tr>
+<tr>
+<td><code>overwrite</code></td>
+<td>Whether to overwrite existing output files (default: FALSE)</td>
+</tr>
+<tr>
+<td><code>dry_run</code></td>
+<td>Whether to perform a dry run without actually submitting the job (default: FALSE)</td>
+</tr>
+<tr>
+<td><code>run_in_output_dir</code></td>
+<td>Whether to run the job in the output directory (default: FALSE)</td>
+</tr>
+<tr>
+<td><code>ncpu</code></td>
+<td>Number of CPUs to allocate for the job (default: 1)</td>
+</tr>
+<tr>
+<td><code>clean_level</code></td>
+<td>Level of cleanup to perform after job completion (default: 1)</td>
+</tr>
+<tr>
+<td><code>parafile</code></td>
+<td>Path to parameter file for parallel runs (default: NULL)</td>
+</tr>
+<tr>
+<td><code>template</code></td>
+<td>Path to SLURM template file for job submission (default: NULL)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Returns invisibly after printing job submission results. Prints model path and corresponding SGE job ID for each submitted job.
+
+## Examples
+
+```r
+## Not run: 
+# Submit a basic NONMEM model
+submit_model_to_sge("model.mod")
+
+# Dry run to test submission without actually running
+submit_model_to_sge("model.mod", dry_run = TRUE)
+
+## End(Not run)
+```

@@ -1,0 +1,47 @@
+---
+title: "Get's model lineage"
+description: "Get's model lineage"
+pagefind: true
+---
+
+## Description
+
+Get's model lineage
+
+## Usage
+
+```r
+get_model_lineage(model_dir)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_dir</code></td>
+<td>path to directory containing all models</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+hyperion_nonmem_tree S3 object
+
+## Examples
+
+```r
+## Not run: 
+get_model_lineage("model/nonmem/")
+
+## End(Not run)
+```

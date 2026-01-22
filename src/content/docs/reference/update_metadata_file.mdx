@@ -1,0 +1,65 @@
+---
+title: "Updates a metadatafile"
+description: "Updates a metadatafile"
+pagefind: true
+---
+
+## Description
+
+Updates a metadatafile
+
+## Usage
+
+```r
+update_metadata_file(
+  model_path,
+  description = NULL,
+  tags = NULL,
+  based_on = NULL
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_path</code></td>
+<td>path to model file or metadata file to update</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Optional description to add to metadata</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>Optional character vector of tags to add to tags field</td>
+</tr>
+<tr>
+<td><code>based_on</code></td>
+<td>character vector of models to add to based_on field</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Invisibly after updaing
+
+## Examples
+
+```r
+## Not run: 
+update_metadata_file("model/nonmem/run001.mod", tags = "key model")
+update_metadata_file("model/nonmem/run004.mod", tags = "key model", based_on = "1002")
+
+## End(Not run)
+```

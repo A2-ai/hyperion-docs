@@ -1,0 +1,47 @@
+---
+title: "Gets model object from lst file"
+description: "Gets model object from lst file"
+pagefind: true
+---
+
+## Description
+
+Gets model object from lst file
+
+## Usage
+
+```r
+read_model_from_lst(path)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>path to lst file, model output directory, or metadata.json file.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+hyperion_nonmem_model S3 object with `model_source` attribute for the source file
+
+## Examples
+
+```r
+## Not run: 
+read_model_from_lst("model/nonmem/run001/run001.lst")
+
+## End(Not run)
+```

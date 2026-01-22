@@ -1,0 +1,42 @@
+---
+title: "Get a comment by original NONMEM name"
+description: "Get a comment by original NONMEM name"
+pagefind: true
+---
+
+## Description
+
+Get a comment by original NONMEM name
+
+## Usage
+
+```r
+get_comment(model_comments, nonmem_name)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_comments</code></td>
+<td>A ModelComments object</td>
+</tr>
+<tr>
+<td><code>nonmem_name</code></td>
+<td>The NONMEM parameter name (e.g., "THETA1", "OMEGA(1,1)")</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+The comment object (ThetaComment, OmegaComment, or SigmaComment), or NULL if not found

@@ -1,0 +1,74 @@
+---
+title: "Gets parameter estimates from model run"
+description: "Gets parameter estimates from model run"
+pagefind: true
+---
+
+## Description
+
+Gets parameter estimates from model run
+
+## Usage
+
+```r
+get_parameters(
+  path,
+  hide_off_diagonal_params = FALSE,
+  only_method = NULL,
+  only_last = TRUE,
+  show_table_idx = FALSE,
+  show_method = FALSE
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>path to model file, model output directory, ext file or metadata json file.</td>
+</tr>
+<tr>
+<td><code>hide_off_diagonal_params</code></td>
+<td>boolean, if TRUE will not display the unfixed off-diagonal estimated parameters</td>
+</tr>
+<tr>
+<td><code>only_method</code></td>
+<td>character, filter for getting estimates from specified method only. Available methods are Fo, Foce, Saems, Bayes, Imp, ImpMap, Its, Nuts</td>
+</tr>
+<tr>
+<td><code>only_last</code></td>
+<td>boolean, for grabbing only last estimation method parameters</td>
+</tr>
+<tr>
+<td><code>show_table_idx</code></td>
+<td>boolean, if TRUE include table_idx column in output</td>
+</tr>
+<tr>
+<td><code>show_method</code></td>
+<td>boolean, if TRUE include method column in output</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+data.frame of parameter estimates
+
+## Examples
+
+```r
+## Not run: 
+get_parameters("model/nonmem/run001/run001.ext")
+
+## End(Not run)
+```

@@ -1,0 +1,76 @@
+---
+title: "Sigma parameter comment class"
+description: "Represents parsed comments for SIGMA parameters."
+pagefind: true
+---
+
+## Description
+
+Represents parsed comments for SIGMA parameters.
+
+## Usage
+
+```r
+SigmaComment(
+  nonmem_name = character(0),
+  name = NULL,
+  display = NULL,
+  description = NULL,
+  parameterization = NULL
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nonmem_name</code></td>
+<td>Character. The NONMEM parameter name (e.g., "SIGMA(1,1)").</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Character or NULL. User-defined parameter name (e.g., "PropErr").</td>
+</tr>
+<tr>
+<td><code>display</code></td>
+<td>Character or NULL. Display name for tables/output.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Character or NULL. Description of the parameter.</td>
+</tr>
+<tr>
+<td><code>parameterization</code></td>
+<td>Character or NULL. Transformation type.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Properties
+
+- **nonmem_name**: The NONMEM parameter identifier.
+
+ 
+
+- **name**: User-friendly name parsed from comments.
+
+ 
+
+- **display**: Display name for tables. Falls back to `name` if NULL.
+
+ 
+
+- **description**: Longer description of what the parameter represents.
+
+ 
+
+- **parameterization**: Transformation type. Valid values: "LogNormal", "Logit", "AddErr", "LogAddErr", "Proportional", "Identity".

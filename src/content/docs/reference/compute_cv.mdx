@@ -1,0 +1,56 @@
+---
+title: "Compute coefficient of variation (CV%) for random effect parameters"
+description: "Calculates the CV% for Omega/Sigma diagonal parameters based on the specified transformation."
+pagefind: true
+---
+
+## Description
+
+Calculates the CV% for Omega/Sigma diagonal parameters based on the specified transformation. For LogNormal and AddErr transforms, uses `sqrt(exp(estimate) - 1) * 100`. For Proportional, uses `sqrt(estimate) * 100`. Returns NA for Theta parameters or Identity transform as CV is not meaningful.
+
+## Usage
+
+```r
+compute_cv(estimate, param_type, transform = "identity")
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>estimate</code></td>
+<td>The parameter estimate(s) (variance scale), can be a vector</td>
+</tr>
+<tr>
+<td><code>param_type</code></td>
+<td>Parameter type(s), can be a vector: "Theta", "Omega", or "Sigma"</td>
+</tr>
+<tr>
+<td><code>transform</code></td>
+<td>Transformation type(s), can be a vector: "LogNormal", "AddErr", "Proportional", or "Identity". Defaults to "Identity".</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+CV as a percentage (vector), or NA if not applicable
+
+## Examples
+
+```r
+## Not run: 
+compute_cv(0.09, "Omega", "LogNormal")
+df %>% mutate(cv = compute_cv(estimate, kind, "LogNormal"))
+
+## End(Not run)
+```

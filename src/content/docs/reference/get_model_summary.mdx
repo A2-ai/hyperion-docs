@@ -1,0 +1,51 @@
+---
+title: "Gets model run summary"
+description: "Gets model run summary"
+pagefind: true
+---
+
+## Description
+
+Gets model run summary
+
+## Usage
+
+```r
+get_model_summary(directory, hide_off_diagonal_params = FALSE)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>directory</code></td>
+<td>path to model run output directory containing .ext, .lst files, or a hyperion_nonmem_model object</td>
+</tr>
+<tr>
+<td><code>hide_off_diagonal_params</code></td>
+<td>boolean, if TRUE will not display the unfixed off-diagonal estimated parameters</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+hyperion_nonmem_summary S3 object
+
+## Examples
+
+```r
+## Not run: 
+get_model_summary("model/nonmem/run001")
+
+## End(Not run)
+```

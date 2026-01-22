@@ -1,0 +1,70 @@
+---
+title: "Add a parameter definition to a lookup file"
+description: "Adds or updates a parameter entry in a TOML lookup file."
+pagefind: true
+---
+
+## Description
+
+Adds or updates a parameter entry in a TOML lookup file. The parameterization value is validated against known types.
+
+## Usage
+
+```r
+add_parameter_to_lookup(
+  path,
+  name,
+  display = NULL,
+  desc = NULL,
+  unit = NULL,
+  parameterization = NULL,
+  overwrite = FALSE
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>Path to the lookup.toml file</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Parameter name (e.g., "TVCL", "OM1")</td>
+</tr>
+<tr>
+<td><code>display</code></td>
+<td>Display name for tables (optional)</td>
+</tr>
+<tr>
+<td><code>desc</code></td>
+<td>Description text (optional)</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>Unit string (optional)</td>
+</tr>
+<tr>
+<td><code>parameterization</code></td>
+<td>Parameterization type (optional). Accepts raw values (EXP, LOG, PROP, ADD, etc.) or canonical values (LogNormal, Proportional, AddErr, LogAddErr, Logit, Identity).</td>
+</tr>
+<tr>
+<td><code>overwrite</code></td>
+<td>If TRUE, overwrite existing entry. Default FALSE.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Invisibly returns the path to the lookup file

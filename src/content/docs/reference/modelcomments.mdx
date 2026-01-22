@@ -1,0 +1,54 @@
+---
+title: "Model comments container with cross-validation"
+description: "Holds all parameter comments for a model organized by parameter type (theta, omega, sigma) and validates cross-references between them."
+pagefind: true
+---
+
+## Description
+
+Holds all parameter comments for a model organized by parameter type (theta, omega, sigma) and validates cross-references between them.
+
+## Usage
+
+```r
+ModelComments(theta = list(), omega = list(), sigma = list())
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theta</code></td>
+<td>Named list of ThetaComment objects for THETA parameters.</td>
+</tr>
+<tr>
+<td><code>omega</code></td>
+<td>Named list of OmegaComment objects for OMEGA parameters.</td>
+</tr>
+<tr>
+<td><code>sigma</code></td>
+<td>Named list of SigmaComment objects for SIGMA parameters.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Properties
+
+- **theta**: Named list of ThetaComment objects, keyed by NONMEM name.
+
+ 
+
+- **omega**: Named list of OmegaComment objects, keyed by NONMEM name.
+
+ 
+
+- **sigma**: Named list of SigmaComment objects, keyed by NONMEM name.

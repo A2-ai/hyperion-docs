@@ -1,0 +1,47 @@
+---
+title: "Gets model object"
+description: "Gets model object"
+pagefind: true
+---
+
+## Description
+
+Gets model object
+
+## Usage
+
+```r
+read_model(path)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>path to mod or ctl file.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+hyperion_nonmem_model S3 object with `model_source` and `run_status` attributes
+
+## Examples
+
+```r
+## Not run: 
+read_model("model/nonmem/run001.mod")
+
+## End(Not run)
+```

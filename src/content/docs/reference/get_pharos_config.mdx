@@ -1,0 +1,30 @@
+---
+title: "Gets the pharos.toml configuration as an R object"
+description: "Gets the pharos.toml configuration as an R object"
+pagefind: true
+---
+
+## Description
+
+Gets the pharos.toml configuration as an R object
+
+## Usage
+
+```r
+get_pharos_config()
+```
+
+## Value
+
+pharos config as nested list structure
+
+## Examples
+
+```r
+## Not run: 
+config <- get_pharos_config()
+config$nonmem$summary$high_correlation_threshold
+config$nonmem$summary$high_condition_threshold
+
+## End(Not run)
+```

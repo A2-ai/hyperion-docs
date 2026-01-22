@@ -1,0 +1,85 @@
+---
+title: "Theta parameter comment class"
+description: "Represents parsed comments for THETA parameters."
+pagefind: true
+---
+
+## Description
+
+Represents parsed comments for THETA parameters.
+
+## Usage
+
+```r
+ThetaComment(
+  nonmem_name = character(0),
+  name = NULL,
+  display = NULL,
+  description = NULL,
+  unit = NULL,
+  parameterization = NULL
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>nonmem_name</code></td>
+<td>Character. The NONMEM parameter name (e.g., "THETA1").</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Character or NULL. User-defined parameter name (e.g., "CL", "V").</td>
+</tr>
+<tr>
+<td><code>display</code></td>
+<td>Character or NULL. Display name for tables/output.</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Character or NULL. Description of the parameter.</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>Character or NULL. Unit of measurement (e.g., "L/hr").</td>
+</tr>
+<tr>
+<td><code>parameterization</code></td>
+<td>Character or NULL. Transformation type.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Properties
+
+- **nonmem_name**: The NONMEM parameter identifier.
+
+ 
+
+- **name**: User-friendly name parsed from comments.
+
+ 
+
+- **display**: Display name for tables. Falls back to `name` if NULL.
+
+ 
+
+- **description**: Longer description of what the parameter represents.
+
+ 
+
+- **unit**: Unit of measurement for the parameter value.
+
+ 
+
+- **parameterization**: Transformation type. Valid values: "LogNormal", "Logit", "AddErr", "LogAddErr", "Proportional", "Identity".

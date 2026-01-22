@@ -1,0 +1,42 @@
+---
+title: "Apply lookup defaults to a parameter comment"
+description: "Fills NULL fields (display, description, unit, parameterization) from a lookup toml file."
+pagefind: true
+---
+
+## Description
+
+Fills NULL fields (display, description, unit, parameterization) from a lookup toml file. Matches the comment's `name` field against toml keys.
+
+## Usage
+
+```r
+apply_lookup_defaults(comment, lookup_path)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>comment</code></td>
+<td>A ThetaComment, OmegaComment, or SigmaComment object</td>
+</tr>
+<tr>
+<td><code>lookup_path</code></td>
+<td>Path to a toml lookup file</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+The modified comment object

@@ -1,0 +1,46 @@
+---
+title: "Check if two models are in a direct lineage"
+description: "Returns TRUE if model1 is an ancestor of model2 or vice versa (i.e., they are in a direct parent-child chain)."
+pagefind: true
+---
+
+## Description
+
+Returns TRUE if model1 is an ancestor of model2 or vice versa (i.e., they are in a direct parent-child chain).
+
+## Usage
+
+```r
+are_models_in_lineage(lineage, model1, model2)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lineage</code></td>
+<td>A hyperion_nonmem_tree object from <code>get_model_lineage()</code></td>
+</tr>
+<tr>
+<td><code>model1</code></td>
+<td>Character, model name (e.g., "run001" or "run001.mod")</td>
+</tr>
+<tr>
+<td><code>model2</code></td>
+<td>Character, model name (e.g., "run003" or "run003.mod")</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Logical, TRUE if models are in direct lineage

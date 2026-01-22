@@ -1,0 +1,38 @@
+---
+title: "Get parameter names from ModelComments"
+description: "Returns a data frame mapping NONMEM parameter names to user-defined names and display names."
+pagefind: true
+---
+
+## Description
+
+Returns a data frame mapping NONMEM parameter names to user-defined names and display names. Row names are set to NONMEM names for easy access (e.g., `df["THETA1", "name"]`).
+
+## Usage
+
+```r
+get_parameter_names(model_comments)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_comments</code></td>
+<td>A ModelComments object</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Data frame with columns: name, display. Row names are NONMEM parameter names (e.g., "THETA1", "OMEGA(1,1)").

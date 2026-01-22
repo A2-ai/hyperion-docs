@@ -1,0 +1,42 @@
+---
+title: "Extract all parameter comments from a model as ModelComments object"
+description: "Extract all parameter comments from a model as ModelComments object"
+pagefind: true
+---
+
+## Description
+
+Extract all parameter comments from a model as ModelComments object
+
+## Usage
+
+```r
+get_model_parameter_info(mod, lookup_path = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mod</code></td>
+<td>A hyperion_nonmem_model object or path to a run output directory containing an .lst file</td>
+</tr>
+<tr>
+<td><code>lookup_path</code></td>
+<td>Optional path to a toml lookup file. If provided, fills NULL fields (display, description, unit, parameterization) from the lookup.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+ModelComments object containing theta, omega, and sigma comments

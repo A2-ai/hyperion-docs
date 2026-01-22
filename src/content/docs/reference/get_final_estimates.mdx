@@ -1,0 +1,66 @@
+---
+title: "Gets all final estimates from an ext file or vector of ext files"
+description: "Gets all final estimates from an ext file or vector of ext files"
+pagefind: true
+---
+
+## Description
+
+Gets all final estimates from an ext file or vector of ext files
+
+## Usage
+
+```r
+get_final_estimates(
+  paths,
+  parameters_only = TRUE,
+  only_method = NULL,
+  only_last = TRUE
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>paths</code></td>
+<td>path to directory containing ext files (including subdirectories), single ext file, or vector of ext file paths</td>
+</tr>
+<tr>
+<td><code>parameters_only</code></td>
+<td>bool if true removes ITERATION and OBJ column, default false</td>
+</tr>
+<tr>
+<td><code>only_method</code></td>
+<td>character, filter for getting estimates from specified method only</td>
+</tr>
+<tr>
+<td><code>only_last</code></td>
+<td>boolean, for grabbing only last estimation method parameters</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+data.frame of final estimates with model names
+
+## Examples
+
+```r
+## Not run: 
+get_final_estimates("model/nonmem/")
+get_final_estimates("bootstrap/")  # Searches subdirectories recursively
+get_final_estimates(c("run001.ext", "run002.ext", "run003.ext"))
+
+## End(Not run)
+```

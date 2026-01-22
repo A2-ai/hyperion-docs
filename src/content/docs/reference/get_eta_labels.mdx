@@ -1,0 +1,38 @@
+---
+title: "Get ETA labels from model comments"
+description: "Creates ETA labels in the format ETA1//ETA-CL from diagonal omega parameters."
+pagefind: true
+---
+
+## Description
+
+Creates ETA labels in the format "ETA1//ETA-CL" from diagonal omega parameters. The label uses the associated_theta name if available, otherwise the omega name.
+
+## Usage
+
+```r
+get_eta_labels(model_comments)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_comments</code></td>
+<td>A ModelComments object</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Character vector of ETA labels (e.g., c("ETA1//ETA-CL", "ETA2//ETA-V"))

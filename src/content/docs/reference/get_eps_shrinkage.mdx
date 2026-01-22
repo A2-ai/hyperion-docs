@@ -1,0 +1,47 @@
+---
+title: "Gets EPS shrinkage metrics from .shk file"
+description: "Gets EPS shrinkage metrics from .shk file"
+pagefind: true
+---
+
+## Description
+
+Gets EPS shrinkage metrics from .shk file
+
+## Usage
+
+```r
+get_eps_shrinkage(path)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>path to model file, model output directory, shk file or metadata json file.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+data.frame of EPS shrinkage metrics
+
+## Examples
+
+```r
+## Not run: 
+get_eps_shrinkage("model/nonmem/run001/run001.shk")
+
+## End(Not run)
+```
