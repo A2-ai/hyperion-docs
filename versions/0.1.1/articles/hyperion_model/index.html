@@ -100,15 +100,15 @@ async function handleVersionChange(select) {
 		})();
 	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="social-icons astro-wu23bvmt">  </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> <select autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label>  </starlight-theme-select>  <script>
 	StarlightThemeProvider.updatePickers();
-</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <script type="module" src="/versions/0.1.1/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script><script type="module" src="/versions/0.1.1/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script><div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><span class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-2" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-2" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-2" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-3" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-3" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-3" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#estimation-methods" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Estimation Methods</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#heuristic-checks" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Heuristic Checks</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-4" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-4" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-4" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary-can-be-generated-from-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">model summary can be generated from model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#estimation-methods-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Estimation Methods</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#heuristic-checks-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Heuristic Checks</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-5" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-5" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-5" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copy-model-accepts-hyperion-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copy model accepts hyperion model object</span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-2" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-2" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-2" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-3" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-3" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-3" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#estimation-methods" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Estimation Methods</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#heuristic-checks" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Heuristic Checks</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-4" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-4" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-4" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary-can-be-generated-from-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">model summary can be generated from model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#estimation-methods-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Estimation Methods</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#heuristic-checks-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Heuristic Checks</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-5" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-5" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-5" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copy-model-accepts-hyperion-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copy model accepts hyperion model object</span> </a>  </li> </ul> </nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Hyperion Model</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <div class="expressive-code"><link rel="stylesheet" href="/versions/0.1.1/_astro/ec.v4551.css"><script type="module" src="/versions/0.1.1/_astro/ec.0vx5m.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">library</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">hyperion</span><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ── pharos configuration ────────────────────────────────────────────────────────</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ pharos.toml found: /Users/mattsmith/Documents/hyperion/vignettes/pharos.toml</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ── hyperion options ────────────────────────────────────────────────────────────</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.significant_number_display : 4</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ── hyperion nonmem object options ──────────────────────────────────────────────</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.nonmem_model.show_included_columns : FALSE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.nonmem_summary.rse_threshold : 50</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">system.file</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#ECC48D;--1:#984E4D">"extdata"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--1:#403F53"><span style="--0:#D6DEEB"> </span><span style="--0:#D7DBE0">package</span><span style="--0:#D6DEEB"> </span></span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"hyperion"</span><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="library(hyperion)#>#>#> ── pharos configuration ────────────────────────────────────────────────────────#> ✔ pharos.toml found: /Users/mattsmith/Documents/hyperion/vignettes/pharos.toml#> ── hyperion options ────────────────────────────────────────────────────────────#> ✔ hyperion.significant_number_display : 4#> ── hyperion nonmem object options ──────────────────────────────────────────────#> ✔ hyperion.nonmem_model.show_included_columns : FALSE#> ✔ hyperion.nonmem_summary.rse_threshold : 50#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30test_data_dir <- system.file(&#x22;extdata&#x22;, package = &#x22;hyperion&#x22;)"><div></div></button></div></figure></div>
+</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <script type="module" src="/versions/0.1.1/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script><script type="module" src="/versions/0.1.1/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script><div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><span class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary-can-be-generated-from-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">model summary can be generated from model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#parameters-can-be-retrieved-with-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">parameters can be retrieved with model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#parameter-info-can-be-retrieved-with-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">parameter info can be retrieved with model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copy-model-accepts-hyperion-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copy model accepts hyperion model object</span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary-can-be-generated-from-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">model summary can be generated from model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#parameters-can-be-retrieved-with-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">parameters can be retrieved with model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#parameter-info-can-be-retrieved-with-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">parameter info can be retrieved with model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copy-model-accepts-hyperion-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copy model accepts hyperion model object</span> </a>  </li> </ul> </nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Hyperion Model</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <div class="expressive-code"><link rel="stylesheet" href="/versions/0.1.1/_astro/ec.v4551.css"><script type="module" src="/versions/0.1.1/_astro/ec.0vx5m.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C792EA;--1:#8844AE">library</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">hyperion</span><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ── pharos configuration ────────────────────────────────────────────────────────</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ pharos.toml found: /Users/mattsmith/Documents/hyperion/vignettes/pharos.toml</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ── hyperion options ────────────────────────────────────────────────────────────</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.significant_number_display : 4</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ── hyperion nonmem object options ──────────────────────────────────────────────</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.nonmem_model.show_included_columns : FALSE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.nonmem_summary.rse_threshold : 50</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">system.file</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#ECC48D;--1:#984E4D">"extdata"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--1:#403F53"><span style="--0:#D6DEEB"> </span><span style="--0:#D7DBE0">package</span><span style="--0:#D6DEEB"> </span></span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"hyperion"</span><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="library(hyperion)#>#>#> ── pharos configuration ────────────────────────────────────────────────────────#> ✔ pharos.toml found: /Users/mattsmith/Documents/hyperion/vignettes/pharos.toml#> ── hyperion options ────────────────────────────────────────────────────────────#> ✔ hyperion.significant_number_display : 4#> ── hyperion nonmem object options ──────────────────────────────────────────────#> ✔ hyperion.nonmem_model.show_included_columns : FALSE#> ✔ hyperion.nonmem_summary.rse_threshold : 50#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30test_data_dir <- system.file(&#x22;extdata&#x22;, package = &#x22;hyperion&#x22;)"><div></div></button></div></figure></div>
 <div class="sl-heading-wrapper level-h1"><h1 id="hyperion-model-object">Hyperion Model object</h1><a class="sl-anchor-link" href="#hyperion-model-object"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Hyperion Model object”</span></a></div>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"mod"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"1001.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod <- read_model(file.path(test_data_dir, &#x22;mod&#x22;, &#x22;1001.mod&#x22;))mod"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="nonmem-model-1001">NONMEM Model: 1001</h1><a class="sl-anchor-link" href="#nonmem-model-1001"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “NONMEM Model: 1001”</span></a></div>
+<p><strong>NONMEM Model: 1001</strong></p>
 <p><strong>Problem:</strong> PK Structural Model</p>
 <p><strong>Run Status:</strong> Not Run</p>
 <p><strong>Dataset:</strong> ../../../../data/derived/PK_Oral_Ex1.csv</p>
 <p><strong>Ignore:</strong> @</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -151,9 +151,9 @@ async function handleVersionChange(select) {
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Lower</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -161,9 +161,9 @@ async function handleVersionChange(select) {
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>THETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>19</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -171,9 +171,9 @@ async function handleVersionChange(select) {
 <p>CL/F (L/h)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>304</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -181,9 +181,9 @@ async function handleVersionChange(select) {
 <p>VC/F (L)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -191,16 +191,16 @@ async function handleVersionChange(select) {
 <p>KA (1/hr)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA4</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p><span style="color: #DD0000;">Yes</span></p>
 </td><td style="text-align:left;">
 <p>F1 (fraction)</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -232,7 +232,7 @@ async function handleVersionChange(select) {
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -240,7 +240,7 @@ async function handleVersionChange(select) {
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>OMEGA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -248,7 +248,7 @@ async function handleVersionChange(select) {
 <p>OM1 CL :EXP</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -256,14 +256,14 @@ async function handleVersionChange(select) {
 <p>OM2 VC :EXP</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>OM3 KA :EXP</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -289,7 +289,7 @@ async function handleVersionChange(select) {
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -297,7 +297,7 @@ async function handleVersionChange(select) {
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>SIGMA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -305,7 +305,7 @@ async function handleVersionChange(select) {
 <p>SIG1</p>
 </td></tr><tr><td style="text-align:left;">
 <p>SIGMA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -313,13 +313,13 @@ async function handleVersionChange(select) {
 <p>SIG2</p>
 </td></tr></tbody></table>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run002b001.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod <- read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run002b001.mod&#x22;))mod"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="nonmem-model-run002b001">NONMEM Model: run002b001</h1><a class="sl-anchor-link" href="#nonmem-model-run002b001"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “NONMEM Model: run002b001”</span></a></div>
-<p><strong>Problem:</strong> Base one-compartment oral absorption model created from
-pharos see run002b001_metadata.json for details.</p>
+<p><strong>NONMEM Model: run002b001</strong></p>
+<p><strong>Problem:</strong> Base one-compartment oral absorption model
+created from pharos see run002b001_metadata.json for details.</p>
 <p><strong>Run Status:</strong> Not Run</p>
 <p><strong>Dataset:</strong> ../../data/derived/onecmpt-oral-30ind.csv</p>
 <p><strong>Ignore:</strong> @</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters-1">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -355,9 +355,9 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Lower</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -365,9 +365,9 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>THETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.247</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -375,9 +375,9 @@ pharos see run002b001_metadata.json for details.</p>
 <p>TVCL (L/hr)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>40.85</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -385,16 +385,16 @@ pharos see run002b001_metadata.json for details.</p>
 <p>TVV (L)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.244</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>TVKA (1/hr)</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters-1">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -426,7 +426,7 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -434,7 +434,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>OMEGA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1304</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -442,7 +442,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>OM1 TVCL :EXP</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1363</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -450,14 +450,14 @@ pharos see run002b001_metadata.json for details.</p>
 <p>OM2 TVV :EXP</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.114</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>OM3 TVKA :EXP</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters-1">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -483,7 +483,7 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -491,7 +491,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>SIGMA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.04812</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -499,7 +499,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>SIG1 Proportional error (variance, 20% CV)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>SIGMA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.0059</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -507,13 +507,13 @@ pharos see run002b001_metadata.json for details.</p>
 <p>SIG2 Additive error (variance, 0.01 mg/L SD)</p>
 </td></tr></tbody></table>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod_nm</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"mod"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"nmexample.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod_nm</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod_nm <- read_model(file.path(test_data_dir, &#x22;mod&#x22;, &#x22;nmexample.mod&#x22;))mod_nm"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="nonmem-model-nmexample">NONMEM Model: nmexample</h1><a class="sl-anchor-link" href="#nonmem-model-nmexample"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “NONMEM Model: nmexample”</span></a></div>
+<p><strong>NONMEM Model: nmexample</strong></p>
 <p><strong>Problem:</strong> RUN# Example 1 (from samp5l)</p>
 <p><strong>Run Status:</strong> Not Run</p>
 <p><strong>Dataset:</strong> example1.csv</p>
 <p><strong>Ignore:</strong> C</p>
 <p><strong>Aliased Columns:</strong> CONC → DV, DOSE → AMT</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters-2">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters-2"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -556,9 +556,9 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Lower</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -566,9 +566,9 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>THETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.001</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -576,9 +576,9 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[LN(CL)]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.001</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -586,9 +586,9 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[LN(V1)]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.001</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -596,16 +596,16 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[LN(Q)]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA4</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.001</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>[LN(V2)]</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters-2">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters-2"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -679,7 +679,7 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -687,7 +687,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>OMEGA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.15</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -695,7 +695,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[P]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(2,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -703,7 +703,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[F]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.15</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -711,7 +711,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[P]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -719,7 +719,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[F]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -727,7 +727,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[F]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.15</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -735,7 +735,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[P]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(4,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -743,7 +743,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[F]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(4,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -751,7 +751,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[F]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(4,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -759,14 +759,14 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[F]</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(4,4)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.15</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>[P]</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters-2">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters-2"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -786,7 +786,7 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -794,7 +794,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>SIGMA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.6</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -802,7 +802,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>[P]</p>
 </td></tr></tbody></table>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod_e</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"mod"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"everything.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod_e</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod_e <- read_model(file.path(test_data_dir, &#x22;mod&#x22;, &#x22;everything.mod&#x22;))mod_e"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="nonmem-model-everything">NONMEM Model: everything</h1><a class="sl-anchor-link" href="#nonmem-model-everything"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “NONMEM Model: everything”</span></a></div>
+<p><strong>NONMEM Model: everything</strong></p>
 <p><strong>Problem:</strong> Some header #2</p>
 <p><strong>Run Status:</strong> Not Run</p>
 <p><strong>Dataset:</strong> …csv</p>
@@ -810,7 +810,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p><strong>Records:</strong> 200</p>
 <p><strong>Dropped Columns:</strong> DATE</p>
 <p><strong>Aliased Columns:</strong> AMT → DOSE</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters-3">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters-3"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -882,11 +882,11 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Lower</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Upper</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -894,11 +894,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>THETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.5</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -906,11 +906,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>THETA(1) and THETA(2)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.5</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -918,11 +918,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>THETA(1) and THETA(2)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2.3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p><span style="color: #DD0000;">Yes</span></p>
@@ -930,11 +930,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>THETA(3)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA4</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.8</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -942,11 +942,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>THETA(4) and THETA(5)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA5</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.25</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -954,11 +954,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>THETA(4) and THETA(5)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA6</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2.3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p><span style="color: #DD0000;">Yes</span></p>
@@ -966,18 +966,18 @@ pharos see run002b001_metadata.json for details.</p>
 <p>THETA(6)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA7</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.75</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p><span style="color: #DD0000;">Yes</span></p>
 </td><td style="text-align:left;">
 <p>THETA(7)</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters-3">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters-3"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -1075,11 +1075,11 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Lower</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Upper</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -1089,11 +1089,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>OMEGA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.04</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1102,11 +1102,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(1) - CL (diagonal)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.17</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1114,11 +1114,11 @@ pharos see run002b001_metadata.json for details.</p>
 </td><td style="text-align:left;">
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1128,11 +1128,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(2) - V (SD)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(4,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1142,11 +1142,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(4,4)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.15</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1156,11 +1156,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(5,5)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1170,11 +1170,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(2) - V (SD)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(6,5)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1184,11 +1184,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(6,6)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.15</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1198,11 +1198,11 @@ pharos see run002b001_metadata.json for details.</p>
 <p>ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(7,7)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1</p>
 </td><td style="text-align:left;">
 <p><span style="color: #DD0000;">Yes</span></p>
@@ -1210,7 +1210,7 @@ pharos see run002b001_metadata.json for details.</p>
 </td><td style="text-align:left;">
 <p>ETA(6) - fixed diagonal</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters-3">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters-3"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -1242,7 +1242,7 @@ pharos see run002b001_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -1250,7 +1250,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>SIGMA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1258,7 +1258,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Proportional error variance</p>
 </td></tr><tr><td style="text-align:left;">
 <p>SIGMA(2,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.002</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1266,7 +1266,7 @@ pharos see run002b001_metadata.json for details.</p>
 <p>Prop-Add covariance, Additive error variance</p>
 </td></tr><tr><td style="text-align:left;">
 <p>SIGMA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.25</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1275,17 +1275,17 @@ pharos see run002b001_metadata.json for details.</p>
 </td></tr></tbody></table>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">names</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#>  [1] "problem"          "input_columns"    "data"             "subroutines"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#>  [5] "theta_parameters" "omega_blocks"     "sigma_blocks"     "estimations"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#>  [9] "tables"           "simulation"       "filename"</span></div></div><div class="ec-line"><div class="code">
 </div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">attributes</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53">) </span><span style="--0:#7FDBCA;--1:#096E72">|></span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">names</span><span style="--0:#D6DEEB;--1:#403F53">()</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "names"         "_tokens"       "_token_ranges" "model_source"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [5] "run_status"    "class"</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="names(mod)#>  [1] &#x22;problem&#x22;          &#x22;input_columns&#x22;    &#x22;data&#x22;             &#x22;subroutines&#x22;#>  [5] &#x22;theta_parameters&#x22; &#x22;omega_blocks&#x22;     &#x22;sigma_blocks&#x22;     &#x22;estimations&#x22;#>  [9] &#x22;tables&#x22;           &#x22;simulation&#x22;       &#x22;filename&#x22;attributes(mod) |> names()#> [1] &#x22;names&#x22;         &#x22;_tokens&#x22;       &#x22;_token_ranges&#x22; &#x22;model_source&#x22;#> [5] &#x22;run_status&#x22;    &#x22;class&#x22;"><div></div></button></div></figure></div>
-<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run001.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">check_dataset</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $canonical_path</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $blake3_hash</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"</span></div></div><div class="ec-line"><div class="code">
-</div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run002.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">check_dataset</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $canonical_path</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $blake3_hash</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"</span></div></div><div class="ec-line"><div class="code">
-</div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">check_dataset</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $canonical_path</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $blake3_hash</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run001.mod&#x22;)) |>  check_dataset(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))#> $canonical_path#> [1] &#x22;/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv&#x22;#>#> $blake3_hash#> [1] &#x22;8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005&#x22;read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run002.mod&#x22;)) |>  check_dataset(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))#> $canonical_path#> [1] &#x22;/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv&#x22;#>#> $blake3_hash#> [1] &#x22;8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005&#x22;read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003.mod&#x22;)) |>  check_dataset(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))#> $canonical_path#> [1] &#x22;/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv&#x22;#>#> $blake3_hash#> [1] &#x22;8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005&#x22;"><div></div></button></div></figure></div>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run001.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">check_dataset</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $canonical_path</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $blake3_hash</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run002.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">check_dataset</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $canonical_path</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $blake3_hash</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">check_dataset</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $canonical_path</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#></span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> $blake3_hash</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run001.mod&#x22;)) |>  check_dataset(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))#> $canonical_path#> [1] &#x22;/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv&#x22;#>#> $blake3_hash#> [1] &#x22;8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005&#x22;read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run002.mod&#x22;)) |>  check_dataset(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))#> $canonical_path#> [1] &#x22;/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv&#x22;#>#> $blake3_hash#> [1] &#x22;8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005&#x22;read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003.mod&#x22;)) |>  check_dataset(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))#> $canonical_path#> [1] &#x22;/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv&#x22;#>#> $blake3_hash#> [1] &#x22;8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005&#x22;"><div></div></button></div></figure></div>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">check_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run001.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> [1] "NMTRAN.exe not found at: \"/opt/nonmem/nm760/tr/NMTRAN.exe\""</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="check_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run001.mod&#x22;))#> [1] &#x22;NMTRAN.exe not found at: \&#x22;/opt/nonmem/nm760/tr/NMTRAN.exe\&#x22;&#x22;"><div></div></button></div></figure></div>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">get_model_summary</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="get_model_summary(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003&#x22;))"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="model-summary-run003">Model Summary: run003</h1><a class="sl-anchor-link" href="#model-summary-run003"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model Summary: run003”</span></a></div>
-<p><strong>Problem:</strong> Base one-compartment oral absorption model created from
-pharos see run003_metadata.json for details.</p>
+<p><strong>Model Summary: run003</strong></p>
+<p><strong>Problem:</strong> Base one-compartment oral absorption model
+created from pharos see run003_metadata.json for details.</p>
 <p><strong>Records: 240 | Observations: 210 | Subjects: 30</strong></p>
 <p><strong>Final OFV:</strong> -109.8</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="estimation-methods">Estimation Methods</h2><a class="sl-anchor-link" href="#estimation-methods"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Estimation Methods”</span></a></div>
+<p><strong>Estimation Methods</strong></p>
 <ul>
 <li><strong>First Order Conditional Estimation with Interaction</strong>
 <ul>
@@ -1293,13 +1293,13 @@ pharos see run003_metadata.json for details.</p>
 </ul>
 </li>
 </ul>
-<div class="sl-heading-wrapper level-h2"><h2 id="heuristic-checks">Heuristic Checks</h2><a class="sl-anchor-link" href="#heuristic-checks"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Heuristic Checks”</span></a></div>
+<p><strong>Heuristic Checks</strong></p>
 <p>[<span style="color:green">OK</span>] Minimization Successful</p>
 <p>[<span style="color:green">OK</span>] Covariance Step Successful</p>
 <p>[<span style="color:green">OK</span>] No Eigenvalue Issues</p>
 <p>[<span style="color:green">OK</span>] No Parameters Near Boundary</p>
 <p>[<span style="color:green">OK</span>] No Hessian Resets</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters-4">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters-4"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -1335,46 +1335,46 @@ pharos see run003_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>TVCL</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.325</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1115</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>8.411</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr><tr><td style="text-align:left;">
 <p>TVV</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>40.16</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2.839</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>7.069</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr><tr><td style="text-align:left;">
 <p>TVKA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.212</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1097</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>9.057</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters-4">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters-4"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -1429,13 +1429,13 @@ pharos see run003_metadata.json for details.</p>
 <p>Parameter</p>
 </th><th style="text-align:left;">
 <p>Random Effect</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Shrinkage (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -1443,13 +1443,13 @@ pharos see run003_metadata.json for details.</p>
 <p>OM1 (TVCL)</p>
 </td><td style="text-align:left;">
 <p>ETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1223</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.05036</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>41.16</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>13.14</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1457,13 +1457,13 @@ pharos see run003_metadata.json for details.</p>
 <p>OMEGA(2,1)</p>
 </td><td style="text-align:left;">
 <p>ETA1:ETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.07454</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03134</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>42.04</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1471,13 +1471,13 @@ pharos see run003_metadata.json for details.</p>
 <p>OM2 (TVV)</p>
 </td><td style="text-align:left;">
 <p>ETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1239</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03675</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>29.66</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>4.631</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1485,18 +1485,18 @@ pharos see run003_metadata.json for details.</p>
 <p>OM3 (TVKA)</p>
 </td><td style="text-align:left;">
 <p>ETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1224</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.05628</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>45.97</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>24.34</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters-4">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters-4"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -1533,13 +1533,13 @@ pharos see run003_metadata.json for details.</p>
 <p>Parameter</p>
 </th><th style="text-align:left;">
 <p>Random Effect</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Shrinkage (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -1547,13 +1547,13 @@ pharos see run003_metadata.json for details.</p>
 <p>SIGMA(1,1)</p>
 </td><td style="text-align:left;">
 <p>EPS1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03754</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.006035</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>16.08</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>14.42</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1561,25 +1561,25 @@ pharos see run003_metadata.json for details.</p>
 <p>SIGMA(2,2)</p>
 </td><td style="text-align:left;">
 <p>EPS2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.005272</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.009211</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p><span style="color: #DD0000;">174.7</span></p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>14.42</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
 <div class="sl-heading-wrapper level-h2"><h2 id="model-summary-can-be-generated-from-model-object">model summary can be generated from model object</h2><a class="sl-anchor-link" href="#model-summary-can-be-generated-from-model-object"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “model summary can be generated from model object”</span></a></div>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#82AAFF;--1:#3B61B0">get_model_summary</span><span style="--0:#D6DEEB;--1:#403F53">()</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod <- read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003.mod&#x22;))mod |>    get_model_summary()"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="model-summary-run003-1">Model Summary: run003</h1><a class="sl-anchor-link" href="#model-summary-run003-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model Summary: run003”</span></a></div>
-<p><strong>Problem:</strong> Base one-compartment oral absorption model created from
-pharos see run003_metadata.json for details.</p>
+<p><strong>Model Summary: run003</strong></p>
+<p><strong>Problem:</strong> Base one-compartment oral absorption model
+created from pharos see run003_metadata.json for details.</p>
 <p><strong>Records: 240 | Observations: 210 | Subjects: 30</strong></p>
 <p><strong>Final OFV:</strong> -109.8</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="estimation-methods-1">Estimation Methods</h2><a class="sl-anchor-link" href="#estimation-methods-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Estimation Methods”</span></a></div>
+<p><strong>Estimation Methods</strong></p>
 <ul>
 <li><strong>First Order Conditional Estimation with Interaction</strong>
 <ul>
@@ -1587,13 +1587,13 @@ pharos see run003_metadata.json for details.</p>
 </ul>
 </li>
 </ul>
-<div class="sl-heading-wrapper level-h2"><h2 id="heuristic-checks-1">Heuristic Checks</h2><a class="sl-anchor-link" href="#heuristic-checks-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Heuristic Checks”</span></a></div>
+<p><strong>Heuristic Checks</strong></p>
 <p>[<span style="color:green">OK</span>] Minimization Successful</p>
 <p>[<span style="color:green">OK</span>] Covariance Step Successful</p>
 <p>[<span style="color:green">OK</span>] No Eigenvalue Issues</p>
 <p>[<span style="color:green">OK</span>] No Parameters Near Boundary</p>
 <p>[<span style="color:green">OK</span>] No Hessian Resets</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters-5">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters-5"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -1629,46 +1629,46 @@ pharos see run003_metadata.json for details.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>TVCL</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.325</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1115</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>8.411</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr><tr><td style="text-align:left;">
 <p>TVV</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>40.16</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>2.839</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>7.069</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr><tr><td style="text-align:left;">
 <p>TVKA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.212</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1097</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>9.057</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters-5">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters-5"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -1723,13 +1723,13 @@ pharos see run003_metadata.json for details.</p>
 <p>Parameter</p>
 </th><th style="text-align:left;">
 <p>Random Effect</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Shrinkage (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -1737,13 +1737,13 @@ pharos see run003_metadata.json for details.</p>
 <p>OM1 (TVCL)</p>
 </td><td style="text-align:left;">
 <p>ETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1223</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.05036</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>41.16</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>13.14</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1751,13 +1751,13 @@ pharos see run003_metadata.json for details.</p>
 <p>OMEGA(2,1)</p>
 </td><td style="text-align:left;">
 <p>ETA1:ETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.07454</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03134</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>42.04</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>NA</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1765,13 +1765,13 @@ pharos see run003_metadata.json for details.</p>
 <p>OM2 (TVV)</p>
 </td><td style="text-align:left;">
 <p>ETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1239</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03675</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>29.66</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>4.631</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1779,18 +1779,18 @@ pharos see run003_metadata.json for details.</p>
 <p>OM3 (TVKA)</p>
 </td><td style="text-align:left;">
 <p>ETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1224</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.05628</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>45.97</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>24.34</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters-5">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters-5"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -1827,13 +1827,13 @@ pharos see run003_metadata.json for details.</p>
 <p>Parameter</p>
 </th><th style="text-align:left;">
 <p>Random Effect</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Shrinkage (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -1841,13 +1841,13 @@ pharos see run003_metadata.json for details.</p>
 <p>SIGMA(1,1)</p>
 </td><td style="text-align:left;">
 <p>EPS1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03754</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.006035</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>16.08</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>14.42</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -1855,16 +1855,273 @@ pharos see run003_metadata.json for details.</p>
 <p>SIGMA(2,2)</p>
 </td><td style="text-align:left;">
 <p>EPS2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.005272</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.009211</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p><span style="color: #DD0000;">174.7</span></p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>14.42</p>
 </td><td style="text-align:left;">
 <p>No</p>
+</td></tr></tbody></table>
+<div class="sl-heading-wrapper level-h2"><h2 id="parameters-can-be-retrieved-with-model">parameters can be retrieved with model</h2><a class="sl-anchor-link" href="#parameters-can-be-retrieved-with-model"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “parameters can be retrieved with model”</span></a></div>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">|></span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">get_parameters</span><span style="--0:#D6DEEB;--1:#403F53">()</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#>    kind       name random_effect    estimate        sd     corr     stderr</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 1 THETA       TVCL          &#x3C;NA>  1.32542000        NA       NA 0.11148400</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 2 THETA        TVV          &#x3C;NA> 40.16250000        NA       NA 2.83899000</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 3 THETA       TVKA          &#x3C;NA>  1.21172000        NA       NA 0.10974700</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 4 OMEGA OM1 (TVCL)          ETA1  0.12234200 0.3497740       NA 0.05035540</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 5 OMEGA OMEGA(2,1)     ETA1:ETA2  0.07454330        NA 0.605513 0.03133500</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 6 OMEGA  OM2 (TVV)          ETA2  0.12387800 0.3519630       NA 0.03674650</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 7 OMEGA OM3 (TVKA)          ETA3  0.12241200 0.3498740       NA 0.05627810</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 8 SIGMA SIGMA(1,1)          EPS1  0.03753710 0.1937450       NA 0.00603493</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 9 SIGMA SIGMA(2,2)          EPS2  0.00527228 0.0726105       NA 0.00921096</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#>          rse shrinkage fixed diagonal</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 1   8.411221        NA FALSE       NA</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 2   7.068758        NA FALSE       NA</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 3   9.057125        NA FALSE       NA</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 4  41.159536  13.14400 FALSE     TRUE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 5  42.035971        NA FALSE    FALSE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 6  29.663459   4.63131 FALSE     TRUE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 7  45.974333  24.33760 FALSE     TRUE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 8  16.077241  14.42190 FALSE     TRUE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> 9 174.705441  14.42190 FALSE     TRUE</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod |> get_parameters()#>    kind       name random_effect    estimate        sd     corr     stderr#> 1 THETA       TVCL          <NA>  1.32542000        NA       NA 0.11148400#> 2 THETA        TVV          <NA> 40.16250000        NA       NA 2.83899000#> 3 THETA       TVKA          <NA>  1.21172000        NA       NA 0.10974700#> 4 OMEGA OM1 (TVCL)          ETA1  0.12234200 0.3497740       NA 0.05035540#> 5 OMEGA OMEGA(2,1)     ETA1:ETA2  0.07454330        NA 0.605513 0.03133500#> 6 OMEGA  OM2 (TVV)          ETA2  0.12387800 0.3519630       NA 0.03674650#> 7 OMEGA OM3 (TVKA)          ETA3  0.12241200 0.3498740       NA 0.05627810#> 8 SIGMA SIGMA(1,1)          EPS1  0.03753710 0.1937450       NA 0.00603493#> 9 SIGMA SIGMA(2,2)          EPS2  0.00527228 0.0726105       NA 0.00921096#>          rse shrinkage fixed diagonal#> 1   8.411221        NA FALSE       NA#> 2   7.068758        NA FALSE       NA#> 3   9.057125        NA FALSE       NA#> 4  41.159536  13.14400 FALSE     TRUE#> 5  42.035971        NA FALSE    FALSE#> 6  29.663459   4.63131 FALSE     TRUE#> 7  45.974333  24.33760 FALSE     TRUE#> 8  16.077241  14.42190 FALSE     TRUE#> 9 174.705441  14.42190 FALSE     TRUE"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="parameter-info-can-be-retrieved-with-model">parameter info can be retrieved with model</h2><a class="sl-anchor-link" href="#parameter-info-can-be-retrieved-with-model"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “parameter info can be retrieved with model”</span></a></div>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">|></span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">get_model_parameter_info</span><span style="--0:#D6DEEB;--1:#403F53">() </span><span style="--0:#7FDBCA;--1:#096E72">|></span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">audit_parameter_info</span><span style="--0:#D6DEEB;--1:#403F53">()</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="mod |> get_model_parameter_info() |> audit_parameter_info()"><div></div></button></div></figure></div>
+<p><strong>Parameter Info Audit</strong></p>
+<p><strong>Theta Sources</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-striped"><thead><tr><th style="text-align:left;">
+<p>parameter</p>
+</th><th style="text-align:left;">
+<p>name</p>
+</th><th style="text-align:left;">
+<p>display</p>
+</th><th style="text-align:left;">
+<p>description</p>
+</th><th style="text-align:left;">
+<p>unit</p>
+</th><th style="text-align:left;">
+<p>parameterization</p>
+</th></tr></thead><tbody><tr><td style="text-align:left;">
+<p>THETA1</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td></tr><tr><td style="text-align:left;">
+<p>THETA2</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td></tr><tr><td style="text-align:left;">
+<p>THETA3</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td></tr></tbody></table>
+<p><strong>Omega Sources</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-striped"><thead><tr><th style="text-align:left;">
+<p>parameter</p>
+</th><th style="text-align:left;">
+<p>name</p>
+</th><th style="text-align:left;">
+<p>display</p>
+</th><th style="text-align:left;">
+<p>description</p>
+</th><th style="text-align:left;">
+<p>parameterization</p>
+</th><th style="text-align:left;">
+<p>associated_theta</p>
+</th></tr></thead><tbody><tr><td style="text-align:left;">
+<p>OMEGA(1,1)</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td></tr><tr><td style="text-align:left;">
+<p>OMEGA(2,1)</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td></tr><tr><td style="text-align:left;">
+<p>OMEGA(2,2)</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td></tr><tr><td style="text-align:left;">
+<p>OMEGA(3,3)</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td></tr></tbody></table>
+<p><strong>Sigma Sources</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="table table-striped"><thead><tr><th style="text-align:left;">
+<p>parameter</p>
+</th><th style="text-align:left;">
+<p>name</p>
+</th><th style="text-align:left;">
+<p>display</p>
+</th><th style="text-align:left;">
+<p>description</p>
+</th><th style="text-align:left;">
+<p>parameterization</p>
+</th></tr></thead><tbody><tr><td style="text-align:left;">
+<p>SIGMA(1,1)</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td></tr><tr><td style="text-align:left;">
+<p>SIGMA(2,2)</p>
+</td><td style="text-align:left;">
+<p>../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
+</td><td style="text-align:left;">
+<p>default</p>
 </td></tr></tbody></table>
 <div class="sl-heading-wrapper level-h1"><h1 id="copy-model">Copy model</h1><a class="sl-anchor-link" href="#copy-model"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Copy model”</span></a></div>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">copy_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">from</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">to</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003b2.mod"</span><span style="--0:#D6DEEB;--1:#403F53">)</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#919F9F;--1:#5F636F">#copies run003 to run003b1 with jittered parameters</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">description</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"Updating run003 to 003b1 with jittered params"</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">jitter</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">0.1</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">overwrite</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">TRUE</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">seed</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#F78C6C;--1:#AA0982">804</span></div></div><div class="ec-line"><div class="code"><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#919F9F;--1:#5F636F">#> NULL</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="copy_model(  from = file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003.mod&#x22;),  to = file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003b2.mod&#x22;), #copies run003 to run003b1 with jittered parameters  description = &#x22;Updating run003 to 003b1 with jittered params&#x22;,  jitter = 0.1,  overwrite = TRUE,  seed = 804)#> NULL"><div></div></button></div></figure></div>
@@ -1875,7 +2132,7 @@ pharos see run003_metadata.json for details.</p>
 <div class="sl-heading-wrapper level-h1"><h1 id="model-lineage">Model Lineage</h1><a class="sl-anchor-link" href="#model-lineage"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model Lineage”</span></a></div>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">example_tree</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">get_model_lineage</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code">
 </div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">example_tree</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="example_tree <- get_model_lineage(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))example_tree"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="hyperion-model-tree">Hyperion Model Tree</h1><a class="sl-anchor-link" href="#hyperion-model-tree"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Hyperion Model Tree”</span></a></div>
+<p><strong>Hyperion Model Tree</strong></p>
 <p>ℹ️ <strong>Models:</strong> 8</p>
 <ul>
 <li><strong style="color:blue">run001</strong> <span style="color:gray">-
@@ -1884,23 +2141,23 @@ Base model</span>
 <li><span style="color:orange">run002</span> <span style="color:gray">-
 Adding COV step, unfixing eps(2)</span>
 <ul>
-<li><span style="color:green">run002b001</span>
-<span style="color:gray">- Jittering initial sigma estimates,
-using theta/…</span></li>
 <li><span style="color:orange">run003</span>
 <span style="color:gray">- Jittering initial estimates</span>
 <ul>
-<li><span style="color:green">run003b1</span>
-<span style="color:gray">- Updating run003 to 003b1 with
-jittered params. …</span></li>
 <li><span style="color:green">run003b2</span>
 <span style="color:gray">- Updating run003 with mod
 object</span></li>
+<li><span style="color:green">run003b1</span>
+<span style="color:gray">- Updating run003 to 003b1 with
+jittered params. …</span></li>
 </ul>
 </li>
 <li><span style="color:green">run002a</span>
 <span style="color:gray">- Some description about what makes
 run002a diffe…</span></li>
+<li><span style="color:green">run002b001</span>
+<span style="color:gray">- Jittering initial sigma estimates,
+using theta/…</span></li>
 </ul>
 </li>
 <li><span style="color:green">run004</span> <span style="color:gray">-
@@ -1910,20 +2167,20 @@ Updating run001 to run004 with jittered params …</span></li>
 </ul>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">spec</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">SummarySpec</span><span style="--0:#D6DEEB;--1:#403F53">(</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">pvalue_scientific</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">FALSE</span></div></div><div class="ec-line"><div class="code"><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code">
 </div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">example_tree</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">apply_summary_spec</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">spec</span><span style="--0:#D6DEEB;--1:#403F53">) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">make_summary_table</span><span style="--0:#D6DEEB;--1:#403F53">()</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="spec <- SummarySpec(  pvalue_scientific = FALSE)example_tree |>  apply_summary_spec(spec) |>  make_summary_table()"><div></div></button></div></figure></div>
-<div id="xpqqgpwthd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xpqqgpwthd table {
+<div id="chhwthgwkl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#chhwthgwkl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-&#10;#xpqqgpwthd thead, #xpqqgpwthd tbody, #xpqqgpwthd tfoot, #xpqqgpwthd tr, #xpqqgpwthd td, #xpqqgpwthd th {
+&#10;#chhwthgwkl thead, #chhwthgwkl tbody, #chhwthgwkl tfoot, #chhwthgwkl tr, #chhwthgwkl td, #chhwthgwkl th {
   border-style: none;
 }
-&#10;#xpqqgpwthd p {
+&#10;#chhwthgwkl p {
   margin: 0;
   padding: 0;
 }
-&#10;#xpqqgpwthd .gt_table {
+&#10;#chhwthgwkl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1948,11 +2205,11 @@ Updating run001 to run004 with jittered params …</span></li>
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_caption {
+&#10;#chhwthgwkl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#xpqqgpwthd .gt_title {
+&#10;#chhwthgwkl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1963,7 +2220,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#xpqqgpwthd .gt_subtitle {
+&#10;#chhwthgwkl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1974,7 +2231,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#xpqqgpwthd .gt_heading {
+&#10;#chhwthgwkl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1985,12 +2242,12 @@ Updating run001 to run004 with jittered params …</span></li>
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_bottom_border {
+&#10;#chhwthgwkl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_col_headings {
+&#10;#chhwthgwkl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2004,7 +2261,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_col_heading {
+&#10;#chhwthgwkl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2023,7 +2280,7 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#xpqqgpwthd .gt_column_spanner_outer {
+&#10;#chhwthgwkl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2034,13 +2291,13 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#xpqqgpwthd .gt_column_spanner_outer:first-child {
+&#10;#chhwthgwkl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#xpqqgpwthd .gt_column_spanner_outer:last-child {
+&#10;#chhwthgwkl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#xpqqgpwthd .gt_column_spanner {
+&#10;#chhwthgwkl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2051,10 +2308,10 @@ Updating run001 to run004 with jittered params …</span></li>
   display: inline-block;
   width: 100%;
 }
-&#10;#xpqqgpwthd .gt_spanner_row {
+&#10;#chhwthgwkl .gt_spanner_row {
   border-bottom-style: hidden;
 }
-&#10;#xpqqgpwthd .gt_group_heading {
+&#10;#chhwthgwkl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2079,7 +2336,7 @@ Updating run001 to run004 with jittered params …</span></li>
   vertical-align: middle;
   text-align: left;
 }
-&#10;#xpqqgpwthd .gt_empty_group_heading {
+&#10;#chhwthgwkl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2093,13 +2350,13 @@ Updating run001 to run004 with jittered params …</span></li>
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#xpqqgpwthd .gt_from_md > :first-child {
+&#10;#chhwthgwkl .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#xpqqgpwthd .gt_from_md > :last-child {
+&#10;#chhwthgwkl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#xpqqgpwthd .gt_row {
+&#10;#chhwthgwkl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2117,7 +2374,7 @@ Updating run001 to run004 with jittered params …</span></li>
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#xpqqgpwthd .gt_stub {
+&#10;#chhwthgwkl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2129,7 +2386,7 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_stub_row_group {
+&#10;#chhwthgwkl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2142,13 +2399,13 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#xpqqgpwthd .gt_row_group_first td {
+&#10;#chhwthgwkl .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#xpqqgpwthd .gt_row_group_first th {
+&#10;#chhwthgwkl .gt_row_group_first th {
   border-top-width: 2px;
 }
-&#10;#xpqqgpwthd .gt_summary_row {
+&#10;#chhwthgwkl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2157,14 +2414,14 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_first_summary_row {
+&#10;#chhwthgwkl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_first_summary_row.thick {
+&#10;#chhwthgwkl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#xpqqgpwthd .gt_last_summary_row {
+&#10;#chhwthgwkl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2173,7 +2430,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_grand_summary_row {
+&#10;#chhwthgwkl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2182,7 +2439,7 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_first_grand_summary_row {
+&#10;#chhwthgwkl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2191,7 +2448,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_last_grand_summary_row_top {
+&#10;#chhwthgwkl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2200,10 +2457,10 @@ Updating run001 to run004 with jittered params …</span></li>
   border-bottom-width: 6px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_striped {
+&#10;#chhwthgwkl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#xpqqgpwthd .gt_table_body {
+&#10;#chhwthgwkl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2211,7 +2468,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_footnotes {
+&#10;#chhwthgwkl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2224,7 +2481,7 @@ Updating run001 to run004 with jittered params …</span></li>
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_footnote {
+&#10;#chhwthgwkl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2232,7 +2489,7 @@ Updating run001 to run004 with jittered params …</span></li>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_sourcenotes {
+&#10;#chhwthgwkl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2245,64 +2502,64 @@ Updating run001 to run004 with jittered params …</span></li>
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_sourcenote {
+&#10;#chhwthgwkl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_left {
+&#10;#chhwthgwkl .gt_left {
   text-align: left;
 }
-&#10;#xpqqgpwthd .gt_center {
+&#10;#chhwthgwkl .gt_center {
   text-align: center;
 }
-&#10;#xpqqgpwthd .gt_right {
+&#10;#chhwthgwkl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#xpqqgpwthd .gt_font_normal {
+&#10;#chhwthgwkl .gt_font_normal {
   font-weight: normal;
 }
-&#10;#xpqqgpwthd .gt_font_bold {
+&#10;#chhwthgwkl .gt_font_bold {
   font-weight: bold;
 }
-&#10;#xpqqgpwthd .gt_font_italic {
+&#10;#chhwthgwkl .gt_font_italic {
   font-style: italic;
 }
-&#10;#xpqqgpwthd .gt_super {
+&#10;#chhwthgwkl .gt_super {
   font-size: 65%;
 }
-&#10;#xpqqgpwthd .gt_footnote_marks {
+&#10;#chhwthgwkl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
-&#10;#xpqqgpwthd .gt_asterisk {
+&#10;#chhwthgwkl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#xpqqgpwthd .gt_indent_1 {
+&#10;#chhwthgwkl .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#xpqqgpwthd .gt_indent_2 {
+&#10;#chhwthgwkl .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#xpqqgpwthd .gt_indent_3 {
+&#10;#chhwthgwkl .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#xpqqgpwthd .gt_indent_4 {
+&#10;#chhwthgwkl .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#xpqqgpwthd .gt_indent_5 {
+&#10;#chhwthgwkl .gt_indent_5 {
   text-indent: 25px;
 }
-&#10;#xpqqgpwthd .katex-display {
+&#10;#chhwthgwkl .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
-&#10;#xpqqgpwthd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+&#10;#chhwthgwkl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

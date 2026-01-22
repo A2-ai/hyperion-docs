@@ -100,7 +100,7 @@ async function handleVersionChange(select) {
 		})();
 	</script> </sl-sidebar-state-persist>  <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="social-icons astro-wu23bvmt">  </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> <select autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label>  </starlight-theme-select>  <script>
 	StarlightThemeProvider.updatePickers();
-</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <script type="module" src="/versions/0.1.1/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script><script type="module" src="/versions/0.1.1/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script><div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><span class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#installation" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Installation</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#getting-started" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Getting started</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#checking-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Checking a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#viewing-a-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Viewing a model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#running-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Running a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model summary</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#estimation-methods" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Estimation Methods</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#heuristic-checks" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Heuristic Checks</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#parameter-table" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Parameter Table</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copying-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copying a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-lineage" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model lineage</span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#installation" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Installation</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#getting-started" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Getting started</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#checking-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Checking a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#viewing-a-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Viewing a model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#running-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Running a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model summary</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#estimation-methods" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Estimation Methods</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#heuristic-checks" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Heuristic Checks</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#theta-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Theta Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#omega-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Omega Parameters</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#sigma-parameters-1" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Sigma Parameters</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#parameter-table" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Parameter Table</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copying-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copying a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-lineage" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model lineage</span> </a>  </li> </ul> </nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Getting Started</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <div class="sl-heading-wrapper level-h1"><h1 id="hyperion">hyperion</h1><a class="sl-anchor-link" href="#hyperion"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “hyperion”</span></a></div>
+</script>   </div>  </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <script type="module" src="/versions/0.1.1/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C181hMzK.js"></script><script type="module" src="/versions/0.1.1/_astro/TableOfContents.astro_astro_type_script_index_0_lang.CKWWgpjV.js"></script><div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><span class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#installation" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Installation</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#getting-started" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Getting started</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#checking-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Checking a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#viewing-a-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Viewing a model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#running-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Running a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model summary</span> </a> <ul class="isMobile astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#parameter-table" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Parameter Table</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copying-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copying a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-lineage" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model lineage</span> </a>  </li> </ul> </div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-g2bywc46" style="--depth: 0;"> <li class="astro-g2bywc46" style="--depth: 0;"> <a href="#_top" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#installation" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Installation</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#getting-started" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Getting started</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#checking-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Checking a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#viewing-a-model-object" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Viewing a model object</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#running-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Running a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-summary" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model summary</span> </a> <ul class="astro-g2bywc46" style="--depth: 1;"> <li class="astro-g2bywc46" style="--depth: 1;"> <a href="#parameter-table" class="astro-g2bywc46" style="--depth: 1;"> <span class="astro-g2bywc46" style="--depth: 1;">Parameter Table</span> </a>  </li> </ul>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#copying-a-model" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Copying a model</span> </a>  </li><li class="astro-g2bywc46" style="--depth: 0;"> <a href="#model-lineage" class="astro-g2bywc46" style="--depth: 0;"> <span class="astro-g2bywc46" style="--depth: 0;">Model lineage</span> </a>  </li> </ul> </nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Getting Started</h1>  </div> </div>  <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <div class="sl-heading-wrapper level-h1"><h1 id="hyperion">hyperion</h1><a class="sl-anchor-link" href="#hyperion"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “hyperion”</span></a></div>
 <p><a href="https://github.com/A2-ai/hyperion/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/A2-ai/hyperion/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a>
 <a href="https://github.com/A2-ai/hyperion/actions/workflows/pharos-dependency-check.yaml"><img src="https://github.com/A2-ai/hyperion/actions/workflows/pharos-dependency-check.yaml/badge.svg" alt="Pharos
 Dependency"></a></p>
@@ -128,12 +128,12 @@ any data path issues, or syntax errors within the control stream with:</p>
 <div class="sl-heading-wrapper level-h2"><h2 id="viewing-a-model-object">Viewing a model object</h2><a class="sl-anchor-link" href="#viewing-a-model-object"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Viewing a model object”</span></a></div>
 <p>Hyperion can read .mod files to give an overview of the mod file with:</p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">read_model</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run002.mod"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="read_model(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run002.mod&#x22;))"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="nonmem-model-run002">NONMEM Model: run002</h1><a class="sl-anchor-link" href="#nonmem-model-run002"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “NONMEM Model: run002”</span></a></div>
+<p><strong>NONMEM Model: run002</strong></p>
 <p><strong>Problem:</strong> Base one-compartment oral absorption model</p>
 <p><strong>Run Status:</strong> Run</p>
 <p><strong>Dataset:</strong> ../../data/derived/onecmpt-oral-30ind.csv</p>
 <p><strong>Ignore:</strong> @</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -169,9 +169,9 @@ any data path issues, or syntax errors within the control stream with:</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Lower</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -179,9 +179,9 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>THETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.24</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -189,9 +189,9 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>TVCL (L/hr)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>40.86</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -199,16 +199,16 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>TVV (L)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>THETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.24</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>TVKA (1/hr)</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -240,7 +240,7 @@ any data path issues, or syntax errors within the control stream with:</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -248,7 +248,7 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>OMEGA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.131</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -256,7 +256,7 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>OM1 TVCL :EXP</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.136</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -264,14 +264,14 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>OM2 TVV :EXP</p>
 </td></tr><tr><td style="text-align:left;">
 <p>OMEGA(3,3)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td><td style="text-align:left;">
 <p>OM3 TVKA :EXP</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -297,7 +297,7 @@ any data path issues, or syntax errors within the control stream with:</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Initial</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -305,7 +305,7 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>Comment</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>SIGMA(1,1)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.0364</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -313,7 +313,7 @@ any data path issues, or syntax errors within the control stream with:</p>
 <p>SIG1 Proportional error (variance, 20% CV)</p>
 </td></tr><tr><td style="text-align:left;">
 <p>SIGMA(2,2)</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.01</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -326,11 +326,11 @@ submission will be coming soon.</p>
 <div class="sl-heading-wrapper level-h2"><h2 id="model-summary">Model summary</h2><a class="sl-anchor-link" href="#model-summary"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model summary”</span></a></div>
 <p>After running a model you can view run details and final estimates with:</p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">get_model_summary</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run002"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="get_model_summary(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run002&#x22;))"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="model-summary-run002">Model Summary: run002</h1><a class="sl-anchor-link" href="#model-summary-run002"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model Summary: run002”</span></a></div>
+<p><strong>Model Summary: run002</strong></p>
 <p><strong>Problem:</strong> Base one-compartment oral absorption model</p>
 <p><strong>Records: 240 | Observations: 210 | Subjects: 30</strong></p>
 <p><strong>Final OFV:</strong> -103.5</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="estimation-methods">Estimation Methods</h2><a class="sl-anchor-link" href="#estimation-methods"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Estimation Methods”</span></a></div>
+<p><strong>Estimation Methods</strong></p>
 <ul>
 <li><strong>First Order Conditional Estimation with Interaction</strong>
 <ul>
@@ -338,13 +338,13 @@ submission will be coming soon.</p>
 </ul>
 </li>
 </ul>
-<div class="sl-heading-wrapper level-h2"><h2 id="heuristic-checks">Heuristic Checks</h2><a class="sl-anchor-link" href="#heuristic-checks"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Heuristic Checks”</span></a></div>
+<p><strong>Heuristic Checks</strong></p>
 <p>[<span style="color:green">OK</span>] Minimization Successful</p>
 <p>[<span style="color:green">OK</span>] Covariance Step Successful</p>
 <p>[<span style="color:green">OK</span>] No Eigenvalue Issues</p>
 <p>[<span style="color:green">OK</span>] No Parameters Near Boundary</p>
 <p>[<span style="color:green">OK</span>] No Hessian Resets</p>
-<div class="sl-heading-wrapper level-h2"><h2 id="theta-parameters-1">Theta Parameters</h2><a class="sl-anchor-link" href="#theta-parameters-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Theta Parameters”</span></a></div>
+<p><strong>Theta Parameters</strong></p>
 
 
 
@@ -380,46 +380,46 @@ submission will be coming soon.</p>
 
 <table class="table table-striped"><thead><tr><th style="text-align:left;">
 <p>Parameter</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
 </th></tr></thead><tbody><tr><td style="text-align:left;">
 <p>TVCL</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.247</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1288</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>10.33</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr><tr><td style="text-align:left;">
 <p>TVV</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>40.85</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>3.027</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>7.411</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr><tr><td style="text-align:left;">
 <p>TVKA</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>1.244</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1134</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>9.117</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="omega-parameters-1">Omega Parameters</h2><a class="sl-anchor-link" href="#omega-parameters-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Omega Parameters”</span></a></div>
+<p><strong>Omega Parameters</strong></p>
 
 
 
@@ -465,13 +465,13 @@ submission will be coming soon.</p>
 <p>Parameter</p>
 </th><th style="text-align:left;">
 <p>Random Effect</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Shrinkage (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -479,13 +479,13 @@ submission will be coming soon.</p>
 <p>OM1 (TVCL)</p>
 </td><td style="text-align:left;">
 <p>ETA1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1304</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.06019</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>46.15</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>18.06</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -493,13 +493,13 @@ submission will be coming soon.</p>
 <p>OM2 (TVV)</p>
 </td><td style="text-align:left;">
 <p>ETA2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1363</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03971</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>29.13</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>4.986</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -507,18 +507,18 @@ submission will be coming soon.</p>
 <p>OM3 (TVKA)</p>
 </td><td style="text-align:left;">
 <p>ETA3</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.1144</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.06144</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p><span style="color: #DD0000;">53.71</span></p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>27.19</p>
 </td><td style="text-align:left;">
 <p>No</p>
 </td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h2"><h2 id="sigma-parameters-1">Sigma Parameters</h2><a class="sl-anchor-link" href="#sigma-parameters-1"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Sigma Parameters”</span></a></div>
+<p><strong>Sigma Parameters</strong></p>
 
 
 
@@ -555,13 +555,13 @@ submission will be coming soon.</p>
 <p>Parameter</p>
 </th><th style="text-align:left;">
 <p>Random Effect</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Estimate</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>SE</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>RSE (%)</p>
-</th><th style="text-align:left;">
+</th><th style="text-align:right;">
 <p>Shrinkage (%)</p>
 </th><th style="text-align:left;">
 <p>Fixed</p>
@@ -569,13 +569,13 @@ submission will be coming soon.</p>
 <p>SIGMA(1,1)</p>
 </td><td style="text-align:left;">
 <p>EPS1</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.03723</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.0116</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>31.16</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>15.44</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -583,13 +583,13 @@ submission will be coming soon.</p>
 <p>SIGMA(2,2)</p>
 </td><td style="text-align:left;">
 <p>EPS2</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.006607</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>0.02792</p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p><span style="color: #DD0000;">422.6</span></p>
-</td><td style="text-align:left;">
+</td><td style="text-align:right;">
 <p>15.44</p>
 </td><td style="text-align:left;">
 <p>No</p>
@@ -598,7 +598,7 @@ submission will be coming soon.</p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">spec</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">TableSpec</span><span style="--0:#D6DEEB;--1:#403F53">(</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">display_transforms</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">list</span><span style="--1:#403F53"><span style="--0:#D6DEEB">(</span><span style="--0:#D7DBE0">omega</span><span style="--0:#D6DEEB"> </span></span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">c</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#ECC48D;--1:#984E4D">"cv"</span><span style="--0:#D6DEEB;--1:#403F53">))</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--1:#403F53">  </span></span><span style="--0:#D7DBE0;--1:#403F53">sections</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">=</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">section_rules</span><span style="--0:#D6DEEB;--1:#403F53">(</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#C5E478;--1:#3B61B0">kind</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">==</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"THETA"</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">~</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"Structural model parameters"</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#C5E478;--1:#3B61B0">kind</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">==</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"OMEGA"</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x26;</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C5E478;--1:#3B61B0">diagonal</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">~</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"Interindividual variance parameters"</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#C5E478;--1:#3B61B0">kind</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">==</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"OMEGA"</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x26;</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">!</span><span style="--0:#C5E478;--1:#3B61B0">diagonal</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">~</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"Interindividual covariance parameters"</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#C5E478;--1:#3B61B0">kind</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">==</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"SIGMA"</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">~</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"Residual variance"</span><span style="--0:#7FDBCA;--1:#096E72">,</span></div></div><div class="ec-line"><div class="code"><span class="indent">    </span><span style="--0:#82AAFF;--1:#3B61B0">TRUE</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">~</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"Other"</span></div></div><div class="ec-line"><div class="code"><span class="indent"><span style="--0:#D6DEEB;--1:#403F53">  </span></span><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#D6DEEB;--1:#403F53">)</span></div></div><div class="ec-line"><div class="code">
 </div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">mod_sum</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">get_model_summary</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code"><span style="--0:#C5E478;--1:#3B61B0">info</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#7FDBCA;--1:#096E72">&#x3C;-</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#82AAFF;--1:#3B61B0">get_model_parameter_info</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div><div class="ec-line"><div class="code">
 </div></div><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">get_parameters</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"run003"</span><span style="--0:#D6DEEB;--1:#403F53">)) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">apply_table_spec</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">spec</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#C5E478;--1:#3B61B0">info</span><span style="--0:#D6DEEB;--1:#403F53">) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">add_summary_info</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">mod_sum</span><span style="--0:#D6DEEB;--1:#403F53">) </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#82AAFF;--1:#3B61B0">make_parameter_table</span><span style="--0:#D6DEEB;--1:#403F53">() </span><span style="--0:#7FDBCA;--1:#096E72">|></span></div></div><div class="ec-line"><div class="code"><span class="indent">  </span><span style="--0:#C5E478;--1:#3B61B0">gt</span><span style="--0:#7FDBCA;--1:#096E72">::</span><span style="--0:#82AAFF;--1:#3B61B0">as_raw_html</span><span style="--0:#D6DEEB;--1:#403F53">()</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="spec <- TableSpec(  display_transforms = list(omega = c(&#x22;cv&#x22;)),  sections = section_rules(    kind == &#x22;THETA&#x22; ~ &#x22;Structural model parameters&#x22;,    kind == &#x22;OMEGA&#x22; &#x26; diagonal ~ &#x22;Interindividual variance parameters&#x22;,    kind == &#x22;OMEGA&#x22; &#x26; !diagonal ~ &#x22;Interindividual covariance parameters&#x22;,    kind == &#x22;SIGMA&#x22; ~ &#x22;Residual variance&#x22;,    TRUE ~ &#x22;Other&#x22;  ))mod_sum <- get_model_summary(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003&#x22;))info <- get_model_parameter_info(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003&#x22;))get_parameters(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;, &#x22;run003&#x22;)) |>  apply_table_spec(spec, info) |>  add_summary_info(mod_sum) |>  make_parameter_table() |>  gt::as_raw_html()"><div></div></button></div></figure></div>
-<div id="dgkurpfqvf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="lkzeaommzg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   
   <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, &#x27;Segoe UI&#x27;, Roboto, Helvetica, Arial, sans-serif, &#x27;Apple Color Emoji&#x27;, &#x27;Segoe UI Emoji&#x27;, &#x27;Segoe UI Symbol&#x27;, &#x27;Noto Color Emoji&#x27;; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
@@ -757,7 +757,7 @@ is based on.</p>
 <p>If you use hyperion to copy models you can extract the model lineage
 with</p>
 <div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="r"><code><div class="ec-line"><div class="code"><span style="--0:#82AAFF;--1:#3B61B0">get_model_lineage</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#82AAFF;--1:#3B61B0">file.path</span><span style="--0:#D6DEEB;--1:#403F53">(</span><span style="--0:#C5E478;--1:#3B61B0">test_data_dir</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"models"</span><span style="--0:#7FDBCA;--1:#096E72">,</span><span style="--0:#D6DEEB;--1:#403F53"> </span><span style="--0:#ECC48D;--1:#984E4D">"onecmt"</span><span style="--0:#D6DEEB;--1:#403F53">))</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="get_model_lineage(file.path(test_data_dir, &#x22;models&#x22;, &#x22;onecmt&#x22;))"><div></div></button></div></figure></div>
-<div class="sl-heading-wrapper level-h1"><h1 id="hyperion-model-tree">Hyperion Model Tree</h1><a class="sl-anchor-link" href="#hyperion-model-tree"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Hyperion Model Tree”</span></a></div>
+<p><strong>Hyperion Model Tree</strong></p>
 <p>ℹ️ <strong>Models:</strong> 8</p>
 <ul>
 <li><strong style="color:blue">run001</strong> <span style="color:gray">-
@@ -768,20 +768,20 @@ Updating run001 to run004 with jittered params …</span></li>
 <li><span style="color:orange">run002</span> <span style="color:gray">-
 Adding COV step, unfixing eps(2)</span>
 <ul>
-<li><span style="color:orange">run003</span>
-<span style="color:gray">- Jittering initial estimates</span>
-<ul>
-<li><span style="color:green">run003b1</span>
-<span style="color:gray">- Updating run003 to 003b1 with
-jittered params. …</span></li>
-<li><span style="color:green">run003b2</span>
-<span style="color:gray">- Updating run003 with mod
-object</span></li>
-</ul>
-</li>
 <li><span style="color:green">run002b001</span>
 <span style="color:gray">- Jittering initial sigma estimates,
 using theta/…</span></li>
+<li><span style="color:orange">run003</span>
+<span style="color:gray">- Jittering initial estimates</span>
+<ul>
+<li><span style="color:green">run003b2</span>
+<span style="color:gray">- Updating run003 with mod
+object</span></li>
+<li><span style="color:green">run003b1</span>
+<span style="color:gray">- Updating run003 to 003b1 with
+jittered params. …</span></li>
+</ul>
+</li>
 <li><span style="color:green">run002a</span>
 <span style="color:gray">- Some description about what makes
 run002a diffe…</span></li>
