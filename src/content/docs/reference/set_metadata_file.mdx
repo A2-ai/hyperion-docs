@@ -27,7 +27,7 @@ set_metadata_file(model_path, description = NULL, tags = NULL, based_on = NULL)
 <tbody>
 <tr>
 <td><code>model_path</code></td>
-<td>Path to the NONMEM model file (required)</td>
+<td>Path to the NONMEM model file, or a hyperion_nonmem_model object (required)</td>
 </tr>
 <tr>
 <td><code>description</code></td>
@@ -54,21 +54,18 @@ Returns invisibly after creating the metadata file
 ```r
 ## Not run: 
 # Create basic metadata for a model
-create_metadata_file("run001.mod", description = "Base population PK model")
+set_metadata_file("run001.mod", description = "Base population PK model")
+
+# Create metadata using a model object
+model <- read_model("run001.mod")
+set_metadata_file(model, description = "Base population PK model")
 
 # Create metadata with tags and lineage
-create_metadata_file(
+set_metadata_file(
   "run002.mod",
   description = "PK model with covariate effects",
   tags = c("population", "pk", "covariates"),
   based_on = c("run001.mod")
-)
-
-# Overwrite existing metadata
-create_metadata_file(
-  "run001.mod",
-  description = "Updated base model",
-  overwrite = TRUE
 )
 
 ## End(Not run)

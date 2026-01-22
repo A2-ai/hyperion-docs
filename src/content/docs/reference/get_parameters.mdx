@@ -34,7 +34,7 @@ get_parameters(
 <tbody>
 <tr>
 <td><code>path</code></td>
-<td>path to model file, model output directory, ext file or metadata json file.</td>
+<td>path to model file, model output directory, ext file or metadata json file, or a hyperion_nonmem_model object</td>
 </tr>
 <tr>
 <td><code>hide_off_diagonal_params</code></td>
@@ -69,6 +69,8 @@ data.frame of parameter estimates
 ```r
 ## Not run: 
 get_parameters("model/nonmem/run001/run001.ext")
+model <- read_model("model/nonmem/run001.mod")
+get_parameters(model)
 
 ## End(Not run)
 ```

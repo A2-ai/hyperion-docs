@@ -163,20 +163,20 @@ class(mod_sum)
 mod_sum
 ```
 
-# Model Summary: run002
+<strong>Model Summary: run002</strong>
 
-**Problem:** Base one-compartment oral absorption model
+<strong>Problem:</strong> Base one-compartment oral absorption model
 
-**Records: 240 \| Observations: 210 \| Subjects: 30**
+<strong>Records: 240 \| Observations: 210 \| Subjects: 30</strong>
 
-**Final OFV:** -103.5
+<strong>Final OFV:</strong> -103.5
 
-## Estimation Methods
+<strong>Estimation Methods</strong>
 
-- **First Order Conditional Estimation with Interaction**
+- <strong>First Order Conditional Estimation with Interaction</strong>
   - Condition Number: 29.63
 
-## Heuristic Checks
+<strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
 
@@ -188,7 +188,7 @@ mod_sum
 
 \[<span style="color:green">OK</span>\] No Hessian Resets
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -201,17 +201,17 @@ mod_sum
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
@@ -234,17 +234,17 @@ Fixed
 TVCL
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.247
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1288
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 10.33
 </td>
@@ -263,17 +263,17 @@ No
 TVV
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 40.85
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 3.027
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 7.411
 </td>
@@ -292,17 +292,17 @@ No
 TVKA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.244
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1134
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 9.117
 </td>
@@ -318,7 +318,7 @@ No
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -336,22 +336,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -379,22 +379,22 @@ OM1 (TVCL)
 ETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1304
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.06019
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 46.15
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 18.06
 </td>
@@ -418,22 +418,22 @@ OM2 (TVV)
 ETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1363
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03971
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 29.13
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 4.986
 </td>
@@ -457,22 +457,22 @@ OM3 (TVKA)
 ETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1144
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.06144
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 <span style="color: #DD0000;">53.71</span>
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 27.19
 </td>
@@ -488,7 +488,7 @@ No
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -506,22 +506,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -549,22 +549,22 @@ SIGMA(1,1)
 EPS1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03723
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.0116
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 31.16
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 15.44
 </td>
@@ -588,22 +588,22 @@ SIGMA(2,2)
 EPS2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.006607
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.02792
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 <span style="color: #DD0000;">422.6</span>
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 15.44
 </td>

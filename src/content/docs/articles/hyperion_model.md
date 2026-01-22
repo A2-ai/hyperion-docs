@@ -25,17 +25,17 @@ mod <- read_model(file.path(test_data_dir, "mod", "1001.mod"))
 mod
 ```
 
-# NONMEM Model: 1001
+<strong>NONMEM Model: 1001</strong>
 
-**Problem:** PK Structural Model
+<strong>Problem:</strong> PK Structural Model
 
-**Run Status:** Not Run
+<strong>Run Status:</strong> Not Run
 
-**Dataset:** ../../../../data/derived/PK_Oral_Ex1.csv
+<strong>Dataset:</strong> ../../../../data/derived/PK_Oral_Ex1.csv
 
-**Ignore:** @
+<strong>Ignore:</strong> @
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -48,12 +48,12 @@ mod
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Lower
 </th>
@@ -81,12 +81,12 @@ Comment
 THETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 19
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -110,12 +110,12 @@ CL/F (L/h)
 THETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 304
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -139,12 +139,12 @@ VC/F (L)
 THETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -168,12 +168,12 @@ KA (1/hr)
 THETA4
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -194,7 +194,7 @@ F1 (fraction)
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -207,7 +207,7 @@ F1 (fraction)
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -235,7 +235,7 @@ Comment
 OMEGA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1
 </td>
@@ -259,7 +259,7 @@ OM1 CL :EXP
 OMEGA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1
 </td>
@@ -283,7 +283,7 @@ OM2 VC :EXP
 OMEGA(3,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1
 </td>
@@ -304,7 +304,7 @@ OM3 KA :EXP
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -317,7 +317,7 @@ OM3 KA :EXP
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -345,7 +345,7 @@ Comment
 SIGMA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1
 </td>
@@ -369,7 +369,7 @@ SIG1
 SIGMA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
@@ -396,18 +396,18 @@ mod <- read_model(file.path(test_data_dir, "models", "onecmt", "run002b001.mod")
 mod
 ```
 
-# NONMEM Model: run002b001
+<strong>NONMEM Model: run002b001</strong>
 
-**Problem:** Base one-compartment oral absorption model created from
-pharos see run002b001_metadata.json for details.
+<strong>Problem:</strong> Base one-compartment oral absorption model
+created from pharos see run002b001_metadata.json for details.
 
-**Run Status:** Not Run
+<strong>Run Status:</strong> Not Run
 
-**Dataset:** ../../data/derived/onecmpt-oral-30ind.csv
+<strong>Dataset:</strong> ../../data/derived/onecmpt-oral-30ind.csv
 
-**Ignore:** @
+<strong>Ignore:</strong> @
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -420,12 +420,12 @@ pharos see run002b001_metadata.json for details.
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Lower
 </th>
@@ -453,12 +453,12 @@ Comment
 THETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.247
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -482,12 +482,12 @@ TVCL (L/hr)
 THETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 40.85
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -511,12 +511,12 @@ TVV (L)
 THETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.244
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -537,7 +537,7 @@ TVKA (1/hr)
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -550,7 +550,7 @@ TVKA (1/hr)
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -578,7 +578,7 @@ Comment
 OMEGA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1304
 </td>
@@ -602,7 +602,7 @@ OM1 TVCL :EXP
 OMEGA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1363
 </td>
@@ -626,7 +626,7 @@ OM2 TVV :EXP
 OMEGA(3,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.114
 </td>
@@ -647,7 +647,7 @@ OM3 TVKA :EXP
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -660,7 +660,7 @@ OM3 TVKA :EXP
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -688,7 +688,7 @@ Comment
 SIGMA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.04812
 </td>
@@ -712,7 +712,7 @@ SIG1 Proportional error (variance, 20% CV)
 SIGMA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.0059
 </td>
@@ -739,19 +739,19 @@ mod_nm <- read_model(file.path(test_data_dir, "mod", "nmexample.mod"))
 mod_nm
 ```
 
-# NONMEM Model: nmexample
+<strong>NONMEM Model: nmexample</strong>
 
-**Problem:** RUN# Example 1 (from samp5l)
+<strong>Problem:</strong> RUN# Example 1 (from samp5l)
 
-**Run Status:** Not Run
+<strong>Run Status:</strong> Not Run
 
-**Dataset:** example1.csv
+<strong>Dataset:</strong> example1.csv
 
-**Ignore:** C
+<strong>Ignore:</strong> C
 
-**Aliased Columns:** CONC → DV, DOSE → AMT
+<strong>Aliased Columns:</strong> CONC → DV, DOSE → AMT
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -764,12 +764,12 @@ mod_nm
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Lower
 </th>
@@ -797,12 +797,12 @@ Comment
 THETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.001
 </td>
@@ -826,12 +826,12 @@ No
 THETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.001
 </td>
@@ -855,12 +855,12 @@ No
 THETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.001
 </td>
@@ -884,12 +884,12 @@ No
 THETA4
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.001
 </td>
@@ -910,7 +910,7 @@ No
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -923,7 +923,7 @@ No
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -951,7 +951,7 @@ Comment
 OMEGA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.15
 </td>
@@ -975,7 +975,7 @@ No
 OMEGA(2,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -999,7 +999,7 @@ No
 OMEGA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.15
 </td>
@@ -1023,7 +1023,7 @@ No
 OMEGA(3,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -1047,7 +1047,7 @@ No
 OMEGA(3,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -1071,7 +1071,7 @@ No
 OMEGA(3,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.15
 </td>
@@ -1095,7 +1095,7 @@ No
 OMEGA(4,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -1119,7 +1119,7 @@ No
 OMEGA(4,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -1143,7 +1143,7 @@ No
 OMEGA(4,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -1167,7 +1167,7 @@ No
 OMEGA(4,4)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.15
 </td>
@@ -1188,7 +1188,7 @@ No
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -1201,7 +1201,7 @@ No
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -1229,7 +1229,7 @@ Comment
 SIGMA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.6
 </td>
@@ -1256,23 +1256,23 @@ mod_e <- read_model(file.path(test_data_dir, "mod", "everything.mod"))
 mod_e
 ```
 
-# NONMEM Model: everything
+<strong>NONMEM Model: everything</strong>
 
-**Problem:** Some header \#2
+<strong>Problem:</strong> Some header \#2
 
-**Run Status:** Not Run
+<strong>Run Status:</strong> Not Run
 
-**Dataset:** ...csv
+<strong>Dataset:</strong> ...csv
 
-**Ignore:** \#, DVID.EQ.3, ID.EQ.3.14
+<strong>Ignore:</strong> \#, DVID.EQ.3, ID.EQ.3.14
 
-**Records:** 200
+<strong>Records:</strong> 200
 
-**Dropped Columns:** DATE
+<strong>Dropped Columns:</strong> DATE
 
-**Aliased Columns:** AMT → DOSE
+<strong>Aliased Columns:</strong> AMT → DOSE
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -1285,17 +1285,17 @@ mod_e
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Lower
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Upper
 </th>
@@ -1323,17 +1323,17 @@ Comment
 THETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.5
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1357,17 +1357,17 @@ THETA(1) and THETA(2)
 THETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.5
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2
 </td>
@@ -1391,17 +1391,17 @@ THETA(1) and THETA(2)
 THETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2.3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1425,17 +1425,17 @@ THETA(3)
 THETA4
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.8
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1459,17 +1459,17 @@ THETA(4) and THETA(5)
 THETA5
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.25
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1493,17 +1493,17 @@ THETA(4) and THETA(5)
 THETA6
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2.3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1527,17 +1527,17 @@ THETA(6)
 THETA7
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.75
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1558,7 +1558,7 @@ THETA(7)
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -1571,17 +1571,17 @@ THETA(7)
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Lower
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Upper
 </th>
@@ -1614,17 +1614,17 @@ Comment
 OMEGA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.04
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1652,17 +1652,17 @@ ETA(1) - CL (diagonal)
 OMEGA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.17
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1689,17 +1689,17 @@ No
 OMEGA(3,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1728,17 +1728,17 @@ ETA(2) - V (SD)
 OMEGA(4,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1767,17 +1767,17 @@ ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)
 OMEGA(4,4)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.15
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1806,17 +1806,17 @@ ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)
 OMEGA(5,5)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1845,17 +1845,17 @@ ETA(2) - V (SD)
 OMEGA(6,5)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1884,17 +1884,17 @@ ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)
 OMEGA(6,6)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.15
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -1923,17 +1923,17 @@ ETA(2)-ETA(3) correlation, ETA(3) - KA (SD)
 OMEGA(7,7)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1
 </td>
@@ -1958,7 +1958,7 @@ ETA(6) - fixed diagonal
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -1971,7 +1971,7 @@ ETA(6) - fixed diagonal
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -1999,7 +1999,7 @@ Comment
 SIGMA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -2023,7 +2023,7 @@ Proportional error variance
 SIGMA(2,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.002
 </td>
@@ -2047,7 +2047,7 @@ Prop-Add covariance, Additive error variance
 SIGMA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.25
 </td>
@@ -2083,7 +2083,7 @@ attributes(mod) |> names()
 read_model(file.path(test_data_dir, "models", "onecmt", "run001.mod")) |>
   check_dataset(file.path(test_data_dir, "models", "onecmt"))
 #> $canonical_path
-#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
+#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
 #> 
 #> $blake3_hash
 #> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"
@@ -2091,7 +2091,7 @@ read_model(file.path(test_data_dir, "models", "onecmt", "run001.mod")) |>
 read_model(file.path(test_data_dir, "models", "onecmt", "run002.mod")) |>
   check_dataset(file.path(test_data_dir, "models", "onecmt"))
 #> $canonical_path
-#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
+#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
 #> 
 #> $blake3_hash
 #> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"
@@ -2099,7 +2099,7 @@ read_model(file.path(test_data_dir, "models", "onecmt", "run002.mod")) |>
 read_model(file.path(test_data_dir, "models", "onecmt", "run003.mod")) |>
   check_dataset(file.path(test_data_dir, "models", "onecmt"))
 #> $canonical_path
-#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpEpA3dD/temp_libpath95e2443a0a9d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
+#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
 #> 
 #> $blake3_hash
 #> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"
@@ -2114,21 +2114,21 @@ check_model(file.path(test_data_dir, "models", "onecmt", "run001.mod"))
 get_model_summary(file.path(test_data_dir, "models", "onecmt", "run003"))
 ```
 
-# Model Summary: run003
+<strong>Model Summary: run003</strong>
 
-**Problem:** Base one-compartment oral absorption model created from
-pharos see run003_metadata.json for details.
+<strong>Problem:</strong> Base one-compartment oral absorption model
+created from pharos see run003_metadata.json for details.
 
-**Records: 240 \| Observations: 210 \| Subjects: 30**
+<strong>Records: 240 \| Observations: 210 \| Subjects: 30</strong>
 
-**Final OFV:** -109.8
+<strong>Final OFV:</strong> -109.8
 
-## Estimation Methods
+<strong>Estimation Methods</strong>
 
-- **First Order Conditional Estimation with Interaction**
+- <strong>First Order Conditional Estimation with Interaction</strong>
   - Condition Number: 6.172
 
-## Heuristic Checks
+<strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
 
@@ -2140,7 +2140,7 @@ pharos see run003_metadata.json for details.
 
 \[<span style="color:green">OK</span>\] No Hessian Resets
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -2153,17 +2153,17 @@ pharos see run003_metadata.json for details.
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
@@ -2186,17 +2186,17 @@ Fixed
 TVCL
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.325
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1115
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 8.411
 </td>
@@ -2215,17 +2215,17 @@ No
 TVV
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 40.16
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2.839
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 7.069
 </td>
@@ -2244,17 +2244,17 @@ No
 TVKA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.212
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1097
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 9.057
 </td>
@@ -2270,7 +2270,7 @@ No
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -2288,22 +2288,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -2331,22 +2331,22 @@ OM1 (TVCL)
 ETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1223
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.05036
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 41.16
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 13.14
 </td>
@@ -2370,22 +2370,22 @@ OMEGA(2,1)
 ETA1:ETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.07454
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03134
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 42.04
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -2409,22 +2409,22 @@ OM2 (TVV)
 ETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1239
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03675
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 29.66
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 4.631
 </td>
@@ -2448,22 +2448,22 @@ OM3 (TVKA)
 ETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1224
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.05628
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 45.97
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 24.34
 </td>
@@ -2479,7 +2479,7 @@ No
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -2497,22 +2497,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -2540,22 +2540,22 @@ SIGMA(1,1)
 EPS1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03754
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.006035
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 16.08
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 14.42
 </td>
@@ -2579,22 +2579,22 @@ SIGMA(2,2)
 EPS2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.005272
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.009211
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 <span style="color: #DD0000;">174.7</span>
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 14.42
 </td>
@@ -2618,21 +2618,21 @@ mod |>
     get_model_summary()
 ```
 
-# Model Summary: run003
+<strong>Model Summary: run003</strong>
 
-**Problem:** Base one-compartment oral absorption model created from
-pharos see run003_metadata.json for details.
+<strong>Problem:</strong> Base one-compartment oral absorption model
+created from pharos see run003_metadata.json for details.
 
-**Records: 240 \| Observations: 210 \| Subjects: 30**
+<strong>Records: 240 \| Observations: 210 \| Subjects: 30</strong>
 
-**Final OFV:** -109.8
+<strong>Final OFV:</strong> -109.8
 
-## Estimation Methods
+<strong>Estimation Methods</strong>
 
-- **First Order Conditional Estimation with Interaction**
+- <strong>First Order Conditional Estimation with Interaction</strong>
   - Condition Number: 6.172
 
-## Heuristic Checks
+<strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
 
@@ -2644,7 +2644,7 @@ pharos see run003_metadata.json for details.
 
 \[<span style="color:green">OK</span>\] No Hessian Resets
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -2657,17 +2657,17 @@ pharos see run003_metadata.json for details.
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
@@ -2690,17 +2690,17 @@ Fixed
 TVCL
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.325
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1115
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 8.411
 </td>
@@ -2719,17 +2719,17 @@ No
 TVV
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 40.16
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 2.839
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 7.069
 </td>
@@ -2748,17 +2748,17 @@ No
 TVKA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.212
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1097
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 9.057
 </td>
@@ -2774,7 +2774,7 @@ No
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -2792,22 +2792,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -2835,22 +2835,22 @@ OM1 (TVCL)
 ETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1223
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.05036
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 41.16
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 13.14
 </td>
@@ -2874,22 +2874,22 @@ OMEGA(2,1)
 ETA1:ETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.07454
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03134
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 42.04
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 NA
 </td>
@@ -2913,22 +2913,22 @@ OM2 (TVV)
 ETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1239
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03675
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 29.66
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 4.631
 </td>
@@ -2952,22 +2952,22 @@ OM3 (TVKA)
 ETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1224
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.05628
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 45.97
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 24.34
 </td>
@@ -2983,7 +2983,7 @@ No
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -3001,22 +3001,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -3044,22 +3044,22 @@ SIGMA(1,1)
 EPS1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03754
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.006035
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 16.08
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 14.42
 </td>
@@ -3083,22 +3083,22 @@ SIGMA(2,2)
 EPS2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.005272
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.009211
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 <span style="color: #DD0000;">174.7</span>
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 14.42
 </td>
@@ -3106,6 +3106,475 @@ EPS2
 <td style="text-align:left;">
 
 No
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## parameters can be retrieved with model
+
+``` r
+mod |> get_parameters()
+#>    kind       name random_effect    estimate        sd     corr     stderr
+#> 1 THETA       TVCL          <NA>  1.32542000        NA       NA 0.11148400
+#> 2 THETA        TVV          <NA> 40.16250000        NA       NA 2.83899000
+#> 3 THETA       TVKA          <NA>  1.21172000        NA       NA 0.10974700
+#> 4 OMEGA OM1 (TVCL)          ETA1  0.12234200 0.3497740       NA 0.05035540
+#> 5 OMEGA OMEGA(2,1)     ETA1:ETA2  0.07454330        NA 0.605513 0.03133500
+#> 6 OMEGA  OM2 (TVV)          ETA2  0.12387800 0.3519630       NA 0.03674650
+#> 7 OMEGA OM3 (TVKA)          ETA3  0.12241200 0.3498740       NA 0.05627810
+#> 8 SIGMA SIGMA(1,1)          EPS1  0.03753710 0.1937450       NA 0.00603493
+#> 9 SIGMA SIGMA(2,2)          EPS2  0.00527228 0.0726105       NA 0.00921096
+#>          rse shrinkage fixed diagonal
+#> 1   8.411221        NA FALSE       NA
+#> 2   7.068758        NA FALSE       NA
+#> 3   9.057125        NA FALSE       NA
+#> 4  41.159536  13.14400 FALSE     TRUE
+#> 5  42.035971        NA FALSE    FALSE
+#> 6  29.663459   4.63131 FALSE     TRUE
+#> 7  45.974333  24.33760 FALSE     TRUE
+#> 8  16.077241  14.42190 FALSE     TRUE
+#> 9 174.705441  14.42190 FALSE     TRUE
+```
+
+## parameter info can be retrieved with model
+
+``` r
+mod |> get_model_parameter_info() |> audit_parameter_info()
+```
+
+<strong>Parameter Info Audit</strong>
+
+<strong>Theta Sources</strong>
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+parameter
+</th>
+
+<th style="text-align:left;">
+
+name
+</th>
+
+<th style="text-align:left;">
+
+display
+</th>
+
+<th style="text-align:left;">
+
+description
+</th>
+
+<th style="text-align:left;">
+
+unit
+</th>
+
+<th style="text-align:left;">
+
+parameterization
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA1
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA2
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA3
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<strong>Omega Sources</strong>
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+parameter
+</th>
+
+<th style="text-align:left;">
+
+name
+</th>
+
+<th style="text-align:left;">
+
+display
+</th>
+
+<th style="text-align:left;">
+
+description
+</th>
+
+<th style="text-align:left;">
+
+parameterization
+</th>
+
+<th style="text-align:left;">
+
+associated_theta
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(1,1)
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(2,1)
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(2,2)
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(3,3)
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<strong>Sigma Sources</strong>
+
+<table class="table table-striped">
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+parameter
+</th>
+
+<th style="text-align:left;">
+
+name
+</th>
+
+<th style="text-align:left;">
+
+display
+</th>
+
+<th style="text-align:left;">
+
+description
+</th>
+
+<th style="text-align:left;">
+
+parameterization
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(1,1)
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(2,2)
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/temp_libpath635e2598589d/hyperion/extdata/models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
+</td>
+
+<td style="text-align:left;">
+
+default
 </td>
 
 </tr>
@@ -3165,28 +3634,28 @@ example_tree <- get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
 example_tree
 ```
 
-# Hyperion Model Tree
+<strong>Hyperion Model Tree</strong>
 
-ℹ️ **Models:** 8
+ℹ️ <strong>Models:</strong> 8
 
 - <strong style="color:blue">run001</strong> <span style="color:gray">-
   Base model</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
-    - <span style="color:green">run002b001</span>
-      <span style="color:gray">- Jittering initial sigma estimates,
-      using theta/…</span>
     - <span style="color:orange">run003</span>
       <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b1</span>
-        <span style="color:gray">- Updating run003 to 003b1 with
-        jittered params. …</span>
       - <span style="color:green">run003b2</span>
         <span style="color:gray">- Updating run003 with mod
         object</span>
+      - <span style="color:green">run003b1</span>
+        <span style="color:gray">- Updating run003 to 003b1 with
+        jittered params. …</span>
     - <span style="color:green">run002a</span>
       <span style="color:gray">- Some description about what makes
       run002a diffe…</span>
+    - <span style="color:green">run002b001</span>
+      <span style="color:gray">- Jittering initial sigma estimates,
+      using theta/…</span>
   - <span style="color:green">run004</span> <span style="color:gray">-
     Updating run001 to run004 with jittered params …</span>
 
@@ -3200,20 +3669,20 @@ example_tree |>
   make_summary_table()
 ```
 
-<div id="xpqqgpwthd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xpqqgpwthd table {
+<div id="chhwthgwkl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#chhwthgwkl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-&#10;#xpqqgpwthd thead, #xpqqgpwthd tbody, #xpqqgpwthd tfoot, #xpqqgpwthd tr, #xpqqgpwthd td, #xpqqgpwthd th {
+&#10;#chhwthgwkl thead, #chhwthgwkl tbody, #chhwthgwkl tfoot, #chhwthgwkl tr, #chhwthgwkl td, #chhwthgwkl th {
   border-style: none;
 }
-&#10;#xpqqgpwthd p {
+&#10;#chhwthgwkl p {
   margin: 0;
   padding: 0;
 }
-&#10;#xpqqgpwthd .gt_table {
+&#10;#chhwthgwkl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3238,11 +3707,11 @@ example_tree |>
   border-left-width: 2px;
   border-left-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_caption {
+&#10;#chhwthgwkl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-&#10;#xpqqgpwthd .gt_title {
+&#10;#chhwthgwkl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3253,7 +3722,7 @@ example_tree |>
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
-&#10;#xpqqgpwthd .gt_subtitle {
+&#10;#chhwthgwkl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3264,7 +3733,7 @@ example_tree |>
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
-&#10;#xpqqgpwthd .gt_heading {
+&#10;#chhwthgwkl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3275,12 +3744,12 @@ example_tree |>
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_bottom_border {
+&#10;#chhwthgwkl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_col_headings {
+&#10;#chhwthgwkl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3294,7 +3763,7 @@ example_tree |>
   border-right-width: 1px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_col_heading {
+&#10;#chhwthgwkl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3313,7 +3782,7 @@ example_tree |>
   padding-right: 5px;
   overflow-x: hidden;
 }
-&#10;#xpqqgpwthd .gt_column_spanner_outer {
+&#10;#chhwthgwkl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3324,13 +3793,13 @@ example_tree |>
   padding-left: 4px;
   padding-right: 4px;
 }
-&#10;#xpqqgpwthd .gt_column_spanner_outer:first-child {
+&#10;#chhwthgwkl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
-&#10;#xpqqgpwthd .gt_column_spanner_outer:last-child {
+&#10;#chhwthgwkl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
-&#10;#xpqqgpwthd .gt_column_spanner {
+&#10;#chhwthgwkl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3341,10 +3810,10 @@ example_tree |>
   display: inline-block;
   width: 100%;
 }
-&#10;#xpqqgpwthd .gt_spanner_row {
+&#10;#chhwthgwkl .gt_spanner_row {
   border-bottom-style: hidden;
 }
-&#10;#xpqqgpwthd .gt_group_heading {
+&#10;#chhwthgwkl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3369,7 +3838,7 @@ example_tree |>
   vertical-align: middle;
   text-align: left;
 }
-&#10;#xpqqgpwthd .gt_empty_group_heading {
+&#10;#chhwthgwkl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3383,13 +3852,13 @@ example_tree |>
   border-bottom-color: #D3D3D3;
   vertical-align: middle;
 }
-&#10;#xpqqgpwthd .gt_from_md > :first-child {
+&#10;#chhwthgwkl .gt_from_md > :first-child {
   margin-top: 0;
 }
-&#10;#xpqqgpwthd .gt_from_md > :last-child {
+&#10;#chhwthgwkl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
-&#10;#xpqqgpwthd .gt_row {
+&#10;#chhwthgwkl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3407,7 +3876,7 @@ example_tree |>
   vertical-align: middle;
   overflow-x: hidden;
 }
-&#10;#xpqqgpwthd .gt_stub {
+&#10;#chhwthgwkl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3419,7 +3888,7 @@ example_tree |>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_stub_row_group {
+&#10;#chhwthgwkl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3432,13 +3901,13 @@ example_tree |>
   padding-right: 5px;
   vertical-align: top;
 }
-&#10;#xpqqgpwthd .gt_row_group_first td {
+&#10;#chhwthgwkl .gt_row_group_first td {
   border-top-width: 2px;
 }
-&#10;#xpqqgpwthd .gt_row_group_first th {
+&#10;#chhwthgwkl .gt_row_group_first th {
   border-top-width: 2px;
 }
-&#10;#xpqqgpwthd .gt_summary_row {
+&#10;#chhwthgwkl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3447,14 +3916,14 @@ example_tree |>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_first_summary_row {
+&#10;#chhwthgwkl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_first_summary_row.thick {
+&#10;#chhwthgwkl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
-&#10;#xpqqgpwthd .gt_last_summary_row {
+&#10;#chhwthgwkl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3463,7 +3932,7 @@ example_tree |>
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_grand_summary_row {
+&#10;#chhwthgwkl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3472,7 +3941,7 @@ example_tree |>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_first_grand_summary_row {
+&#10;#chhwthgwkl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3481,7 +3950,7 @@ example_tree |>
   border-top-width: 6px;
   border-top-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_last_grand_summary_row_top {
+&#10;#chhwthgwkl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3490,10 +3959,10 @@ example_tree |>
   border-bottom-width: 6px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_striped {
+&#10;#chhwthgwkl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
-&#10;#xpqqgpwthd .gt_table_body {
+&#10;#chhwthgwkl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3501,7 +3970,7 @@ example_tree |>
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_footnotes {
+&#10;#chhwthgwkl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3514,7 +3983,7 @@ example_tree |>
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_footnote {
+&#10;#chhwthgwkl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3522,7 +3991,7 @@ example_tree |>
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_sourcenotes {
+&#10;#chhwthgwkl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3535,64 +4004,64 @@ example_tree |>
   border-right-width: 2px;
   border-right-color: #D3D3D3;
 }
-&#10;#xpqqgpwthd .gt_sourcenote {
+&#10;#chhwthgwkl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
   padding-right: 5px;
 }
-&#10;#xpqqgpwthd .gt_left {
+&#10;#chhwthgwkl .gt_left {
   text-align: left;
 }
-&#10;#xpqqgpwthd .gt_center {
+&#10;#chhwthgwkl .gt_center {
   text-align: center;
 }
-&#10;#xpqqgpwthd .gt_right {
+&#10;#chhwthgwkl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
-&#10;#xpqqgpwthd .gt_font_normal {
+&#10;#chhwthgwkl .gt_font_normal {
   font-weight: normal;
 }
-&#10;#xpqqgpwthd .gt_font_bold {
+&#10;#chhwthgwkl .gt_font_bold {
   font-weight: bold;
 }
-&#10;#xpqqgpwthd .gt_font_italic {
+&#10;#chhwthgwkl .gt_font_italic {
   font-style: italic;
 }
-&#10;#xpqqgpwthd .gt_super {
+&#10;#chhwthgwkl .gt_super {
   font-size: 65%;
 }
-&#10;#xpqqgpwthd .gt_footnote_marks {
+&#10;#chhwthgwkl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
-&#10;#xpqqgpwthd .gt_asterisk {
+&#10;#chhwthgwkl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
-&#10;#xpqqgpwthd .gt_indent_1 {
+&#10;#chhwthgwkl .gt_indent_1 {
   text-indent: 5px;
 }
-&#10;#xpqqgpwthd .gt_indent_2 {
+&#10;#chhwthgwkl .gt_indent_2 {
   text-indent: 10px;
 }
-&#10;#xpqqgpwthd .gt_indent_3 {
+&#10;#chhwthgwkl .gt_indent_3 {
   text-indent: 15px;
 }
-&#10;#xpqqgpwthd .gt_indent_4 {
+&#10;#chhwthgwkl .gt_indent_4 {
   text-indent: 20px;
 }
-&#10;#xpqqgpwthd .gt_indent_5 {
+&#10;#chhwthgwkl .gt_indent_5 {
   text-indent: 25px;
 }
-&#10;#xpqqgpwthd .katex-display {
+&#10;#chhwthgwkl .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
-&#10;#xpqqgpwthd div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+&#10;#chhwthgwkl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

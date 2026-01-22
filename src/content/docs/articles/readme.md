@@ -82,17 +82,17 @@ Hyperion can read .mod files to give an overview of the mod file with:
 read_model(file.path(test_data_dir, "models", "onecmt", "run002.mod"))
 ```
 
-# NONMEM Model: run002
+<strong>NONMEM Model: run002</strong>
 
-**Problem:** Base one-compartment oral absorption model
+<strong>Problem:</strong> Base one-compartment oral absorption model
 
-**Run Status:** Run
+<strong>Run Status:</strong> Run
 
-**Dataset:** ../../data/derived/onecmpt-oral-30ind.csv
+<strong>Dataset:</strong> ../../data/derived/onecmpt-oral-30ind.csv
 
-**Ignore:** @
+<strong>Ignore:</strong> @
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -105,12 +105,12 @@ read_model(file.path(test_data_dir, "models", "onecmt", "run002.mod"))
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Lower
 </th>
@@ -138,12 +138,12 @@ Comment
 THETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.24
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -167,12 +167,12 @@ TVCL (L/hr)
 THETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 40.86
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -196,12 +196,12 @@ TVV (L)
 THETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.24
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0
 </td>
@@ -222,7 +222,7 @@ TVKA (1/hr)
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -235,7 +235,7 @@ TVKA (1/hr)
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -263,7 +263,7 @@ Comment
 OMEGA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.131
 </td>
@@ -287,7 +287,7 @@ OM1 TVCL :EXP
 OMEGA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.136
 </td>
@@ -311,7 +311,7 @@ OM2 TVV :EXP
 OMEGA(3,3)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1
 </td>
@@ -332,7 +332,7 @@ OM3 TVKA :EXP
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -345,7 +345,7 @@ OM3 TVKA :EXP
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Initial
 </th>
@@ -373,7 +373,7 @@ Comment
 SIGMA(1,1)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.0364
 </td>
@@ -397,7 +397,7 @@ SIG1 Proportional error (variance, 20% CV)
 SIGMA(2,2)
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.01
 </td>
@@ -431,20 +431,20 @@ After running a model you can view run details and final estimates with:
 get_model_summary(file.path(test_data_dir, "models", "onecmt", "run002"))
 ```
 
-# Model Summary: run002
+<strong>Model Summary: run002</strong>
 
-**Problem:** Base one-compartment oral absorption model
+<strong>Problem:</strong> Base one-compartment oral absorption model
 
-**Records: 240 \| Observations: 210 \| Subjects: 30**
+<strong>Records: 240 \| Observations: 210 \| Subjects: 30</strong>
 
-**Final OFV:** -103.5
+<strong>Final OFV:</strong> -103.5
 
-## Estimation Methods
+<strong>Estimation Methods</strong>
 
-- **First Order Conditional Estimation with Interaction**
+- <strong>First Order Conditional Estimation with Interaction</strong>
   - Condition Number: 29.63
 
-## Heuristic Checks
+<strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
 
@@ -456,7 +456,7 @@ get_model_summary(file.path(test_data_dir, "models", "onecmt", "run002"))
 
 \[<span style="color:green">OK</span>\] No Hessian Resets
 
-## Theta Parameters
+<strong>Theta Parameters</strong>
 
 <table class="table table-striped">
 
@@ -469,17 +469,17 @@ get_model_summary(file.path(test_data_dir, "models", "onecmt", "run002"))
 Parameter
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
@@ -502,17 +502,17 @@ Fixed
 TVCL
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.247
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1288
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 10.33
 </td>
@@ -531,17 +531,17 @@ No
 TVV
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 40.85
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 3.027
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 7.411
 </td>
@@ -560,17 +560,17 @@ No
 TVKA
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 1.244
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1134
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 9.117
 </td>
@@ -586,7 +586,7 @@ No
 
 </table>
 
-## Omega Parameters
+<strong>Omega Parameters</strong>
 
 <table class="table table-striped">
 
@@ -604,22 +604,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -647,22 +647,22 @@ OM1 (TVCL)
 ETA1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1304
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.06019
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 46.15
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 18.06
 </td>
@@ -686,22 +686,22 @@ OM2 (TVV)
 ETA2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1363
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03971
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 29.13
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 4.986
 </td>
@@ -725,22 +725,22 @@ OM3 (TVKA)
 ETA3
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.1144
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.06144
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 <span style="color: #DD0000;">53.71</span>
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 27.19
 </td>
@@ -756,7 +756,7 @@ No
 
 </table>
 
-## Sigma Parameters
+<strong>Sigma Parameters</strong>
 
 <table class="table table-striped">
 
@@ -774,22 +774,22 @@ Parameter
 Random Effect
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Estimate
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 SE
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 RSE (%)
 </th>
 
-<th style="text-align:left;">
+<th style="text-align:right;">
 
 Shrinkage (%)
 </th>
@@ -817,22 +817,22 @@ SIGMA(1,1)
 EPS1
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.03723
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.0116
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 31.16
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 15.44
 </td>
@@ -856,22 +856,22 @@ SIGMA(2,2)
 EPS2
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.006607
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 0.02792
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 <span style="color: #DD0000;">422.6</span>
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:right;">
 
 15.44
 </td>
@@ -911,7 +911,7 @@ get_parameters(file.path(test_data_dir, "models", "onecmt", "run003")) |>
   gt::as_raw_html()
 ```
 
-<div id="dgkurpfqvf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="lkzeaommzg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_heading" style="border-style: none; background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;" bgcolor="#FFFFFF" align="center">
@@ -1088,9 +1088,9 @@ with
 get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
 ```
 
-# Hyperion Model Tree
+<strong>Hyperion Model Tree</strong>
 
-ℹ️ **Models:** 8
+ℹ️ <strong>Models:</strong> 8
 
 - <strong style="color:blue">run001</strong> <span style="color:gray">-
   Base model</span>
@@ -1098,17 +1098,17 @@ get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
     Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
-    - <span style="color:orange">run003</span>
-      <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b1</span>
-        <span style="color:gray">- Updating run003 to 003b1 with
-        jittered params. …</span>
-      - <span style="color:green">run003b2</span>
-        <span style="color:gray">- Updating run003 with mod
-        object</span>
     - <span style="color:green">run002b001</span>
       <span style="color:gray">- Jittering initial sigma estimates,
       using theta/…</span>
+    - <span style="color:orange">run003</span>
+      <span style="color:gray">- Jittering initial estimates</span>
+      - <span style="color:green">run003b2</span>
+        <span style="color:gray">- Updating run003 with mod
+        object</span>
+      - <span style="color:green">run003b1</span>
+        <span style="color:gray">- Updating run003 to 003b1 with
+        jittered params. …</span>
     - <span style="color:green">run002a</span>
       <span style="color:gray">- Some description about what makes
       run002a diffe…</span>
