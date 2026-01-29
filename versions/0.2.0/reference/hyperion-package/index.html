@@ -105,174 +105,86 @@ async function handleVersionChange(select) {
 <div class="sl-heading-wrapper level-h2"><h2 id="model-io">Model I/O</h2><a class="sl-anchor-link" href="#model-io"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model I/O”</span></a></div>
 <p>Functions for reading, writing, and validating NONMEM models:</p>
 <ul>
-<li>
-<p><code dir="auto">read_model()</code> - Read a model from a .mod or .ctl file</p>
-</li>
-<li>
-<p><code dir="auto">copy_model()</code> - Copy a model to a new file with optional parameter updates</p>
-</li>
-<li>
-<p><code dir="auto">check_model()</code> - Validate model syntax</p>
-</li>
-<li>
-<p><code dir="auto">check_dataset()</code> - Validate model dataset</p>
-</li>
+<li><a href="../read_model/"><code dir="auto">read_model()</code></a> - Read a model from a .mod or .ctl file</li>
+<li><a href="../copy_model/"><code dir="auto">copy_model()</code></a> - Copy a model to a new file with optional parameter updates</li>
+<li><a href="../check_model/"><code dir="auto">check_model()</code></a> - Validate model syntax</li>
+<li><a href="../check_dataset/"><code dir="auto">check_dataset()</code></a> - Validate model dataset</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="model-summaries">Model Summaries</h2><a class="sl-anchor-link" href="#model-summaries"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model Summaries”</span></a></div>
 <p>Functions for summarizing model runs:</p>
 <ul>
-<li>
-<p><code dir="auto">summary()</code> - Get a summary of a completed model run</p>
-</li>
-<li>
-<p><code dir="auto">get_run_info()</code> - Get run details and heuristics from .lst file</p>
-</li>
+<li><a href="../summary/"><code dir="auto">summary()</code></a> - Get a summary of a completed model run</li>
+<li><a href="../get_run_info/"><code dir="auto">get_run_info()</code></a> - Get run details and heuristics from .lst file</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="parameter-extraction">Parameter Extraction</h2><a class="sl-anchor-link" href="#parameter-extraction"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Parameter Extraction”</span></a></div>
 <p>Functions for extracting parameter estimates, gradients, and shrinkage:</p>
 <ul>
-<li>
-<p><code dir="auto">get_parameters()</code> - Get parameter estimates from .ext file</p>
-</li>
-<li>
-<p><code dir="auto">get_final_estimates()</code> - Get final parameter estimates</p>
-</li>
-<li>
-<p><code dir="auto">read_ext_file()</code> - Read .ext file directly</p>
-</li>
-<li>
-<p><code dir="auto">get_gradients()</code> - Get gradient values</p>
-</li>
-<li>
-<p><code dir="auto">get_eta_shrinkage()</code> - Get ETA shrinkage</p>
-</li>
-<li>
-<p><code dir="auto">get_eps_shrinkage()</code> - Get EPS shrinkage</p>
-</li>
+<li><a href="../get_parameters/"><code dir="auto">get_parameters()</code></a> - Get parameter estimates from .ext file</li>
+<li><a href="../get_final_estimates/"><code dir="auto">get_final_estimates()</code></a> - Get final parameter estimates</li>
+<li><a href="../read_ext_file/"><code dir="auto">read_ext_file()</code></a> - Read .ext file directly</li>
+<li><a href="../get_gradients/"><code dir="auto">get_gradients()</code></a> - Get gradient values</li>
+<li><a href="../get_eta_shrinkage/"><code dir="auto">get_eta_shrinkage()</code></a> - Get ETA shrinkage</li>
+<li><a href="../get_eps_shrinkage/"><code dir="auto">get_eps_shrinkage()</code></a> - Get EPS shrinkage</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="parameter-metadata">Parameter Metadata</h2><a class="sl-anchor-link" href="#parameter-metadata"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Parameter Metadata”</span></a></div>
 <p>S7 classes and functions for structured parameter comments:</p>
 <ul>
-<li>
-<p><code dir="auto">get_model_parameter_info()</code> - Extract parameter metadata from a model</p>
-</li>
-<li>
-<p>ThetaComment, OmegaComment, SigmaComment - Parameter comment classes</p>
-</li>
-<li>
-<p>ModelComments - Container for all parameter comments</p>
-</li>
-<li>
-<p><code dir="auto">get_comment()</code> - Get a comment by NONMEM name</p>
-</li>
-<li>
-<p><code dir="auto">get_parameter_names()</code> - Get user-defined parameter names from model or ModelComments</p>
-</li>
-<li>
-<p><code dir="auto">get_parameter_transform()</code> - Get parameterization (transform) type</p>
-</li>
-<li>
-<p><code dir="auto">get_parameter_unit()</code> - Get parameter units</p>
-</li>
-<li>
-<p><code dir="auto">get_theta_names()</code> - Get theta parameter names</p>
-</li>
-<li>
-<p><code dir="auto">get_eta_labels()</code> - Get ETA labels for plots/tables</p>
-</li>
-<li>
-<p><code dir="auto">update_param_info()</code> - Update parameter metadata</p>
-</li>
-<li>
-<p><code dir="auto">audit_parameter_info()</code> - Audit provenance of metadata fields</p>
-</li>
+<li><a href="../get_model_parameter_info/"><code dir="auto">get_model_parameter_info()</code></a> - Extract parameter metadata from a model</li>
+<li><a href="../thetacomment/"><code dir="auto">ThetaComment</code></a>, <a href="../omegacomment/"><code dir="auto">OmegaComment</code></a>, <a href="../sigmacomment/"><code dir="auto">SigmaComment</code></a> - Parameter comment classes</li>
+<li><a href="../modelcomments/"><code dir="auto">ModelComments</code></a> - Container for all parameter comments</li>
+<li><a href="../get_comment/"><code dir="auto">get_comment()</code></a> - Get a comment by NONMEM name</li>
+<li><a href="../get_parameter_names/"><code dir="auto">get_parameter_names()</code></a> - Get user-defined parameter names from model or ModelComments</li>
+<li><a href="../get_parameter_transform/"><code dir="auto">get_parameter_transform()</code></a> - Get parameterization (transform) type</li>
+<li><a href="../get_parameter_unit/"><code dir="auto">get_parameter_unit()</code></a> - Get parameter units</li>
+<li><a href="../get_theta_names/"><code dir="auto">get_theta_names()</code></a> - Get theta parameter names</li>
+<li><a href="../get_eta_labels/"><code dir="auto">get_eta_labels()</code></a> - Get ETA labels for plots/tables</li>
+<li><a href="../update_param_info/"><code dir="auto">update_param_info()</code></a> - Update parameter metadata</li>
+<li><a href="../audit_parameter_info/"><code dir="auto">audit_parameter_info()</code></a> - Audit provenance of metadata fields</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="lookup-files">Lookup Files</h2><a class="sl-anchor-link" href="#lookup-files"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Lookup Files”</span></a></div>
 <p>Functions for managing TOML lookup files with parameter metadata:</p>
 <ul>
-<li>
-<p><code dir="auto">apply_lookup()</code> - Apply lookup file to fill missing metadata</p>
-</li>
-<li>
-<p><code dir="auto">apply_lookup_defaults()</code> - Apply default values from lookup</p>
-</li>
-<li>
-<p><code dir="auto">add_parameter_to_lookup()</code> - Add a parameter to lookup file</p>
-</li>
-<li>
-<p><code dir="auto">remove_parameter_from_lookup()</code> - Remove a parameter from lookup</p>
-</li>
-<li>
-<p><code dir="auto">list_lookup_parameters()</code> - List parameters in a lookup file</p>
-</li>
+<li><a href="../apply_lookup/"><code dir="auto">apply_lookup()</code></a> - Apply lookup file to fill missing metadata</li>
+<li><a href="../apply_lookup_defaults/"><code dir="auto">apply_lookup_defaults()</code></a> - Apply default values from lookup</li>
+<li><a href="../add_parameter_to_lookup/"><code dir="auto">add_parameter_to_lookup()</code></a> - Add a parameter to lookup file</li>
+<li><a href="../remove_parameter_from_lookup/"><code dir="auto">remove_parameter_from_lookup()</code></a> - Remove a parameter from lookup</li>
+<li><a href="../list_lookup_parameters/"><code dir="auto">list_lookup_parameters()</code></a> - List parameters in a lookup file</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="transform-calculations">Transform Calculations</h2><a class="sl-anchor-link" href="#transform-calculations"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Transform Calculations”</span></a></div>
 <p>Functions for computing derived statistics with transform awareness:</p>
 <ul>
-<li>
-<p><code dir="auto">compute_cv()</code> - Compute coefficient of variation</p>
-</li>
-<li>
-<p><code dir="auto">compute_rse()</code> - Compute relative standard error</p>
-</li>
-<li>
-<p><code dir="auto">compute_ci()</code> - Compute confidence intervals</p>
-</li>
-<li>
-<p><code dir="auto">transform_value()</code> - Back-transform estimates to natural scale</p>
-</li>
+<li><a href="../compute_cv/"><code dir="auto">compute_cv()</code></a> - Compute coefficient of variation</li>
+<li><a href="../compute_rse/"><code dir="auto">compute_rse()</code></a> - Compute relative standard error</li>
+<li><a href="../compute_ci/"><code dir="auto">compute_ci()</code></a> - Compute confidence intervals</li>
+<li><a href="../transform_value/"><code dir="auto">transform_value()</code></a> - Back-transform estimates to natural scale</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="model-lineage">Model Lineage</h2><a class="sl-anchor-link" href="#model-lineage"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Model Lineage”</span></a></div>
 <p>Functions for tracking model development history:</p>
 <ul>
-<li>
-<p><code dir="auto">get_model_lineage()</code> - Get full lineage tree</p>
-</li>
-<li>
-<p><code dir="auto">get_model_ancestors()</code> - Get ancestor models</p>
-</li>
-<li>
-<p><code dir="auto">get_model_descendants()</code> - Get descendant models</p>
-</li>
-<li>
-<p><code dir="auto">are_models_in_lineage()</code> - Check if models are related</p>
-</li>
+<li><a href="../get_model_lineage/"><code dir="auto">get_model_lineage()</code></a> - Get full lineage tree</li>
+<li><a href="../get_model_ancestors/"><code dir="auto">get_model_ancestors()</code></a> - Get ancestor models</li>
+<li><a href="../get_model_descendants/"><code dir="auto">get_model_descendants()</code></a> - Get descendant models</li>
+<li><a href="../are_models_in_lineage/"><code dir="auto">are_models_in_lineage()</code></a> - Check if models are related</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="configuration">Configuration</h2><a class="sl-anchor-link" href="#configuration"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Configuration”</span></a></div>
 <p>Functions for pharos configuration:</p>
 <ul>
-<li>
-<p><code dir="auto">init()</code> - Initialize pharos with config file path</p>
-</li>
-<li>
-<p><code dir="auto">get_pharos_config()</code> - Get current pharos configuration</p>
-</li>
-<li>
-<p><code dir="auto">get_comment_type()</code> - Get comment parsing mode (raw or type1)</p>
-</li>
-<li>
-<p><code dir="auto">use_type1_comments()</code> - Configure pharos.toml for type1 comment parsing</p>
-</li>
+<li><a href="../init/"><code dir="auto">init()</code></a> - Initialize pharos with config file path</li>
+<li><a href="../get_pharos_config/"><code dir="auto">get_pharos_config()</code></a> - Get current pharos configuration</li>
+<li><a href="../get_comment_type/"><code dir="auto">get_comment_type()</code></a> - Get comment parsing mode (raw or type1)</li>
+<li><a href="../use_type1_comments/"><code dir="auto">use_type1_comments()</code></a> - Configure pharos.toml for type1 comment parsing</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="metadata-files">Metadata Files</h2><a class="sl-anchor-link" href="#metadata-files"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Metadata Files”</span></a></div>
 <p>Functions for managing model metadata JSON files:</p>
 <ul>
-<li>
-<p><code dir="auto">set_metadata_file()</code> - Create or update metadata file</p>
-</li>
-<li>
-<p><code dir="auto">update_metadata_file()</code> - Update existing metadata</p>
-</li>
+<li><a href="../set_metadata_file/"><code dir="auto">set_metadata_file()</code></a> - Create or update metadata file</li>
+<li><a href="../update_metadata_file/"><code dir="auto">update_metadata_file()</code></a> - Update existing metadata</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="job-submission">Job Submission</h2><a class="sl-anchor-link" href="#job-submission"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Job Submission”</span></a></div>
 <p>Functions for submitting models to compute clusters:</p>
 <ul>
-<li>
-<p><code dir="auto">submit_model_to_slurm()</code> - Submit to SLURM scheduler</p>
-</li>
-<li>
-<p><code dir="auto">submit_model_to_sge()</code> - Submit to SGE scheduler</p>
-</li>
+<li><a href="../submit_model_to_slurm/"><code dir="auto">submit_model_to_slurm()</code></a> - Submit to SLURM scheduler</li>
+<li><a href="../submit_model_to_sge/"><code dir="auto">submit_model_to_sge()</code></a> - Submit to SGE scheduler</li>
 </ul>
 <div class="sl-heading-wrapper level-h2"><h2 id="authors">Author(s)</h2><a class="sl-anchor-link" href="#authors"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only">Section titled “Author(s)”</span></a></div>
 <p><strong>Maintainer</strong>: Matt Smith &#x3C;<a href="mailto:matthews@a2-ai.com">matthews@a2-ai.com</a>></p>
