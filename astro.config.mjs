@@ -60,7 +60,7 @@ export default defineConfig({
         {
           label: "Model Summaries",
           items: [
-            { label: "summary.hyperion_nonmem_model", slug: "reference/summary.hyperion_nonmem_model" },
+            { label: "summary.hyperion_nonmem_model", slug: "reference/summary-hyperion_nonmem_model" },
             { label: "get_run_info", slug: "reference/get_run_info" }
           ]
         },

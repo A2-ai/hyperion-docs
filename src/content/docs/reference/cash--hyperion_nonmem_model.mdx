@@ -1,0 +1,43 @@
+---
+title: "Element access for hyperion_nonmem_model objects"
+description: "Prevents direct access to internal token fields."
+pagefind: true
+---
+
+## Description
+
+Prevents direct access to internal token fields.
+
+## Usage
+
+```r
+## S3 method for class 'hyperion_nonmem_model'
+x$name
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x</code></td>
+<td>A hyperion_nonmem_model object</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>The element name to access</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+The element value, or NULL for restricted fields
