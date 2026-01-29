@@ -27,7 +27,7 @@ get_gradients(path, only_method = NULL, only_last = TRUE)
 <tbody>
 <tr>
 <td><code>path</code></td>
-<td>path to model file, model output directory, grd file or metadata json file.</td>
+<td>path to model file, model output directory, grd file or metadata json file, or a hyperion_nonmem_model object</td>
 </tr>
 <tr>
 <td><code>only_method</code></td>
@@ -50,6 +50,8 @@ data.frame of gradients
 ```r
 ## Not run: 
 get_gradients("model/nonmem/run001/run001.grd")
+model <- read_model("model/nonmem/run001.mod")
+get_gradients(model)
 
 ## End(Not run)
 ```

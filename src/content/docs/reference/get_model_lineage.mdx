@@ -27,7 +27,7 @@ get_model_lineage(model_dir)
 <tbody>
 <tr>
 <td><code>model_dir</code></td>
-<td>path to directory containing all models</td>
+<td>path to directory containing all models, or a hyperion_nonmem_model object (uses the model's parent directory)</td>
 </tr>
 </tbody>
 </table>
@@ -42,6 +42,8 @@ hyperion_nonmem_tree S3 object
 ```r
 ## Not run: 
 get_model_lineage("model/nonmem/")
+model <- read_model("model/nonmem/run001.mod")
+get_model_lineage(model)
 
 ## End(Not run)
 ```

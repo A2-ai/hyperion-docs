@@ -26,6 +26,7 @@ library(hyperion)
 #> ✔ hyperion.nonmem_model.show_included_columns : FALSE
 #> ✔ hyperion.nonmem_summary.rse_threshold : 50
 #> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
+
 test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 
@@ -230,7 +231,7 @@ read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its"
   theme_bw()
 ```
 
-![](/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/starlightr-rmd-635e5f9e9a1e//figures/ext/unnamed-chunk-6-1.png)
+![](/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/starlightr-rmd-dfd877b62f91//figures/ext/unnamed-chunk-6-1.png)
 
 ``` r
 read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its") |> 
@@ -251,7 +252,7 @@ read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its"
   theme_bw()
 ```
 
-![](/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/starlightr-rmd-635e5f9e9a1e//figures/ext/unnamed-chunk-7-1.png)
+![](/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/starlightr-rmd-dfd877b62f91//figures/ext/unnamed-chunk-7-1.png)
 
 ``` r
 read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its") |> 
@@ -272,7 +273,7 @@ read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its"
   theme_bw()
 ```
 
-![](/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmpv5J36i/starlightr-rmd-635e5f9e9a1e//figures/ext/unnamed-chunk-8-1.png)
+![](/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/starlightr-rmd-dfd877b62f91//figures/ext/unnamed-chunk-8-1.png)
 
 ``` r
 

@@ -1,5 +1,5 @@
 ---
-title: "Get parameter names from ModelComments"
+title: "Get parameter names from a model or ModelComments object"
 description: "Returns a data frame mapping NONMEM parameter names to user-defined names and display names."
 pagefind: true
 ---
@@ -11,7 +11,7 @@ Returns a data frame mapping NONMEM parameter names to user-defined names and di
 ## Usage
 
 ```r
-get_parameter_names(model_comments)
+get_parameter_names(x, lookup_path = NULL)
 ```
 
 ## Arguments
@@ -26,12 +26,20 @@ get_parameter_names(model_comments)
 </thead>
 <tbody>
 <tr>
-<td><code>model_comments</code></td>
-<td>A ModelComments object</td>
+<td><code>x</code></td>
+<td>A ModelComments object or a hyperion_nonmem_model object. If a model object is provided, parameter info is extracted automatically.</td>
+</tr>
+<tr>
+<td><code>lookup_path</code></td>
+<td>Optional path to a TOML lookup file. Only used when <code>x</code> is a model object. If provided, fills NULL fields from the lookup.</td>
 </tr>
 </tbody>
 </table>
 </div>
+
+## Details
+
+This function handles both typed (type1) and raw comment formats, extracting parameter names regardless of the comment style used in the model file.
 
 ## Value
 

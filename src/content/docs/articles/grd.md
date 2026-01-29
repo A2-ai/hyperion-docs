@@ -24,6 +24,7 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
+
 test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 
@@ -88,16 +89,16 @@ get_gradients(file.path(test_data_dir, "models", "onecmt", "run002"))
 #> 4   -0.000111782    -4.43439e-05 -0.000122955 1.27956e-05
 
 get_gradients(file.path(test_data_dir, "models", "onecmt", "run002.mod"))
-#>   iteration method       GRD.1.       GRD.2.       GRD.3.       GRD.4.
-#> 1         0   FOCE -2.38364e-01  4.34772e-01 -3.34223e-01  3.33661e-02
-#> 2         5   FOCE  1.23194e+00 -9.14972e-01  3.77112e-01 -4.11332e-01
-#> 3        10   FOCE  1.84041e-03 -2.25898e-03 -2.12048e-03  2.22174e-03
-#> 4        15   FOCE  2.41066e-05  1.73623e-05  3.20979e-06  2.26613e-06
-#>         GRD.5.       GRD.6.       GRD.7.      GRD.8.
-#> 1  0.114883000 -2.04802e+00  0.340024000 1.11603e+00
-#> 2  0.991775000  2.96604e-01  1.926170000 5.00827e-01
-#> 3 -0.001427710  2.96243e-03  0.015992400 2.34632e-03
-#> 4 -0.000111782 -4.43439e-05 -0.000122955 1.27956e-05
+#>   iteration method    GRD.TVCL.     GRD.TVV.    GRD.TVKA. GRD.OM1..TVCL..
+#> 1         0   FOCE -2.38364e-01  4.34772e-01 -3.34223e-01     3.33661e-02
+#> 2         5   FOCE  1.23194e+00 -9.14972e-01  3.77112e-01    -4.11332e-01
+#> 3        10   FOCE  1.84041e-03 -2.25898e-03 -2.12048e-03     2.22174e-03
+#> 4        15   FOCE  2.41066e-05  1.73623e-05  3.20979e-06     2.26613e-06
+#>   GRD.OM2..TVV.. GRD.OM3..TVKA..    GRD.EPS1.   GRD.EPS2.
+#> 1    0.114883000    -2.04802e+00  0.340024000 1.11603e+00
+#> 2    0.991775000     2.96604e-01  1.926170000 5.00827e-01
+#> 3   -0.001427710     2.96243e-03  0.015992400 2.34632e-03
+#> 4   -0.000111782    -4.43439e-05 -0.000122955 1.27956e-05
 
 get_gradients(file.path(test_data_dir, "models", "onecmt", "run002", "run002.grd"))
 #>   iteration method    GRD.TVCL.     GRD.TVV.    GRD.TVKA. GRD.OM1..TVCL..

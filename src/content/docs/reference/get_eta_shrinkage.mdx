@@ -27,7 +27,7 @@ get_eta_shrinkage(path)
 <tbody>
 <tr>
 <td><code>path</code></td>
-<td>path to model file, model output directory, shk file or metadata json file.</td>
+<td>path to model file, model output directory, shk file or metadata json file, or a hyperion_nonmem_model object</td>
 </tr>
 </tbody>
 </table>
@@ -42,6 +42,8 @@ data.frame of ETA shrinkage metrics
 ```r
 ## Not run: 
 get_eta_shrinkage("model/nonmem/run001/run001.shk")
+model <- read_model("model/nonmem/run001.mod")
+get_eta_shrinkage(model)
 
 ## End(Not run)
 ```

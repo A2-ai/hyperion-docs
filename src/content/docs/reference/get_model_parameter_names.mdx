@@ -1,12 +1,12 @@
 ---
-title: "Gets parameter names from model for display purposes"
-description: "Gets parameter names from model for display purposes"
+title: "Gets parameter names from model using typed comment parsing (internal)"
+description: "This function extracts parameter names using the pharos typed comment parser."
 pagefind: true
 ---
 
 ## Description
 
-Gets parameter names from model for display purposes
+This function extracts parameter names using the pharos typed comment parser. For general use, prefer the R-side get_parameter_names() which handles both typed and raw comment formats.
 
 ## Usage
 
@@ -36,14 +36,3 @@ get_model_parameter_names(model)
 ## Value
 
 Named character vector with NONMEM names as names and user-friendly names as values
-
-## Examples
-
-```r
-## Not run: 
-model <- read_model("run001.mod")
-param_names <- get_model_parameter_names(model)
-omega_names <- param_names[grepl("^OMEGA", names(param_names))]
-
-## End(Not run)
-```

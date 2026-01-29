@@ -15,6 +15,7 @@ library(hyperion)
 #> ✔ hyperion.nonmem_model.show_included_columns : FALSE
 #> ✔ hyperion.nonmem_summary.rse_threshold : 50
 #> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
+
 test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 

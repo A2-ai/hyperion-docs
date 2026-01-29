@@ -1,0 +1,80 @@
+---
+title: "Update parameter info in a ModelComments object"
+description: "Update parameter info in a ModelComments object"
+pagefind: true
+---
+
+## Description
+
+Update parameter info in a ModelComments object
+
+## Usage
+
+```r
+update_param_info(
+  info,
+  parameter,
+  kind = NULL,
+  name = NULL,
+  display = NULL,
+  description = NULL,
+  unit = NULL,
+  parameterization = NULL,
+  associated_theta = NULL
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>info</code></td>
+<td>A ModelComments object</td>
+</tr>
+<tr>
+<td><code>parameter</code></td>
+<td>The parameter to update. Can be a NONMEM name (e.g., "THETA1", "OMEGA(1,1)") or a custom name/display value.</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>Optional character. Filter by parameter kind ("THETA", "OMEGA", or "SIGMA"). Required if the name is ambiguous across kinds.</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>User-defined parameter name (e.g., "CL", "IIV-CL")</td>
+</tr>
+<tr>
+<td><code>display</code></td>
+<td>Display name for tables/output</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Description of the parameter</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>Unit of measurement. Applies to THETA and SIGMA parameters.</td>
+</tr>
+<tr>
+<td><code>parameterization</code></td>
+<td>Transformation type. Valid values: "LogNormal", "Logit", "AddErr", "LogAddErr", "Proportional", "Identity".</td>
+</tr>
+<tr>
+<td><code>associated_theta</code></td>
+<td>Related theta name(s). Only applies to OMEGA parameters.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+The updated ModelComments object

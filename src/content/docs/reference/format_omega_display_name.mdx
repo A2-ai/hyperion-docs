@@ -1,0 +1,75 @@
+---
+title: "Format omega display name, avoiding duplicate theta info"
+description: "Builds a display name for omega parameters by appending associated theta information, but only if that information isn't already present in the name."
+pagefind: true
+---
+
+## Description
+
+Builds a display name for omega parameters by appending associated theta information, but only if that information isn't already present in the name. This prevents duplication like "IIV-CL (CL)" when the omega was already renamed to include the theta.
+
+## Usage
+
+```r
+format_omega_display_name(name, associated_theta, theta_labels = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>The omega parameter name (e.g., "IIV-CL" or "IIV")</td>
+</tr>
+<tr>
+<td><code>associated_theta</code></td>
+<td>Character vector of associated theta names</td>
+</tr>
+<tr>
+<td><code>theta_labels</code></td>
+<td>Optional named vector mapping theta names to display labels. If provided, uses labels for the suffix; otherwise uses theta names.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+The formatted display name with theta info appended only if missing
+
+## Examples
+
+```r
+# Theta already in name - no duplication
+format_omega_display_name("IIV-CL", "CL")
+# Returns: "IIV-CL"
+
+# Theta not in name - appends it
+format_omega_display_name("IIV", "CL")
+# Returns: "IIV CL"
+
+# Multiple thetas
+format_omega_display_name("IIV", c("CL", "V"))
+# Returns: "IIV CL, V"
+
+# With custom labels
+format_omega_display_name("IIV", "CL", c(CL = "Clearance"))
+# Returns: "IIV Clearance"
+```
+
+### Output
+
+```
+[1] "IIV-CL" 
+[1] "IIV CL" 
+[1] "IIV CL, V" 
+[1] "IIV Clearance" 
+```

@@ -1,0 +1,56 @@
+---
+title: "Format numbers as strings using significant digits"
+description: "Formats numeric values as character strings using a specified number of significant figures."
+pagefind: true
+---
+
+## Description
+
+Formats numeric values as character strings using a specified number of significant figures. Uses the `hyperion.significant_number_display` option as the default when `digits` is not specified.
+
+## Usage
+
+```r
+format_hyperion_sigfig_string(x, digits = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x</code></td>
+<td>Numeric value(s) to format.</td>
+</tr>
+<tr>
+<td><code>digits</code></td>
+<td>Number of significant digits. Defaults to <code>getOption("hyperion.significant_number_display", 4)</code>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Character vector of formatted numbers. Returns `NA_character_` for `NA` input values.
+
+## Examples
+
+```r
+format_hyperion_sigfig_string(0.123456789, digits = 3)
+format_hyperion_sigfig_string(c(1.234, 56.789, NA), digits = 2)
+```
+
+### Output
+
+```
+[1] "0.123" 
+[1] "1.2" "57"  NA    
+```
