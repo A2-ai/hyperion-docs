@@ -2081,29 +2081,134 @@ attributes(mod) |> names()
 
 ``` r
 read_model(file.path(test_data_dir, "models", "onecmt", "run001.mod")) |>
-  check_dataset(file.path(test_data_dir, "models", "onecmt"))
-#> $canonical_path
-#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
-#> 
-#> $blake3_hash
-#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"
+  check_dataset() 
+```
+
+<strong>Dataset Check</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Path
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Hash
+</td>
+
+<td style="text-align:left;">
+
+8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+``` r
 
 read_model(file.path(test_data_dir, "models", "onecmt", "run002.mod")) |>
-  check_dataset(file.path(test_data_dir, "models", "onecmt"))
-#> $canonical_path
-#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
-#> 
-#> $blake3_hash
-#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"
+  check_dataset()
+```
+
+<strong>Dataset Check</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Path
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Hash
+</td>
+
+<td style="text-align:left;">
+
+8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+``` r
 
 read_model(file.path(test_data_dir, "models", "onecmt", "run003.mod")) |>
-  check_dataset(file.path(test_data_dir, "models", "onecmt"))
-#> $canonical_path
-#> [1] "/private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv"
-#> 
-#> $blake3_hash
-#> [1] "8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005"
+  check_dataset()
 ```
+
+<strong>Dataset Check</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Path
+</td>
+
+<td style="text-align:left;">
+
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Hash
+</td>
+
+<td style="text-align:left;">
+
+8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ``` r
 check_model(file.path(test_data_dir, "models", "onecmt", "run001.mod"))
@@ -3164,7 +3269,7 @@ THETA1
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3179,7 +3284,7 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3198,7 +3303,7 @@ THETA2
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3213,7 +3318,7 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3232,7 +3337,7 @@ THETA3
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3247,7 +3352,7 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3314,7 +3419,7 @@ OMEGA(1,1)
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3329,12 +3434,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3348,7 +3453,7 @@ OMEGA(2,1)
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3363,12 +3468,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3382,7 +3487,7 @@ OMEGA(2,2)
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3397,12 +3502,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3416,7 +3521,7 @@ OMEGA(3,3)
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3431,12 +3536,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3498,7 +3603,7 @@ SIGMA(1,1)
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3532,7 +3637,7 @@ SIGMA(2,2)
 
 <td style="text-align:left;">
 
-../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/RtmpnNTvuF/temp_libpathdfd84dac5634/hyperion/extdata/models/onecmt/run003/run003.lst
+../../../../../private/var/folders/bx/l0m1kftd7m93lvrc4m3_309c0000gn/T/Rtmp4Z6xsf/temp_libpath1738247001b5e/hyperion/extdata/models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3618,21 +3723,21 @@ example_tree
 
 - <strong style="color:blue">run001</strong> <span style="color:gray">-
   Base model</span>
+  - <span style="color:green">run004</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
     - <span style="color:orange">run003</span>
       <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b1</span>
-        <span style="color:gray">- Updating run003 to 003b1 with
-        jittered params. …</span>
       - <span style="color:green">run003b2</span>
         <span style="color:gray">- Updating run003 with mod
         object</span>
-    - <span style="color:green">run002a</span>
-      <span style="color:gray">- Some description about what makes
-      run002a diffe…</span>
+      - <span style="color:green">run003b1</span>
+        <span style="color:gray">- Updating run003 to 003b1 with
+        jittered params. …</span>
     - <span style="color:green">run002b001</span>
       <span style="color:gray">- Jittering initial sigma estimates,
       using theta/…</span>
-  - <span style="color:green">run004</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>
+    - <span style="color:green">run002a</span>
+      <span style="color:gray">- Some description about what makes
+      run002a diffe…</span>

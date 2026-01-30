@@ -1,0 +1,48 @@
+---
+title: "Get data path"
+description: "Extracts the dataset path from a hyperion_nonmem_model object."
+pagefind: true
+---
+
+## Description
+
+Extracts the dataset path from a hyperion_nonmem_model object.
+
+## Usage
+
+```r
+get_data_path(model)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>A hyperion_nonmem_model object</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Character string with the data path, or NULL if not found
+
+## Examples
+
+```r
+## Not run: 
+mod <- read_model("models/run001.mod")
+get_data_path(mod) # "../data/derived/pk_data.csv"
+
+## End(Not run)
+```

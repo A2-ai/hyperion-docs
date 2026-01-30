@@ -1,0 +1,48 @@
+---
+title: "Get model directory"
+description: "Extracts the directory path from a hyperion_nonmem_model object."
+pagefind: true
+---
+
+## Description
+
+Extracts the directory path from a hyperion_nonmem_model object.
+
+## Usage
+
+```r
+get_model_dir(model)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>A hyperion_nonmem_model object</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Value
+
+Character string with the model directory path (relative to pharos.toml)
+
+## Examples
+
+```r
+## Not run: 
+mod <- read_model("models/run001.mod")
+get_model_dir(mod) # "models"
+
+## End(Not run)
+```

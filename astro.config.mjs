@@ -47,14 +47,17 @@ export default defineConfig({
     {
       label: "Reference",
       items: [
-        { label: "hyperion-package", slug: "reference/hyperion-package" },
+        { label: "hyperion.package", slug: "reference/hyperion-package" },
         {
           label: "Model I/O",
           items: [
             { label: "read_model", slug: "reference/read_model" },
             { label: "copy_model", slug: "reference/copy_model" },
             { label: "check_model", slug: "reference/check_model" },
-            { label: "check_dataset", slug: "reference/check_dataset" }
+            { label: "check_dataset", slug: "reference/check_dataset" },
+            { label: "get_model_name", slug: "reference/get_model_name" },
+            { label: "get_model_dir", slug: "reference/get_model_dir" },
+            { label: "get_data_path", slug: "reference/get_data_path" }
           ]
         },
         {
