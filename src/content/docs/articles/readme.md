@@ -421,8 +421,18 @@ SIG2 Additive error (variance, 0.01 mg/L SD)
 
 ## Running a model
 
-There is no current support from hyperion to run a model, but SLURM job
-submission will be coming soon.
+Hyeprion can submit jobs with `pharos` to SLURM or SGE
+
+``` r
+run002 |>
+  submit_model_to_slurm(partition = "cpu2mem4gb", ncpu = 1, overwrite = TRUE)
+```
+
+``` r
+run002 |>
+  submit_model_to_sge(ncpu = 1, overwrite = TRUE)
+```
+
 
 ## Model summary
 
