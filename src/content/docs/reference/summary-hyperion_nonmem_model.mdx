@@ -12,7 +12,7 @@ Summary method for hyperion_nonmem_model objects
 
 ```r
 ## S3 method for class 'hyperion_nonmem_model'
-summary(object, hide_off_diagonal_params = FALSE, ...)
+summary(object, hide_off_diagonal_params = FALSE, n_iterations = 10, ...)
 ```
 
 ## Arguments
@@ -33,6 +33,10 @@ summary(object, hide_off_diagonal_params = FALSE, ...)
 <tr>
 <td><code>hide_off_diagonal_params</code></td>
 <td>Logical, if TRUE will not display the unfixed off-diagonal estimated parameters. Default is FALSE.</td>
+</tr>
+<tr>
+<td><code>n_iterations</code></td>
+<td>Number of recent iterations to show for running models. Default is 10.</td>
 </tr>
 <tr>
 <td><code>...</code></td>

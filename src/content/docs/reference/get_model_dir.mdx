@@ -11,7 +11,7 @@ Extracts the directory path from a hyperion_nonmem_model object.
 ## Usage
 
 ```r
-get_model_dir(model)
+get_model_dir(model, absolute = FALSE)
 ```
 
 ## Arguments
@@ -29,20 +29,25 @@ get_model_dir(model)
 <td><code>model</code></td>
 <td>A hyperion_nonmem_model object</td>
 </tr>
+<tr>
+<td><code>absolute</code></td>
+<td>Logical; if TRUE, resolve <code>model_source</code> using <code>from_config_relative()</code> before extracting the directory. Default FALSE.</td>
+</tr>
 </tbody>
 </table>
 </div>
 
 ## Value
 
-Character string with the model directory path (relative to pharos.toml)
+Character string with the model directory path
 
 ## Examples
 
 ```r
 ## Not run: 
 mod <- read_model("models/run001.mod")
-get_model_dir(mod) # "models"
+get_model_dir(mod) # "models" (config-relative)
+get_model_dir(mod, absolute = TRUE) # "/path/to/project/models"
 
 ## End(Not run)
 ```

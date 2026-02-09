@@ -421,18 +421,8 @@ SIG2 Additive error (variance, 0.01 mg/L SD)
 
 ## Running a model
 
-Hyeprion can submit jobs with `pharos` to SLURM or SGE
-
-``` r
-run002 |>
-  submit_model_to_slurm(partition = "cpu2mem4gb", ncpu = 1, overwrite = TRUE)
-```
-
-``` r
-run002 |>
-  submit_model_to_sge(ncpu = 1, overwrite = TRUE)
-```
-
+There is no current support from hyperion to run a model, but SLURM job
+submission will be coming soon.
 
 ## Model summary
 
@@ -929,15 +919,22 @@ get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
 
 <strong>Hyperion Model Tree</strong>
 
-ℹ️ <strong>Models:</strong> 8
+ℹ️ <strong>Models:</strong> 9
 
 - <strong style="color:blue">run001</strong> <span style="color:gray">-
   Base model</span>
+  - <span style="color:green">run004</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
+  - <span style="color:green">run005</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
     - <span style="color:green">run002b001</span>
       <span style="color:gray">- Jittering initial sigma estimates,
       using theta/…</span>
+    - <span style="color:green">run002a</span>
+      <span style="color:gray">- Some description about what makes
+      run002a diffe…</span>
     - <span style="color:orange">run003</span>
       <span style="color:gray">- Jittering initial estimates</span>
       - <span style="color:green">run003b2</span>
@@ -946,8 +943,3 @@ get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
       - <span style="color:green">run003b1</span>
         <span style="color:gray">- Updating run003 to 003b1 with
         jittered params. …</span>
-    - <span style="color:green">run002a</span>
-      <span style="color:gray">- Some description about what makes
-      run002a diffe…</span>
-  - <span style="color:green">run004</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>

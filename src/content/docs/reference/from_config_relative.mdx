@@ -1,0 +1,42 @@
+---
+title: "Convert a config-relative path to an absolute path."
+description: "Resolves a path stored relative to the project configuration directory (the directory containing pharos.toml ) to an absolute path."
+pagefind: true
+---
+
+## Description
+
+Resolves a path stored relative to the project configuration directory (the directory containing `pharos.toml`) to an absolute path. If the path is already absolute, it is returned unchanged.
+
+## Usage
+
+```r
+from_config_relative(path)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td>A config-relative or absolute file path.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+## Details
+
+hyperion model objects store paths relative to the project configuration directory. Use this function to resolve them to absolute paths for file system operations.
+
+## Value
+
+The absolute file path as a character string.
