@@ -3729,6 +3729,10 @@ example_tree
 
 - <strong style="color:blue">run001</strong> <span style="color:gray">-
   Base model</span>
+  - <span style="color:green">run005</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
+  - <span style="color:green">run004</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
     - <span style="color:orange">run003</span>
@@ -3745,7 +3749,3 @@ example_tree
     - <span style="color:green">run002b001</span>
       <span style="color:gray">- Jittering initial sigma estimates,
       using theta/…</span>
-  - <span style="color:green">run005</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>
-  - <span style="color:green">run004</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>

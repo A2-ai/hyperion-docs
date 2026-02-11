@@ -54,6 +54,7 @@ export default defineConfig({
         { label: "hyperion-package", slug: "reference/hyperion-package" },
         {
           label: "Model I/O",
+          collapsed: true,
           items: [
             { label: "read_model", slug: "reference/read_model" },
             { label: "copy_model", slug: "reference/copy_model" },
@@ -66,6 +67,7 @@ export default defineConfig({
         },
         {
           label: "Model Summaries",
+          collapsed: true,
           items: [
             { label: "summary.hyperion_nonmem_model", slug: "reference/summary-hyperion_nonmem_model" },
             { label: "get_run_info", slug: "reference/get_run_info" }
@@ -73,6 +75,7 @@ export default defineConfig({
         },
         {
           label: "Parameter Extraction",
+          collapsed: true,
           items: [
             { label: "get_parameters", slug: "reference/get_parameters" },
             { label: "get_final_estimates", slug: "reference/get_final_estimates" },
@@ -84,6 +87,7 @@ export default defineConfig({
         },
         {
           label: "Parameter Metadata",
+          collapsed: true,
           items: [
             { label: "get_model_parameter_info", slug: "reference/get_model_parameter_info" },
             { label: "ThetaComment", slug: "reference/thetacomment" },
@@ -102,6 +106,7 @@ export default defineConfig({
         },
         {
           label: "Lookup Files",
+          collapsed: true,
           items: [
             { label: "apply_lookup", slug: "reference/apply_lookup" },
             { label: "apply_lookup_defaults", slug: "reference/apply_lookup_defaults" },
@@ -112,6 +117,7 @@ export default defineConfig({
         },
         {
           label: "Transform Calculations",
+          collapsed: true,
           items: [
             { label: "compute_cv", slug: "reference/compute_cv" },
             { label: "compute_rse", slug: "reference/compute_rse" },
@@ -121,6 +127,7 @@ export default defineConfig({
         },
         {
           label: "Model Lineage",
+          collapsed: true,
           items: [
             { label: "get_model_lineage", slug: "reference/get_model_lineage" },
             { label: "get_model_ancestors", slug: "reference/get_model_ancestors" },
@@ -130,6 +137,7 @@ export default defineConfig({
         },
         {
           label: "Configuration",
+          collapsed: true,
           items: [
             { label: "init", slug: "reference/init" },
             { label: "get_pharos_config", slug: "reference/get_pharos_config" },
@@ -139,6 +147,7 @@ export default defineConfig({
         },
         {
           label: "Metadata Files",
+          collapsed: true,
           items: [
             { label: "set_metadata_file", slug: "reference/set_metadata_file" },
             { label: "update_metadata_file", slug: "reference/update_metadata_file" }
@@ -146,6 +155,7 @@ export default defineConfig({
         },
         {
           label: "Job Submission",
+          collapsed: true,
           items: [
             { label: "submit_model_to_slurm", slug: "reference/submit_model_to_slurm" },
             { label: "submit_model_to_sge", slug: "reference/submit_model_to_sge" }
