@@ -61,8 +61,7 @@ export default defineConfig({
             { label: "check_dataset", slug: "reference/check_dataset" },
             { label: "get_model_name", slug: "reference/get_model_name" },
             { label: "get_model_dir", slug: "reference/get_model_dir" },
-            { label: "get_data_path", slug: "reference/get_data_path" },
-            { label: "from_config_relative", slug: "reference/from_config_relative" }
+            { label: "get_data_path", slug: "reference/get_data_path" }
           ]
         },
         {

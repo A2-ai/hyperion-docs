@@ -39,7 +39,7 @@ library(hyperion)
 #> 
 #> 
 #> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos.toml found: /Users/mattsmith/Documents/hyperion/pharos.toml
+#> ✔ pharos.toml found: /data/user-homes/matthews/Packages/hyperion/pharos.toml
 #> ── hyperion options ────────────────────────────────────────────────────────────
 #> ✔ hyperion.significant_number_display : 4
 #> ── hyperion nonmem object options ──────────────────────────────────────────────
@@ -63,15 +63,26 @@ You can check a model for correct compilation before submitting to catch
 any data path issues, or syntax errors within the control stream with:
 
 ``` r
-check_model(file.path(test_data_dir, "models", "onecmt", "run002a.mod")) |>
-  cat()
-#> -1
+check_model(file.path(test_data_dir, "models", "onecmt", "run002a.mod"))
+#> WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
+#>              
+#>  (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
+#>   
+#> Note: Analytical 2nd Derivatives are constructed in FSUBS but are never used.
+#>       You may insert $ABBR DERIV2=NO after the first $PROB to save FSUBS construction and compilation time
+#> [1] 0
 ```
 
 ``` r
-check_model(file.path(test_data_dir, "models", "onecmt", "run004.mod")) |>
-  cat()
-#> -1
+check_model(file.path(test_data_dir, "models", "onecmt", "run004.mod"))
+#> AN ERROR WAS FOUND IN THE CONTROL STATEMENTS.
+#>  
+#> AN ERROR WAS FOUND ON LINE 11 AT THE APPROXIMATE POSITION NOTED:
+#>  TVCL = THETA1
+#>         X     
+#>  THE CHARACTERS IN ERROR ARE: THETA1
+#>   208  UNDEFINED VARIABLE.
+#> [1] 4
 ```
 
 ## Viewing a model object
@@ -421,8 +432,13 @@ SIG2 Additive error (variance, 0.01 mg/L SD)
 
 ## Running a model
 
-There is no current support from hyperion to run a model, but SLURM job
-submission will be coming soon.
+You can submit a model to a `slurm` or `sge` grid using the following
+commands:
+
+``` r
+submit_model_to_slurm(run002, ncpu = 1)
+submit_model_to_sge(run002, ncpu = 1)
+```
 
 ## Model summary
 
@@ -925,21 +941,21 @@ get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
   Base model</span>
   - <span style="color:green">run004</span> <span style="color:gray">-
     Updating run001 to run004 with jittered params …</span>
-  - <span style="color:green">run005</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
-    - <span style="color:green">run002b001</span>
-      <span style="color:gray">- Jittering initial sigma estimates,
-      using theta/…</span>
-    - <span style="color:green">run002a</span>
-      <span style="color:gray">- Some description about what makes
-      run002a diffe…</span>
     - <span style="color:orange">run003</span>
       <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b2</span>
-        <span style="color:gray">- Updating run003 with mod
-        object</span>
       - <span style="color:green">run003b1</span>
         <span style="color:gray">- Updating run003 to 003b1 with
         jittered params. …</span>
+      - <span style="color:green">run003b2</span>
+        <span style="color:gray">- Updating run003 with mod
+        object</span>
+    - <span style="color:green">run002a</span>
+      <span style="color:gray">- Some description about what makes
+      run002a diffe…</span>
+    - <span style="color:green">run002b001</span>
+      <span style="color:gray">- Jittering initial sigma estimates,
+      using theta/…</span>
+  - <span style="color:green">run005</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
