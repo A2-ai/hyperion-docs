@@ -2211,7 +2211,8 @@ Hash
 </table>
 
 ``` r
-check_model(file.path(test_data_dir, "models", "onecmt", "run001.mod"))
+read_model(file.path(test_data_dir, "models", "onecmt", "run001.mod")) |>
+  check_model()
 #> WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
 #>              
 #>  (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
@@ -2219,12 +2220,6 @@ check_model(file.path(test_data_dir, "models", "onecmt", "run001.mod"))
 #> Note: Analytical 2nd Derivatives are constructed in FSUBS but are never used.
 #>       You may insert $ABBR DERIV2=NO after the first $PROB to save FSUBS construction and compilation time
 #> [1] 0
-```
-
-``` r
-summary(file.path(test_data_dir, "models", "onecmt", "run003"))
-#>    Length     Class      Mode 
-#>         1 character character
 ```
 
 ## model summary can be generated from model object
@@ -3216,6 +3211,8 @@ NA
 
 </table>
 
+## Model information source is captured
+
 ``` r
 mod |> get_model_parameter_info() |> audit_parameter_info()
 ```
@@ -3720,19 +3717,19 @@ example_tree
     Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
-    - <span style="color:orange">run003</span>
-      <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b1</span>
-        <span style="color:gray">- Updating run003 to 003b1 with
-        jittered params. …</span>
-      - <span style="color:green">run003b2</span>
-        <span style="color:gray">- Updating run003 with mod
-        object</span>
-    - <span style="color:green">run002a</span>
-      <span style="color:gray">- Some description about what makes
-      run002a diffe…</span>
     - <span style="color:green">run002b001</span>
       <span style="color:gray">- Jittering initial sigma estimates,
       using theta/…</span>
+    - <span style="color:orange">run003</span>
+      <span style="color:gray">- Jittering initial estimates</span>
+      - <span style="color:green">run003b2</span>
+        <span style="color:gray">- Updating run003 with mod
+        object</span>
+      - <span style="color:green">run003b1</span>
+        <span style="color:gray">- Updating run003 to 003b1 with
+        jittered params. …</span>
+    - <span style="color:green">run002a</span>
+      <span style="color:gray">- Some description about what makes
+      run002a diffe…</span>
   - <span style="color:green">run004</span> <span style="color:gray">-
     Updating run001 to run004 with jittered params …</span>

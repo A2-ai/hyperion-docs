@@ -11,6 +11,12 @@ Returns a data frame mapping NONMEM parameter names to user-defined
 names and display names. Row names are set to NONMEM names for easy
 access (e.g., `df["THETA1", "name"]`).
 
+## Details
+
+This function handles both typed (type1) and raw comment formats,
+extracting parameter names regardless of the comment style used in
+the model file.
+
 
 
 
@@ -49,11 +55,5 @@ Data frame with columns: name, display. Row names are NONMEM
 parameter names (e.g., "THETA1", "OMEGA(1,1)").
 
 
-
-## Details
-
-This function handles both typed (type1) and raw comment formats,
-extracting parameter names regardless of the comment style used in
-the model file.
 
 

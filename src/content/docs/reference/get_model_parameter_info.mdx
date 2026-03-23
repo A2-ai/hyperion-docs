@@ -10,6 +10,12 @@ pagefind: true
 Parses parameter comments and returns structured metadata for theta, omega,
 and sigma parameters.
 
+## Details
+
+For model objects sourced from `.mod`/`.ctl` files:
+- if run status is `"run"`, metadata is read from the corresponding `.lst`
+- otherwise (`"not_run"`/`"running"`), metadata is read from the model file
+
 
 
 
@@ -47,12 +53,6 @@ get_model_parameter_info(mod, lookup_path = NULL)
 A `ModelComments` object containing theta, omega, and sigma comments.
 
 
-
-## Details
-
-For model objects sourced from `.mod`/`.ctl` files:
-- if run status is `"run"`, metadata is read from the corresponding `.lst`
-- otherwise (`"not_run"`/`"running"`), metadata is read from the model file
 
 
 ## Comment Parsing Modes

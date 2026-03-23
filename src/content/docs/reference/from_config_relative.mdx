@@ -11,6 +11,12 @@ Resolves a path stored relative to the project configuration directory
 (the directory containing `pharos.toml`) to an absolute path. If the
 path is already absolute, it is returned unchanged.
 
+## Details
+
+hyperion model objects store paths relative to the project
+configuration directory. Use this function to resolve them to absolute
+paths for file system operations.
+
 
 
 
@@ -44,11 +50,5 @@ from_config_relative(path)
 The absolute file path as a character string.
 
 
-
-## Details
-
-hyperion model objects store paths relative to the project
-configuration directory. Use this function to resolve them to absolute
-paths for file system operations.
 
 
