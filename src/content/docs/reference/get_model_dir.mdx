@@ -4,9 +4,15 @@ description: "Extracts the directory path from a hyperion_nonmem_model object."
 pagefind: true
 ---
 
+
 ## Description
 
 Extracts the directory path from a hyperion_nonmem_model object.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +25,7 @@ get_model_dir(model, absolute = FALSE)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -31,23 +34,25 @@ get_model_dir(model, absolute = FALSE)
 </tr>
 <tr>
 <td><code>absolute</code></td>
-<td>Logical; if TRUE, resolve <code>model_source</code> using <code>from_config_relative()</code> before extracting the directory. Default FALSE.</td>
+<td>Logical; if TRUE, resolve `model_source` using [`from_config_relative()`](../from_config_relative/) before extracting the directory. Default FALSE.</td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
 ## Value
 
 Character string with the model directory path
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 mod <- read_model("models/run001.mod")
 get_model_dir(mod) # "models" (config-relative)
 get_model_dir(mod, absolute = TRUE) # "/path/to/project/models"
-
-## End(Not run)
 ```
+

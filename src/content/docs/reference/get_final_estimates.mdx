@@ -1,12 +1,18 @@
 ---
 title: "Gets all final estimates from an ext file or vector of ext files"
-description: "Gets all final estimates from an ext file or vector of ext files"
+description: "Gets all final estimates from an ext file or vector of ext files."
 pagefind: true
 ---
+
 
 ## Description
 
 Gets all final estimates from an ext file or vector of ext files
+
+
+
+
+
 
 ## Usage
 
@@ -24,10 +30,7 @@ get_final_estimates(
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -50,17 +53,19 @@ get_final_estimates(
 </table>
 </div>
 
+
 ## Value
 
 data.frame of final estimates with model names
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 get_final_estimates("model/nonmem/")
 get_final_estimates("bootstrap/")  # Searches subdirectories recursively
 get_final_estimates(c("run001.ext", "run002.ext", "run003.ext"))
-
-## End(Not run)
 ```
+

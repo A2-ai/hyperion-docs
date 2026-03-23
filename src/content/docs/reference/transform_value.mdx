@@ -1,12 +1,21 @@
 ---
 title: "Back-transform a parameter value to the natural scale"
-description: "Applies the inverse transformation to convert a parameter from the estimation scale to the natural/interpretable scale."
+description: "Applies the inverse transformation to convert a parameter from the estimation scale to the natural/interpretable scale. For LogNormal, this exponentiates the va"
 pagefind: true
 ---
 
+
 ## Description
 
-Applies the inverse transformation to convert a parameter from the estimation scale to the natural/interpretable scale. For LogNormal, this exponentiates the value. For Identity, Proportional, and AddErr, the value is returned unchanged.
+Applies the inverse transformation to convert a parameter from the
+estimation scale to the natural/interpretable scale. For LogNormal,
+this exponentiates the value. For Identity, Proportional, and AddErr,
+the value is returned unchanged.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +28,7 @@ transform_value(value, transform)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -37,16 +43,18 @@ transform_value(value, transform)
 </table>
 </div>
 
+
 ## Value
 
 The back-transformed value(s) on the natural scale
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 transform_value(0.5, "LogNormal")
 transform_value(c(0.5, 1.0), "LogNormal")
-
-## End(Not run)
 ```
+

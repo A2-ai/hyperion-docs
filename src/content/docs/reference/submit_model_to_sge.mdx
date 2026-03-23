@@ -1,12 +1,20 @@
 ---
 title: "Submits a NONMEM model to SGE for execution"
-description: "This function submits a NONMEM model file to a SGE cluster for execution, allowing for parallel processing and job queue management."
+description: "This function submits a NONMEM model file to a SGE cluster for execution, allowing for parallel processing and job queue management. The function handles job co"
 pagefind: true
 ---
 
+
 ## Description
 
-This function submits a NONMEM model file to a SGE cluster for execution, allowing for parallel processing and job queue management. The function handles job configuration, resource allocation, and job submission through pharos
+This function submits a NONMEM model file to a SGE cluster for execution,
+allowing for parallel processing and job queue management. The function handles
+job configuration, resource allocation, and job submission through pharos
+
+
+
+
+
 
 ## Usage
 
@@ -19,7 +27,8 @@ submit_model_to_sge(
   ncpu = 1,
   clean_level = 1,
   parafile = NULL,
-  template = NULL
+  template = NULL,
+  verbose = FALSE
 )
 ```
 
@@ -28,10 +37,7 @@ submit_model_to_sge(
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -66,18 +72,25 @@ submit_model_to_sge(
 <td><code>template</code></td>
 <td>Path to SGE template file for job submission (default: NULL)</td>
 </tr>
+<tr>
+<td><code>verbose</code></td>
+<td>Whether to include DEBUG logs in output log file (default: FALSE)</td>
+</tr>
 </tbody>
 </table>
 </div>
+
 
 ## Value
 
 Returns invisibly after printing job submission results. Prints model path and corresponding SGE job ID for each submitted job.
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 # Submit a basic NONMEM model
 submit_model_to_sge("model.mod")
 
@@ -87,6 +100,5 @@ submit_model_to_sge(model)
 
 # Dry run to test submission without actually running
 submit_model_to_sge("model.mod", dry_run = TRUE)
-
-## End(Not run)
 ```
+

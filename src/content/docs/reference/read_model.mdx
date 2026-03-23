@@ -1,12 +1,18 @@
 ---
 title: "Gets model object"
-description: "Gets model object"
+description: "Gets model object."
 pagefind: true
 ---
+
 
 ## Description
 
 Gets model object
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +25,7 @@ read_model(path)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -33,15 +36,17 @@ read_model(path)
 </table>
 </div>
 
+
 ## Value
 
 hyperion_nonmem_model S3 object with `model_source` and `run_status` attributes
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 read_model("model/nonmem/run001.mod")
-
-## End(Not run)
 ```
+

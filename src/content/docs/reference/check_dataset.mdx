@@ -1,12 +1,18 @@
 ---
 title: "Checks model dataset"
-description: "Checks model dataset"
+description: "Checks model dataset."
 pagefind: true
 ---
+
 
 ## Description
 
 Checks model dataset
+
+
+
+
+
 
 ## Usage
 
@@ -19,30 +25,29 @@ check_dataset(model)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><code>model</code></td>
-<td>hyperion_nonmem_model object from <code>read_model</code></td>
+<td>hyperion_nonmem_model object from `read_model`</td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
 ## Value
 
 Dataset check results
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 model <- read_model("model/nonmem/run001.mod")
 model |> check_dataset()
-
-## End(Not run)
 ```
+

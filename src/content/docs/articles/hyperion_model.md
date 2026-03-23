@@ -2073,7 +2073,7 @@ Prop-Add covariance, Additive error variance
 names(mod)
 #>  [1] "problem"          "input_columns"    "data"             "subroutines"     
 #>  [5] "theta_parameters" "omega_blocks"     "sigma_blocks"     "estimations"     
-#>  [9] "tables"           "simulation"
+#>  [9] "tables"           "simulation"       "covariance"
 
 attributes(mod) |> names()
 #> [1] "names"        "filename"     "model_source" "run_status"   "class"
@@ -2099,7 +2099,7 @@ Path
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv
+data/derived/onecmpt-oral-30ind.csv
 </td>
 
 </tr>
@@ -2143,7 +2143,7 @@ Path
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv
+data/derived/onecmpt-oral-30ind.csv
 </td>
 
 </tr>
@@ -2187,7 +2187,7 @@ Path
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/data/derived/onecmpt-oral-30ind.csv
+data/derived/onecmpt-oral-30ind.csv
 </td>
 
 </tr>
@@ -3275,7 +3275,7 @@ THETA1
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3290,7 +3290,7 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3309,7 +3309,7 @@ THETA2
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3324,7 +3324,7 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3343,7 +3343,7 @@ THETA3
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3358,7 +3358,7 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3425,7 +3425,7 @@ OMEGA(1,1)
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3440,12 +3440,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3459,7 +3459,7 @@ OMEGA(2,1)
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3474,12 +3474,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3493,7 +3493,7 @@ OMEGA(2,2)
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3508,12 +3508,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3527,7 +3527,7 @@ OMEGA(3,3)
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3542,12 +3542,12 @@ default
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3609,7 +3609,7 @@ SIGMA(1,1)
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3643,7 +3643,7 @@ SIGMA(2,2)
 
 <td style="text-align:left;">
 
-../../../../../../tmp/RtmpQKnWlg/temp_libpath17419f456e02fa/hyperion/extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3686,19 +3686,6 @@ copy_model(
 #> NULL
 ```
 
-``` r
-copy_model(
-  from = file.path(test_data_dir, "models", "onecmt", "run002.mod"),
-  to = file.path(test_data_dir, "models", "onecmt", "run002b001.mod"),
-  update = c("theta", "omega"),
-  jitter = c(sigma = 0.3), #jitters run002 sigma initial estimates
-  description = "Jittering initial sigma estimates, using theta/omega final estimates. Adding covariate",
-  overwrite = TRUE,
-  seed = 804
-)
-#> NULL
-```
-
 ## Copy model accepts hyperion model object
 
 ``` r
@@ -3729,23 +3716,23 @@ example_tree
 
 - <strong style="color:blue">run001</strong> <span style="color:gray">-
   Base model</span>
+  - <span style="color:green">run005</span> <span style="color:gray">-
+    Updating run001 to run004 with jittered params …</span>
   - <span style="color:orange">run002</span> <span style="color:gray">-
     Adding COV step, unfixing eps(2)</span>
     - <span style="color:orange">run003</span>
       <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b2</span>
-        <span style="color:gray">- Updating run003 with mod
-        object</span>
       - <span style="color:green">run003b1</span>
         <span style="color:gray">- Updating run003 to 003b1 with
         jittered params. …</span>
+      - <span style="color:green">run003b2</span>
+        <span style="color:gray">- Updating run003 with mod
+        object</span>
     - <span style="color:green">run002a</span>
       <span style="color:gray">- Some description about what makes
       run002a diffe…</span>
     - <span style="color:green">run002b001</span>
       <span style="color:gray">- Jittering initial sigma estimates,
       using theta/…</span>
-  - <span style="color:green">run005</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>
   - <span style="color:green">run004</span> <span style="color:gray">-
     Updating run001 to run004 with jittered params …</span>

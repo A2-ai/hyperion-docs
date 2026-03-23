@@ -1,12 +1,20 @@
 ---
 title: "Format numbers as strings using fixed decimal places"
-description: "Formats numeric values as character strings with a fixed number of decimal places."
+description: "Formats numeric values as character strings with a fixed number of decimal places. If `decimals` is `NULL`, falls back to significant figure formatting via."
 pagefind: true
 ---
 
+
 ## Description
 
-Formats numeric values as character strings with a fixed number of decimal places. If `decimals` is `NULL`, falls back to significant figure formatting via `format_hyperion_sigfig_string()`.
+Formats numeric values as character strings with a fixed number of decimal
+places. If `decimals` is `NULL`, falls back to significant figure formatting
+via [`format_hyperion_sigfig_string()`](../format_hyperion_sigfig_string/).
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +27,7 @@ format_hyperion_decimal_string(x, decimals)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -31,19 +36,19 @@ format_hyperion_decimal_string(x, decimals)
 </tr>
 <tr>
 <td><code>decimals</code></td>
-<td>Number of decimal places. If <code>NULL</code>, uses significant figure formatting instead.</td>
+<td>Number of decimal places. If `NULL`, uses significant figure formatting instead.</td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
 ## Value
 
-Character vector of formatted numbers. Returns `NA_character_` for `NA` input values.
+Character vector of formatted numbers. Returns `NA_character_` for
+`NA` input values.
 
-## See Also
 
-[`format_hyperion_sigfig_string()`](../format_hyperion_sigfig_string/)
 
 ## Examples
 
@@ -62,3 +67,13 @@ format_hyperion_decimal_string(0.123456789, decimals = NULL)
 [1] "1.500" "2.567" NA      
 [1] "0.1235" 
 ```
+
+## See Also
+
+[`format_hyperion_sigfig_string()`](../format_hyperion_sigfig_string/)
+
+
+## Keyword
+
+internal
+

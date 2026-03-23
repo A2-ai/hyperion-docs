@@ -1,12 +1,18 @@
 ---
 title: "Updates a metadatafile"
-description: "Updates a metadatafile"
+description: "Updates a metadatafile."
 pagefind: true
 ---
+
 
 ## Description
 
 Updates a metadatafile
+
+
+
+
+
 
 ## Usage
 
@@ -24,10 +30,7 @@ update_metadata_file(
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -50,18 +53,20 @@ update_metadata_file(
 </table>
 </div>
 
+
 ## Value
 
 Invisibly after updaing
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 update_metadata_file("model/nonmem/run001.mod", tags = "key model")
 update_metadata_file("model/nonmem/run004.mod", tags = "key model", based_on = "1002")
 model <- read_model("model/nonmem/run001.mod")
 update_metadata_file(model, tags = "key model")
-
-## End(Not run)
 ```
+

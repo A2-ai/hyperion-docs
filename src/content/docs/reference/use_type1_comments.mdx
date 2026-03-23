@@ -1,12 +1,19 @@
 ---
 title: "Set comment type to type1 in pharos.toml"
-description: "Modifies the pharos.toml configuration file to use type1 comment parsing."
+description: "Modifies the pharos. toml configuration file to use type1 comment parsing. This is useful when NONMEM control streams use the type1 comment format."
 pagefind: true
 ---
 
+
 ## Description
 
-Modifies the pharos.toml configuration file to use type1 comment parsing. This is useful when NONMEM control streams use the type1 comment format.
+Modifies the pharos.toml configuration file to use type1 comment parsing.
+This is useful when NONMEM control streams use the type1 comment format.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +26,7 @@ use_type1_comments(path = NULL)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -33,15 +37,17 @@ use_type1_comments(path = NULL)
 </table>
 </div>
 
+
 ## Value
 
 The path to the modified pharos.toml file (invisibly).
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 use_type1_comments()
-
-## End(Not run)
 ```
+

@@ -1,12 +1,18 @@
 ---
 title: "Gets parameter estimates from model run"
-description: "Gets parameter estimates from model run"
+description: "Gets parameter estimates from model run."
 pagefind: true
 ---
+
 
 ## Description
 
 Gets parameter estimates from model run
+
+
+
+
+
 
 ## Usage
 
@@ -26,10 +32,7 @@ get_parameters(
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -60,17 +63,19 @@ get_parameters(
 </table>
 </div>
 
+
 ## Value
 
 data.frame of parameter estimates
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 get_parameters("model/nonmem/run001/run001.ext")
 model <- read_model("model/nonmem/run001.mod")
 get_parameters(model)
-
-## End(Not run)
 ```
+

@@ -4,9 +4,15 @@ description: "Extracts the model name from a hyperion_nonmem_model object."
 pagefind: true
 ---
 
+
 ## Description
 
 Extracts the model name from a hyperion_nonmem_model object.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +25,7 @@ get_model_name(model)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -33,16 +36,18 @@ get_model_name(model)
 </table>
 </div>
 
+
 ## Value
 
 Character string with the model name (filename without extension)
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 mod <- read_model("models/run001.mod")
 get_model_name(mod) # "run001"
-
-## End(Not run)
 ```
+

@@ -1,12 +1,20 @@
 ---
 title: "Get parameter names from a model or ModelComments object"
-description: "Returns a data frame mapping NONMEM parameter names to user-defined names and display names."
+description: "Returns a data frame mapping NONMEM parameter names to user-defined names and display names. Row names are set to NONMEM names for easy access (e. g. , `df[\"THE"
 pagefind: true
 ---
 
+
 ## Description
 
-Returns a data frame mapping NONMEM parameter names to user-defined names and display names. Row names are set to NONMEM names for easy access (e.g., `df["THETA1", "name"]`).
+Returns a data frame mapping NONMEM parameter names to user-defined
+names and display names. Row names are set to NONMEM names for easy
+access (e.g., `df["THETA1", "name"]`).
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +27,7 @@ get_parameter_names(x, lookup_path = NULL)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -31,16 +36,24 @@ get_parameter_names(x, lookup_path = NULL)
 </tr>
 <tr>
 <td><code>lookup_path</code></td>
-<td>Optional path to a TOML lookup file. Only used when <code>x</code> is a model object. If provided, fills NULL fields from the lookup.</td>
+<td>Optional path to a TOML lookup file. Only used when `x` is a model object. If provided, fills NULL fields from the lookup.</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-## Details
-
-This function handles both typed (type1) and raw comment formats, extracting parameter names regardless of the comment style used in the model file.
 
 ## Value
 
-Data frame with columns: name, display. Row names are NONMEM parameter names (e.g., "THETA1", "OMEGA(1,1)").
+Data frame with columns: name, display. Row names are NONMEM
+parameter names (e.g., "THETA1", "OMEGA(1,1)").
+
+
+
+## Details
+
+This function handles both typed (type1) and raw comment formats,
+extracting parameter names regardless of the comment style used in
+the model file.
+
+

@@ -1,12 +1,20 @@
 ---
 title: "Submits a NONMEM model to SLURM for execution"
-description: "This function submits a NONMEM model file to a SLURM cluster for execution, allowing for parallel processing and job queue management."
+description: "This function submits a NONMEM model file to a SLURM cluster for execution, allowing for parallel processing and job queue management. The function handles job "
 pagefind: true
 ---
 
+
 ## Description
 
-This function submits a NONMEM model file to a SLURM cluster for execution, allowing for parallel processing and job queue management. The function handles job configuration, resource allocation, and job submission through pharos
+This function submits a NONMEM model file to a SLURM cluster for execution,
+allowing for parallel processing and job queue management. The function handles
+job configuration, resource allocation, and job submission through pharos
+
+
+
+
+
 
 ## Usage
 
@@ -21,7 +29,8 @@ submit_model_to_slurm(
   clean_level = 1,
   parafile = NULL,
   template = NULL,
-  account = NULL
+  account = NULL,
+  verbose = FALSE
 )
 ```
 
@@ -30,10 +39,7 @@ submit_model_to_slurm(
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -76,18 +82,25 @@ submit_model_to_slurm(
 <td><code>account</code></td>
 <td>SLURM account to charge the job to (default: NULL)</td>
 </tr>
+<tr>
+<td><code>verbose</code></td>
+<td>Whether to include DEBUG logs in output log file (default: FALSE)</td>
+</tr>
 </tbody>
 </table>
 </div>
+
 
 ## Value
 
 Returns invisibly after printing job submission results. Prints model path and corresponding SLURM job ID for each submitted job.
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 # Submit a basic NONMEM model
 submit_model_to_slurm("model.mod")
 
@@ -100,6 +113,5 @@ submit_model_to_slurm("model.mod", dry_run = TRUE)
 
 # Submit to specific partition with account
 submit_model_to_slurm("model.mod", partition = "gpu", account = "myproject")
-
-## End(Not run)
 ```
+

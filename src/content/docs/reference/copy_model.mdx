@@ -1,12 +1,18 @@
 ---
 title: "Copies model file to new model file"
-description: "Copies model file to new model file"
+description: "Copies model file to new model file."
 pagefind: true
 ---
+
 
 ## Description
 
 Copies model file to new model file
+
+
+
+
+
 
 ## Usage
 
@@ -30,10 +36,7 @@ copy_model(
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -58,11 +61,11 @@ copy_model(
 </tr>
 <tr>
 <td><code>jitter</code></td>
-<td>numeric value or named numeric vector for parameter jittering using uniform distribution. Each parameter value is multiplied by a random factor between (1 - jitter%) and (1 + jitter%) with boundary enforcement. Examples: 0.1 (10% jitter on all params) or c("theta" = 0.05, "omega" = 0.1)</td>
+<td>Single numeric value for parameter jittering using a uniform distribution. Each parameter value is multiplied by a random factor between (1 - jitter%) and (1 + jitter%) with boundary enforcement.</td>
 </tr>
 <tr>
 <td><code>jitter_excluded</code></td>
-<td>character or character vector of parameter names to exclude from jittering. Examples: "THETA1" or c("THETA1", "OMEGA(1,1)")</td>
+<td>character or character vector of parameter names to exclude from jittering. Examples: "THETA1" or c("THETA1")</td>
 </tr>
 <tr>
 <td><code>seed</code></td>
@@ -80,15 +83,17 @@ copy_model(
 </table>
 </div>
 
+
 ## Value
 
 path to new model file (invisible) todo
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 copy_model(from = "model/nonmem/run001.mod", to = "model/nonmem/run002.mod")
-
-## End(Not run)
 ```
+

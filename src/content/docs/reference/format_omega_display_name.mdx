@@ -1,12 +1,21 @@
 ---
 title: "Format omega display name, avoiding duplicate theta info"
-description: "Builds a display name for omega parameters by appending associated theta information, but only if that information isn't already present in the name."
+description: "Builds a display name for omega parameters by appending associated theta information, but only if that information isn't already present in the name. This preve"
 pagefind: true
 ---
 
+
 ## Description
 
-Builds a display name for omega parameters by appending associated theta information, but only if that information isn't already present in the name. This prevents duplication like "IIV-CL (CL)" when the omega was already renamed to include the theta.
+Builds a display name for omega parameters by appending associated theta
+information, but only if that information isn't already present in the name.
+This prevents duplication like "IIV-CL (CL)" when the omega was already
+renamed to include the theta.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +28,7 @@ format_omega_display_name(name, associated_theta, theta_labels = NULL)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -41,9 +47,12 @@ format_omega_display_name(name, associated_theta, theta_labels = NULL)
 </table>
 </div>
 
+
 ## Value
 
 The formatted display name with theta info appended only if missing
+
+
 
 ## Examples
 
@@ -73,3 +82,8 @@ format_omega_display_name("IIV", "CL", c(CL = "Clearance"))
 [1] "IIV CL, V" 
 [1] "IIV Clearance" 
 ```
+
+## Keyword
+
+internal
+

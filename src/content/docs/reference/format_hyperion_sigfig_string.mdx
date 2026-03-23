@@ -1,12 +1,20 @@
 ---
 title: "Format numbers as strings using significant digits"
-description: "Formats numeric values as character strings using a specified number of significant figures."
+description: "Formats numeric values as character strings using a specified number of significant figures. Uses the `hyperion. significant_number_display` option as the defau"
 pagefind: true
 ---
 
+
 ## Description
 
-Formats numeric values as character strings using a specified number of significant figures. Uses the `hyperion.significant_number_display` option as the default when `digits` is not specified.
+Formats numeric values as character strings using a specified number of
+significant figures. Uses the `hyperion.significant_number_display` option
+as the default when `digits` is not specified.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +27,7 @@ format_hyperion_sigfig_string(x, digits = NULL)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -31,15 +36,19 @@ format_hyperion_sigfig_string(x, digits = NULL)
 </tr>
 <tr>
 <td><code>digits</code></td>
-<td>Number of significant digits. Defaults to <code>getOption("hyperion.significant_number_display", 4)</code>.</td>
+<td>Number of significant digits. Defaults to `getOption("hyperion.significant_number_display", 4)`.</td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
 ## Value
 
-Character vector of formatted numbers. Returns `NA_character_` for `NA` input values.
+Character vector of formatted numbers. Returns `NA_character_` for
+`NA` input values.
+
+
 
 ## Examples
 
@@ -54,3 +63,8 @@ format_hyperion_sigfig_string(c(1.234, 56.789, NA), digits = 2)
 [1] "0.123" 
 [1] "1.2" "57"  NA    
 ```
+
+## Keyword
+
+internal
+

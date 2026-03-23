@@ -1,12 +1,19 @@
 ---
 title: "Get model metadata from metadata JSON file"
-description: "Loads metadata for a NONMEM model from the model's sibling _metadata.json file."
+description: "Loads metadata for a NONMEM model from the model's sibling `<model_stem>_metadata. json` file."
 pagefind: true
 ---
 
+
 ## Description
 
-Loads metadata for a NONMEM model from the model's sibling `⁠&lt;model_stem&gt;_metadata.json⁠` file.
+Loads metadata for a NONMEM model from the model's sibling
+`<model_stem>_metadata.json` file.
+
+
+
+
+
 
 ## Usage
 
@@ -19,39 +26,35 @@ get_model_metadata(model)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
 <td><code>model</code></td>
-<td>A hyperion_nonmem_model object from <code>read_model()</code></td>
+<td>A hyperion_nonmem_model object from `read_model()`</td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
 ## Value
 
 hyperion_model_metadata object containing:
-
 - description - Model description string
-
 - tags - Character vector of metadata tags
-
 - based_on - Character vector of parent model references
+
+
 
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 mod <- read_model("model/nonmem/run001.mod")
 meta <- get_model_metadata(mod)
 meta$description
 meta$tags
 meta$based_on
-
-## End(Not run)
 ```
+

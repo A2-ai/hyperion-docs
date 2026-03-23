@@ -1,12 +1,19 @@
 ---
 title: "Apply lookup defaults to a parameter comment"
-description: "Fills NULL fields (display, description, unit, parameterization) from a lookup toml file."
+description: "Fills NULL fields (display, description, unit, parameterization) from a lookup toml file. Matches the comment's `name` field against toml keys."
 pagefind: true
 ---
 
+
 ## Description
 
-Fills NULL fields (display, description, unit, parameterization) from a lookup toml file. Matches the comment's `name` field against toml keys.
+Fills NULL fields (display, description, unit, parameterization) from a
+lookup toml file. Matches the comment's `name` field against toml keys.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +26,7 @@ apply_lookup_defaults(comment, lookup_path)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -37,6 +41,10 @@ apply_lookup_defaults(comment, lookup_path)
 </table>
 </div>
 
+
 ## Value
 
 The modified comment object
+
+
+

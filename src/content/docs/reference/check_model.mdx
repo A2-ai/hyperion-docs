@@ -1,12 +1,18 @@
 ---
 title: "Checks mod file for nmtran errors"
-description: "Checks mod file for nmtran errors"
+description: "Checks mod file for nmtran errors."
 pagefind: true
 ---
+
 
 ## Description
 
 Checks mod file for nmtran errors
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +25,7 @@ check_model(model_path)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -33,17 +36,19 @@ check_model(model_path)
 </table>
 </div>
 
+
 ## Value
 
 exit code of NMTRAN
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 check_model("model/nonmem/1001.mod")
 model <- read_model("model/nonmem/1001.mod")
 check_model(model)
-
-## End(Not run)
 ```
+

@@ -1,12 +1,18 @@
 ---
 title: "Get's model lineage"
-description: "Get's model lineage"
+description: "Get's model lineage."
 pagefind: true
 ---
+
 
 ## Description
 
 Get's model lineage
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +25,7 @@ get_model_lineage(model_dir)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -33,17 +36,19 @@ get_model_lineage(model_dir)
 </table>
 </div>
 
+
 ## Value
 
 hyperion_nonmem_tree S3 object
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 get_model_lineage("model/nonmem/")
 model <- read_model("model/nonmem/run001.mod")
 get_model_lineage(model)
-
-## End(Not run)
 ```
+

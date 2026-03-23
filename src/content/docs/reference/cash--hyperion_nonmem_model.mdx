@@ -4,15 +4,21 @@ description: "Prevents direct access to internal token fields."
 pagefind: true
 ---
 
+
 ## Description
 
 Prevents direct access to internal token fields.
+
+
+
+
+
 
 ## Usage
 
 ```r
 ## S3 method for class 'hyperion_nonmem_model'
-x$name
+$(x, name)
 ```
 
 ## Arguments
@@ -20,10 +26,7 @@ x$name
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -38,6 +41,10 @@ x$name
 </table>
 </div>
 
+
 ## Value
 
 The element value, or NULL for restricted fields
+
+
+

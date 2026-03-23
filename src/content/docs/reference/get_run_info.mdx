@@ -1,12 +1,18 @@
 ---
 title: "Parses lst file for run details and heuristics"
-description: "Parses lst file for run details and heuristics"
+description: "Parses lst file for run details and heuristics."
 pagefind: true
 ---
+
 
 ## Description
 
 Parses lst file for run details and heuristics
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +25,7 @@ get_run_info(path)
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -33,17 +36,19 @@ get_run_info(path)
 </table>
 </div>
 
+
 ## Value
 
 list of data.frames of run details and run heuristics
 
+
+
 ## Examples
 
 ```r
-## Not run: 
+# Not run:
 get_run_info("model/nonmem/run001/run001.lst")
 model <- read_model("model/nonmem/run001.mod")
 get_run_info(model)
-
-## End(Not run)
 ```
+

@@ -15,12 +15,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "hyperion",
-      customCss: ["./src/styles/custom.css"],
+      customCss: ["./src/styles/starlightr.css", "./src/styles/custom.css"],
       plugins: [starlightKatex()],
       components: { SiteTitle: "./src/components/VersionSelect.astro" },
-      
-      
-      
       sidebar: [
     {
       label: "Articles",
@@ -163,7 +160,8 @@ export default defineConfig({
           collapsed: true,
           items: [
             { label: "submit_model_to_slurm", slug: "reference/submit_model_to_slurm" },
-            { label: "submit_model_to_sge", slug: "reference/submit_model_to_sge" }
+            { label: "submit_model_to_sge", slug: "reference/submit_model_to_sge" },
+            { label: "get_partition_info", slug: "reference/get_partition_info" }
           ]
         }
       ]
@@ -172,4 +170,3 @@ export default defineConfig({
     })
   ]
 });
-

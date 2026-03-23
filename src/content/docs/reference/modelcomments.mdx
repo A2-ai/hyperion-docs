@@ -4,9 +4,16 @@ description: "Holds all parameter comments for a model organized by parameter ty
 pagefind: true
 ---
 
+
 ## Description
 
-Holds all parameter comments for a model organized by parameter type (theta, omega, sigma) and validates cross-references between them.
+Holds all parameter comments for a model organized by parameter type
+(theta, omega, sigma) and validates cross-references between them.
+
+
+
+
+
 
 ## Usage
 
@@ -19,10 +26,7 @@ ModelComments(theta = list(), omega = list(), sigma = list())
 <div class="arg-table">
 <table>
 <thead>
-<tr>
-<th>Argument</th>
-<th>Description</th>
-</tr>
+<tr><th>Argument</th><th>Description</th></tr>
 </thead>
 <tbody>
 <tr>
@@ -41,20 +45,23 @@ ModelComments(theta = list(), omega = list(), sigma = list())
 </table>
 </div>
 
+
+
 ## Properties
 
 - **theta**: Named list of ThetaComment objects, keyed by NONMEM name.
-
- 
-
 - **omega**: Named list of OmegaComment objects, keyed by NONMEM name.
-
- 
-
 - **sigma**: Named list of SigmaComment objects, keyed by NONMEM name.
+
+
 
 ## Comment Style Guide
 
-`ModelComments` is populated by parsing NONMEM comments from `⁠$THETA⁠`, `⁠$OMEGA⁠`, and `⁠$SIGMA⁠` blocks.
+`ModelComments` is populated by parsing NONMEM comments from `$THETA`,
+`$OMEGA`, and `$SIGMA` blocks.
 
-For accepted raw comment formats and examples, see `get_model_parameter_info()` ("Raw Comment Formats").
+For accepted raw comment formats and examples, see
+[`get_model_parameter_info()`](../get_model_parameter_info/) ("Raw Comment Formats").
+
+
+
