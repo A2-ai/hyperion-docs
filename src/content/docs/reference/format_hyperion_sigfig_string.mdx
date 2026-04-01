@@ -4,7 +4,6 @@ description: "Formats numeric values as character strings using a specified numb
 pagefind: true
 ---
 
-
 ## Description
 
 Formats numeric values as character strings using a specified number of
@@ -56,11 +55,12 @@ Character vector of formatted numbers. Returns `NA_character_` for
 format_hyperion_sigfig_string(0.123456789, digits = 3)
 format_hyperion_sigfig_string(c(1.234, 56.789, NA), digits = 2)
 ```
-
 ### Output
 
 ```
 [1] "0.123" 
 [1] "1.2" "57"  NA    
 ```
+
+
 

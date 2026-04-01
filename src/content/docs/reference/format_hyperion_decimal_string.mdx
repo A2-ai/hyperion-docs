@@ -4,7 +4,6 @@ description: "Formats numeric values as character strings with a fixed number of
 pagefind: true
 ---
 
-
 ## Description
 
 Formats numeric values as character strings with a fixed number of decimal
@@ -59,7 +58,6 @@ format_hyperion_decimal_string(c(1.5, 2.567, NA), decimals = 3)
 # Falls back to sigfig formatting when decimals is NULL
 format_hyperion_decimal_string(0.123456789, decimals = NULL)
 ```
-
 ### Output
 
 ```
@@ -68,8 +66,10 @@ format_hyperion_decimal_string(0.123456789, decimals = NULL)
 [1] "0.1235" 
 ```
 
+
 ## See Also
 
 [`format_hyperion_sigfig_string()`](../format_hyperion_sigfig_string/)
+
 
 
