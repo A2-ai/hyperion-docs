@@ -8,21 +8,21 @@ library(hyperion)
 #> 
 #> 
 #> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos.toml found: /data/user-homes/matthews/Packages/hyperion/vignettes/pharos.toml
+#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
+#> ✔ pharos.toml found: hyperion/pharos.toml
+#>     └ hyperion.config_dir : (unset)
 #> ── hyperion options ────────────────────────────────────────────────────────────
 #> ✔ hyperion.significant_number_display : 4
 #> ── hyperion nonmem object options ──────────────────────────────────────────────
 #> ✔ hyperion.nonmem_model.show_included_columns : FALSE
 #> ✔ hyperion.nonmem_summary.rse_threshold : 50
 #> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
-
-test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 
 # Hyperion Model object
 
 ``` r
-mod <- read_model(file.path(test_data_dir, "mod", "1001.mod"))
+mod <- read_model(file.path("mod", "1001.mod"))
 mod
 ```
 
@@ -35,6 +35,8 @@ mod
 <strong>Dataset:</strong> ../../../../data/derived/PK_Oral_Ex1.csv
 
 <strong>Ignore:</strong> @
+
+<strong>Aliased Columns:</strong> ATFD → TIME, ODV → DV
 
 <strong>Theta Parameters</strong>
 
@@ -248,7 +250,7 @@ No
 
 <td style="text-align:left;">
 
-OM1 CL :EXP
+OM1 CL/F :EXP
 </td>
 
 </tr>
@@ -272,7 +274,7 @@ No
 
 <td style="text-align:left;">
 
-OM2 VC :EXP
+OM2 VC/F :EXP
 </td>
 
 </tr>
@@ -393,7 +395,7 @@ SIG2
 
 ``` r
 
-mod <- read_model(file.path(test_data_dir, "models", "onecmt", "run002b001.mod"))
+mod <- read_model(file.path("models", "onecmt", "run002b001.mod"))
 mod
 ```
 
@@ -736,7 +738,7 @@ SIG2 Additive error (variance, 0.01 mg/L SD)
 
 ``` r
 
-mod_nm <- read_model(file.path(test_data_dir, "mod", "nmexample.mod"))
+mod_nm <- read_model(file.path("mod", "nmexample.mod"))
 mod_nm
 ```
 
@@ -750,7 +752,7 @@ mod_nm
 
 <strong>Ignore:</strong> C
 
-<strong>Aliased Columns:</strong> CONC → DV, DOSE → AMT
+<strong>Aliased Columns:</strong> DV → CONC, AMT → DOSE
 
 <strong>Theta Parameters</strong>
 
@@ -1253,7 +1255,7 @@ No
 
 ``` r
 
-mod_e <- read_model(file.path(test_data_dir, "mod", "everything.mod"))
+mod_e <- read_model(file.path("mod", "everything.mod"))
 mod_e
 ```
 
@@ -1263,15 +1265,17 @@ mod_e
 
 <strong>Run Status:</strong> Not Run
 
-<strong>Dataset:</strong> ...csv
+<strong>Dataset:</strong> ..with spaces.csv
 
-<strong>Ignore:</strong> \#, DVID.EQ.3, ID.EQ.3.14
+<strong>Ignore:</strong> \#, DVID.EQ.3, ID.EQ.3.14, DVID.EQ.3,
+AGE.GE.18, AGE.GT.3, AGE.LT.100, AGE.LE.65, TYPE.NE.0, TYPE.EQ.1,
+TYPE.EQN.1, TYPE.NEN.2, TYPE.EQ.1
 
 <strong>Records:</strong> 200
 
 <strong>Dropped Columns:</strong> DATE
 
-<strong>Aliased Columns:</strong> AMT → DOSE
+<strong>Aliased Columns:</strong> DOSE → AMT
 
 <strong>Theta Parameters</strong>
 
@@ -1394,6 +1398,414 @@ THETA3
 
 <td style="text-align:right;">
 
+0.5
+</td>
+
+<td style="text-align:right;">
+
+-Inf
+</td>
+
+<td style="text-align:right;">
+
+10
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+THETA with -INF lower bound
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA4
+</td>
+
+<td style="text-align:right;">
+
+5
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+Inf
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+THETA with INF upper bound
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA5
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Three identical THETAs
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA6
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Three identical THETAs
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA7
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Three identical THETAs
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA8
+</td>
+
+<td style="text-align:right;">
+
+1.5
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+10
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Named THETA
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA9
+</td>
+
+<td style="text-align:right;">
+
+0.5
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+NAMES syntax
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA10
+</td>
+
+<td style="text-align:right;">
+
+10
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+NAMES syntax
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA11
+</td>
+
+<td style="text-align:right;">
+
+2
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+NAMES syntax
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA12
+</td>
+
+<td style="text-align:right;">
+
+1.1
+</td>
+
+<td style="text-align:right;">
+
+1
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Three identical THETAs with NAMES
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA13
+</td>
+
+<td style="text-align:right;">
+
+1.1
+</td>
+
+<td style="text-align:right;">
+
+1
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Three identical THETAs with NAMES
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA14
+</td>
+
+<td style="text-align:right;">
+
+1.1
+</td>
+
+<td style="text-align:right;">
+
+1
+</td>
+
+<td style="text-align:right;">
+
+NA
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Three identical THETAs with NAMES
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+THETA15
+</td>
+
+<td style="text-align:right;">
+
 2.3
 </td>
 
@@ -1423,7 +1835,7 @@ THETA(3)
 
 <td style="text-align:left;">
 
-THETA4
+THETA16
 </td>
 
 <td style="text-align:right;">
@@ -1457,7 +1869,7 @@ THETA(4) and THETA(5)
 
 <td style="text-align:left;">
 
-THETA5
+THETA17
 </td>
 
 <td style="text-align:right;">
@@ -1491,7 +1903,7 @@ THETA(4) and THETA(5)
 
 <td style="text-align:left;">
 
-THETA6
+THETA18
 </td>
 
 <td style="text-align:right;">
@@ -1525,7 +1937,7 @@ THETA(6)
 
 <td style="text-align:left;">
 
-THETA7
+THETA19
 </td>
 
 <td style="text-align:right;">
@@ -1577,16 +1989,6 @@ Parameter
 Initial
 </th>
 
-<th style="text-align:right;">
-
-Lower
-</th>
-
-<th style="text-align:right;">
-
-Upper
-</th>
-
 <th style="text-align:left;">
 
 Fixed
@@ -1620,16 +2022,6 @@ OMEGA(1,1)
 0.04
 </td>
 
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
 <td style="text-align:left;">
 
 No
@@ -1658,16 +2050,6 @@ OMEGA(2,2)
 0.17
 </td>
 
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
 <td style="text-align:left;">
 
 No
@@ -1693,16 +2075,6 @@ OMEGA(3,3)
 <td style="text-align:right;">
 
 0.2
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
 </td>
 
 <td style="text-align:left;">
@@ -1734,16 +2106,6 @@ OMEGA(4,3)
 0.3
 </td>
 
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
 <td style="text-align:left;">
 
 No
@@ -1771,16 +2133,6 @@ OMEGA(4,4)
 <td style="text-align:right;">
 
 0.15
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
 </td>
 
 <td style="text-align:left;">
@@ -1812,16 +2164,6 @@ OMEGA(5,5)
 0.2
 </td>
 
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
 <td style="text-align:left;">
 
 No
@@ -1849,16 +2191,6 @@ OMEGA(6,5)
 <td style="text-align:right;">
 
 0.3
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
 </td>
 
 <td style="text-align:left;">
@@ -1890,16 +2222,6 @@ OMEGA(6,6)
 0.15
 </td>
 
-<td style="text-align:right;">
-
-NA
-</td>
-
-<td style="text-align:right;">
-
-NA
-</td>
-
 <td style="text-align:left;">
 
 No
@@ -1926,17 +2248,7 @@ OMEGA(7,7)
 
 <td style="text-align:right;">
 
-0.1
-</td>
-
-<td style="text-align:right;">
-
-0
-</td>
-
-<td style="text-align:right;">
-
-1
+0.01121
 </td>
 
 <td style="text-align:left;">
@@ -1950,7 +2262,1209 @@ OMEGA(7,7)
 
 <td style="text-align:left;">
 
-ETA(6) - fixed diagonal
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(8,7)
+</td>
+
+<td style="text-align:right;">
+
+0
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(8,8)
+</td>
+
+<td style="text-align:right;">
+
+0.3387
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(9,9)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(10,9)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(10,10)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(11,9)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(11,10)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(11,11)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(12,9)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(12,10)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(12,11)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(12,12)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(13,13)
+</td>
+
+<td style="text-align:right;">
+
+0.4
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+Label=Value syntax for diagonal
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(14,14)
+</td>
+
+<td style="text-align:right;">
+
+0.3
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(15,14)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+Label=Value syntax in block
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(15,15)
+</td>
+
+<td style="text-align:right;">
+
+0.35
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+Label=Value syntax in block
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(16,16)
+</td>
+
+<td style="text-align:right;">
+
+0.03
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(17,16)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(17,17)
+</td>
+
+<td style="text-align:right;">
+
+0.03
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(18,16)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(18,17)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(18,18)
+</td>
+
+<td style="text-align:right;">
+
+0.03
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(19,16)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(19,17)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(19,18)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(19,19)
+</td>
+
+<td style="text-align:right;">
+
+0.03
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(20,20)
+</td>
+
+<td style="text-align:right;">
+
+0.2
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(21,20)
+</td>
+
+<td style="text-align:right;">
+
+0.3
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(21,21)
+</td>
+
+<td style="text-align:right;">
+
+0.15
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(22,20)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(22,21)
+</td>
+
+<td style="text-align:right;">
+
+0.05
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(22,22)
+</td>
+
+<td style="text-align:right;">
+
+0.3
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(23,23)
+</td>
+
+<td style="text-align:right;">
+
+0.2
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(24,23)
+</td>
+
+<td style="text-align:right;">
+
+0.3
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(24,24)
+</td>
+
+<td style="text-align:right;">
+
+0.15
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(25,23)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(25,24)
+</td>
+
+<td style="text-align:right;">
+
+0.05
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(25,25)
+</td>
+
+<td style="text-align:right;">
+
+0.3
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Correlation
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(26,26)
+</td>
+
+<td style="text-align:right;">
+
+6
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(27,26)
+</td>
+
+<td style="text-align:right;">
+
+0.005
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(27,27)
+</td>
+
+<td style="text-align:right;">
+
+0.3
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(28,26)
+</td>
+
+<td style="text-align:right;">
+
+0.001
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(28,27)
+</td>
+
+<td style="text-align:right;">
+
+0.002
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+OMEGA(28,28)
+</td>
+
+<td style="text-align:right;">
+
+0.1
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+<td style="text-align:left;">
+
 </td>
 
 </tr>
@@ -2065,66 +3579,142 @@ Prop-Add covariance, Additive error variance
 
 </tr>
 
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(3,3)
+</td>
+
+<td style="text-align:right;">
+
+1
+</td>
+
+<td style="text-align:left;">
+
+<span style="color: #DD0000;">Yes</span>
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(4,4)
+</td>
+
+<td style="text-align:right;">
+
+0.036
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(5,5)
+</td>
+
+<td style="text-align:right;">
+
+0.04
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+Label=Value syntax for SIGMA
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(6,6)
+</td>
+
+<td style="text-align:right;">
+
+0.01
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+diagonal SIGMA
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+SIGMA(7,7)
+</td>
+
+<td style="text-align:right;">
+
+0.02
+</td>
+
+<td style="text-align:left;">
+
+No
+</td>
+
+<td style="text-align:left;">
+
+diagonal SIGMA
+</td>
+
+</tr>
+
 </tbody>
 
 </table>
 
 ``` r
 names(mod)
-#>  [1] "problem"          "input_columns"    "data"             "subroutines"     
-#>  [5] "theta_parameters" "omega_blocks"     "sigma_blocks"     "estimations"     
-#>  [9] "tables"           "simulation"       "covariance"
+#>  [1] "cst"           "tokens"        "problem"       "input_columns"
+#>  [5] "data"          "thetas"        "omega_blocks"  "sigma_blocks" 
+#>  [9] "estimations"   "tables"        "simulation"    "msfi"         
+#> [13] "covariance"    "subroutines"   "abbreviated"   "pk"           
+#> [17] "error"         "des"           "pred"
 
 attributes(mod) |> names()
-#> [1] "names"        "filename"     "model_source" "run_status"   "class"
+#> [1] "names"        "filename"     "model_source" "class"        "run_status"
 ```
 
 ``` r
-read_model(file.path(test_data_dir, "models", "onecmt", "run001.mod")) |>
-  check_dataset() 
-```
-
-<strong>Dataset Check</strong>
-
-<table>
-
-<tbody>
-
-<tr>
-
-<td style="text-align:left;">
-
-Path
-</td>
-
-<td style="text-align:left;">
-
-extdata/data/derived/onecmpt-oral-30ind.csv
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;">
-
-Hash
-</td>
-
-<td style="text-align:left;">
-
-8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-``` r
-
-read_model(file.path(test_data_dir, "models", "onecmt", "run002.mod")) |>
+read_model(file.path("models", "onecmt", "run001.mod")) |>
   check_dataset()
 ```
 
@@ -2143,7 +3733,7 @@ Path
 
 <td style="text-align:left;">
 
-extdata/data/derived/onecmpt-oral-30ind.csv
+data/derived/onecmpt-oral-30ind.csv
 </td>
 
 </tr>
@@ -2168,7 +3758,7 @@ Hash
 
 ``` r
 
-read_model(file.path(test_data_dir, "models", "onecmt", "run003.mod")) |>
+read_model(file.path("models", "onecmt", "run002.mod")) |>
   check_dataset()
 ```
 
@@ -2187,7 +3777,7 @@ Path
 
 <td style="text-align:left;">
 
-extdata/data/derived/onecmpt-oral-30ind.csv
+data/derived/onecmpt-oral-30ind.csv
 </td>
 
 </tr>
@@ -2211,21 +3801,66 @@ Hash
 </table>
 
 ``` r
-read_model(file.path(test_data_dir, "models", "onecmt", "run001.mod")) |>
+
+read_model(file.path("models", "onecmt", "run003.mod")) |>
+  check_dataset()
+```
+
+<strong>Dataset Check</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Path
+</td>
+
+<td style="text-align:left;">
+
+data/derived/onecmpt-oral-30ind.csv
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Hash
+</td>
+
+<td style="text-align:left;">
+
+8d8189cfc45dc4d56c295ca990a131e086f53d874aa91e730c1e8856e840b005
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+``` r
+read_model(file.path("models", "onecmt", "run001.mod")) |>
   check_model()
-#> WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
-#>              
-#>  (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
-#>   
-#> Note: Analytical 2nd Derivatives are constructed in FSUBS but are never used.
-#>       You may insert $ABBR DERIV2=NO after the first $PROB to save FSUBS construction and compilation time
-#> [1] 0
 ```
+
+    #> WARNINGS AND ERRORS (IF ANY) FOR PROBLEM    1
+    #>
+    #>  (WARNING  2) NM-TRAN INFERS THAT THE DATA ARE POPULATION.
+    #>
+    #> Note: Analytical 2nd Derivatives are constructed in FSUBS but are never used.
+    #>       You may insert $ABBR DERIV2=NO after the first $PROB to save FSUBS construction and compilation time
+    #> [1] 0
 
 ## model summary can be generated from model object
 
 ``` r
-mod <- read_model(file.path(test_data_dir, "models", "onecmt", "run003.mod"))
+mod <- read_model(file.path("models", "onecmt", "run003.mod"))
 mod |>
     summary()
 ```
@@ -2478,7 +4113,7 @@ No
 
 <td style="text-align:left;">
 
-OMEGA(2,1)
+OM1,2 (TVCL, TVV)
 </td>
 
 <td style="text-align:left;">
@@ -2730,26 +4365,26 @@ No
 
 ``` r
 mod |> get_parameters()
-#>    kind       name random_effect    estimate        sd     corr     stderr
-#> 1 THETA       TVCL          <NA>  1.32542000        NA       NA 0.11148400
-#> 2 THETA        TVV          <NA> 40.16250000        NA       NA 2.83899000
-#> 3 THETA       TVKA          <NA>  1.21172000        NA       NA 0.10974700
-#> 4 OMEGA OM1 (TVCL)          ETA1  0.12234200 0.3497740       NA 0.05035540
-#> 5 OMEGA OMEGA(2,1)     ETA1:ETA2  0.07454330        NA 0.605513 0.03133500
-#> 6 OMEGA  OM2 (TVV)          ETA2  0.12387800 0.3519630       NA 0.03674650
-#> 7 OMEGA OM3 (TVKA)          ETA3  0.12241200 0.3498740       NA 0.05627810
-#> 8 SIGMA SIGMA(1,1)          EPS1  0.03753710 0.1937450       NA 0.00603493
-#> 9 SIGMA SIGMA(2,2)          EPS2  0.00527228 0.0726105       NA 0.00921096
-#>          rse shrinkage fixed diagonal
-#> 1   8.411221        NA FALSE       NA
-#> 2   7.068758        NA FALSE       NA
-#> 3   9.057125        NA FALSE       NA
-#> 4  41.159536  13.14400 FALSE     TRUE
-#> 5  42.035971        NA FALSE    FALSE
-#> 6  29.663459   4.63131 FALSE     TRUE
-#> 7  45.974333  24.33760 FALSE     TRUE
-#> 8  16.077241  14.42190 FALSE     TRUE
-#> 9 174.705441  14.42190 FALSE     TRUE
+#>    kind              name random_effect    estimate        sd     corr
+#> 1 THETA              TVCL          <NA>  1.32542000        NA       NA
+#> 2 THETA               TVV          <NA> 40.16250000        NA       NA
+#> 3 THETA              TVKA          <NA>  1.21172000        NA       NA
+#> 4 OMEGA        OM1 (TVCL)          ETA1  0.12234200 0.3497740       NA
+#> 5 OMEGA OM1,2 (TVCL, TVV)     ETA1:ETA2  0.07454330        NA 0.605513
+#> 6 OMEGA         OM2 (TVV)          ETA2  0.12387800 0.3519630       NA
+#> 7 OMEGA        OM3 (TVKA)          ETA3  0.12241200 0.3498740       NA
+#> 8 SIGMA        SIGMA(1,1)          EPS1  0.03753710 0.1937450       NA
+#> 9 SIGMA        SIGMA(2,2)          EPS2  0.00527228 0.0726105       NA
+#>       stderr        rse shrinkage fixed diagonal
+#> 1 0.11148400   8.411221        NA FALSE       NA
+#> 2 2.83899000   7.068758        NA FALSE       NA
+#> 3 0.10974700   9.057125        NA FALSE       NA
+#> 4 0.05035540  41.159536  13.14400 FALSE     TRUE
+#> 5 0.03133500  42.035971        NA FALSE    FALSE
+#> 6 0.03674650  29.663459   4.63131 FALSE     TRUE
+#> 7 0.05627810  45.974333  24.33760 FALSE     TRUE
+#> 8 0.00603493  16.077241  14.42190 FALSE     TRUE
+#> 9 0.00921096 174.705441  14.42190 FALSE     TRUE
 ```
 
 ## parameter info can be retrieved with model
@@ -2931,6 +4566,11 @@ name
 
 <th style="text-align:left;">
 
+raw_name
+</th>
+
+<th style="text-align:left;">
+
 display
 </th>
 
@@ -2960,6 +4600,11 @@ associated_theta
 <td style="text-align:left;">
 
 OMEGA(1,1)
+</td>
+
+<td style="text-align:left;">
+
+OM1 (TVCL)
 </td>
 
 <td style="text-align:left;">
@@ -2998,6 +4643,11 @@ OMEGA(2,1)
 
 <td style="text-align:left;">
 
+OM1,2 (TVCL, TVV)
+</td>
+
+<td style="text-align:left;">
+
 OM1,2
 </td>
 
@@ -3032,6 +4682,11 @@ OMEGA(2,2)
 
 <td style="text-align:left;">
 
+OM2 (TVV)
+</td>
+
+<td style="text-align:left;">
+
 OM2
 </td>
 
@@ -3062,6 +4717,11 @@ TVV
 <td style="text-align:left;">
 
 OMEGA(3,3)
+</td>
+
+<td style="text-align:left;">
+
+OM3 (TVKA)
 </td>
 
 <td style="text-align:left;">
@@ -3148,7 +4808,7 @@ SIGMA(1,1)
 
 <td style="text-align:left;">
 
-SIG1
+NA
 </td>
 
 <td style="text-align:left;">
@@ -3182,7 +4842,7 @@ SIGMA(2,2)
 
 <td style="text-align:left;">
 
-SIG2
+NA
 </td>
 
 <td style="text-align:left;">
@@ -3272,7 +4932,7 @@ THETA1
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3287,7 +4947,7 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3306,7 +4966,7 @@ THETA2
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3321,7 +4981,7 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3340,7 +5000,7 @@ THETA3
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3355,7 +5015,7 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3385,6 +5045,11 @@ parameter
 <th style="text-align:left;">
 
 name
+</th>
+
+<th style="text-align:left;">
+
+raw_name
 </th>
 
 <th style="text-align:left;">
@@ -3422,7 +5087,12 @@ OMEGA(1,1)
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3437,12 +5107,12 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3456,7 +5126,12 @@ OMEGA(2,1)
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3471,12 +5146,12 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3490,7 +5165,12 @@ OMEGA(2,2)
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3505,12 +5185,12 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3524,7 +5204,12 @@ OMEGA(3,3)
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
@@ -3539,12 +5224,12 @@ default
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+models/onecmt/run003/run003.lst
 </td>
 
 </tr>
@@ -3606,7 +5291,7 @@ SIGMA(1,1)
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+default
 </td>
 
 <td style="text-align:left;">
@@ -3640,7 +5325,7 @@ SIGMA(2,2)
 
 <td style="text-align:left;">
 
-extdata/models/onecmt/run003/run003.lst
+default
 </td>
 
 <td style="text-align:left;">
@@ -3673,8 +5358,8 @@ default
 
 ``` r
 copy_model(
-  from = file.path(test_data_dir, "models", "onecmt", "run003.mod"),
-  to = file.path(test_data_dir, "models", "onecmt", "run003b2.mod"), #copies run003 to run003b1 with jittered parameters
+  from = file.path("models", "onecmt", "run003.mod"),
+  to = file.path("models", "onecmt", "run003b2.mod"), #copies run003 to run003b1 with jittered parameters
   description = "Updating run003 to 003b1 with jittered params",
   jitter = 0.1,
   overwrite = TRUE,
@@ -3686,11 +5371,11 @@ copy_model(
 ## Copy model accepts hyperion model object
 
 ``` r
-mod <- read_model(file.path(test_data_dir, "models", "onecmt", "run003.mod"))
+mod <- read_model(file.path("models", "onecmt", "run003.mod"))
 
-mod |> 
+mod |>
     copy_model(
-        to = file.path(test_data_dir, "models", "onecmt", "run003b2.mod"),
+        to = file.path("models", "onecmt", "run003b2.mod"),
         update = "all",
         description = "Updating run003 with mod object",
         overwrite = TRUE,
@@ -3699,37 +5384,219 @@ mod |>
 #> NULL
 ```
 
-# Model Lineage
+# Managing metadata and lineage
+
+## Set and read metadata
+
+`set_metadata_file()` writes a JSON metadata sidecar next to a model.
+The `description`, `tags`, `based_on`, and `copied_from` fields are
+stored separately so model provenance can be tracked explicitly.
 
 ``` r
-example_tree <- get_model_lineage(file.path(test_data_dir, "models", "onecmt"))
+set_metadata_file(
+  file.path("models", "onecmt", "run003.mod"),
+  description = "Base one-compartment oral absorption model",
+  tags = c("base", "key"),
+  based_on = c("run002.mod")
+)
+#> NULL
 
-example_tree
+read_model(file.path("models", "onecmt", "run003.mod")) |>
+  get_model_metadata()
+```
+
+<strong>Model Metadata</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Description
+</td>
+
+<td style="text-align:left;">
+
+Base one-compartment oral absorption model
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Tags
+</td>
+
+<td style="text-align:left;">
+
+base, key
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Based On
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run002.mod
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+## Populate metadata at copy time
+
+`copy_model()` accepts `based_on` and `tags` so the new model’s metadata
+is populated as part of the copy.
+
+``` r
+copy_model(
+  from = file.path("models", "onecmt", "run003.mod"),
+  to = file.path("models", "onecmt", "run003b2.mod"),
+  description = "run003 with jittered params, exploring WT on V",
+  based_on = c("run003.mod"),
+  tags = c("exploratory", "wt-on-v"),
+  jitter = 0.1,
+  overwrite = TRUE,
+  seed = 804
+)
+#> NULL
+```
+
+## Clear metadata fields
+
+`clear_metadata_file()` selectively clears `based_on`, `copied_from`,
+and/or `tags`. Fields not selected are preserved.
+
+``` r
+clear_metadata_file(
+  file.path("models", "onecmt", "run003b2.mod"),
+  tags = TRUE
+)
+#> NULL
+```
+
+## Lineage queries
+
+`get_model_lineage()` returns the project lineage tree. With no
+arguments it returns every model rooted at the directory containing
+`pharos.toml`.
+
+``` r
+get_model_lineage()
 ```
 
 <strong>Hyperion Model Tree</strong>
 
 ℹ️ <strong>Models:</strong> 9
 
-- <strong style="color:blue">run001</strong> <span style="color:gray">-
-  Base model</span>
-  - <span style="color:orange">run002</span> <span style="color:gray">-
-    Adding COV step, unfixing eps(2)</span>
-    - <span style="color:green">run002b001</span>
-      <span style="color:gray">- Jittering initial sigma estimates,
-      using theta/…</span>
-    - <span style="color:orange">run003</span>
-      <span style="color:gray">- Jittering initial estimates</span>
-      - <span style="color:green">run003b1</span>
-        <span style="color:gray">- Updating run003 to 003b1 with
-        jittered params. …</span>
-      - <span style="color:green">run003b2</span>
-        <span style="color:gray">- Updating run003 with mod
-        object</span>
-    - <span style="color:green">run002a</span>
-      <span style="color:gray">- Some description about what makes
-      run002a diffe…</span>
-  - <span style="color:green">run005</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>
-  - <span style="color:green">run004</span> <span style="color:gray">-
-    Updating run001 to run004 with jittered params …</span>
+- <strong style="color:blue">models/onecmt/run001</strong>
+  <span style="color:teal">base</span>
+  <span style="color:gray">\|</span> <span style="color:gray">Base
+  model</span>
+
+- <strong style="color:blue">models/onecmt/run002</strong>
+  <span style="color:gray">Adding COV step, unfixing eps(2)</span>
+
+  - <span style="color:orange">models/onecmt/run003</span>
+    <span style="color:teal">base, key</span>
+    <span style="color:gray">\|</span> <span style="color:gray">Base
+    one-compartment oral absorption model</span>
+    - <span style="color:green">models/onecmt/run003b2</span>
+      <span style="color:gray">run003 with jittered params, exploring WT
+      on V</span>
+
+- <strong style="color:blue">models/onecmt/run002a</strong>
+  <span style="color:gray">Some description about what makes run002a
+  diffe…</span>
+
+- <strong style="color:blue">models/onecmt/run002b001</strong>
+  <span style="color:teal">not run, 2cmt</span>
+  <span style="color:gray">\|</span> <span style="color:gray">Jittering
+  initial sigma estimates, using theta/…</span>
+
+- <strong style="color:blue">models/onecmt/run003b1</strong>
+  <span style="color:gray">Updating run003 to 003b1 with jittered
+  params. …</span>
+
+- <strong style="color:blue">models/onecmt/run004</strong>
+  <span style="color:gray">Updating run001 to run004 with jittered
+  params …</span>
+
+- <strong style="color:blue">models/onecmt/run005</strong>
+  <span style="color:gray">Updating run001 to run004 with jittered
+  params …</span>
+
+Pass a model to get its full lineage (ancestors and descendants):
+
+``` r
+get_model_lineage(file.path("models", "onecmt", "run003.mod"))
+```
+
+<strong>Hyperion Model Tree</strong>
+
+ℹ️ <strong>Models:</strong> 3
+
+- <strong style="color:blue">models/onecmt/run002</strong>
+  <span style="color:gray">Adding COV step, unfixing eps(2)</span>
+  - <span style="color:orange"><strong><u>models/onecmt/run003</u></strong></span>
+    <span style="color:teal">base, key</span>
+    <span style="color:gray">\|</span> <span style="color:gray">Base
+    one-compartment oral absorption model</span>
+    - <span style="color:green">models/onecmt/run003b2</span>
+      <span style="color:gray">run003 with jittered params, exploring WT
+      on V</span>
+
+Use `from` and `to` to filter the tree downward, upward, or to the slice
+between two models:
+
+``` r
+get_model_lineage(from = file.path("models", "onecmt", "run001.mod"))
+```
+
+<strong>Hyperion Model Tree</strong>
+
+ℹ️ <strong>Models:</strong> 1
+
+- <strong style="color:blue"><strong><u>models/onecmt/run001</u></strong></strong>
+  <span style="color:teal">base</span>
+  <span style="color:gray">\|</span> <span style="color:gray">Base
+  model</span>
+
+``` r
+
+get_model_lineage(to = file.path("models", "onecmt", "run003b1.mod"))
+```
+
+<strong>Hyperion Model Tree</strong>
+
+ℹ️ <strong>Models:</strong> 1
+
+- <strong style="color:blue"><strong><u>models/onecmt/run003b1</u></strong></strong>
+  <span style="color:gray">Updating run003 to 003b1 with jittered
+  params. …</span>
+
+``` r
+
+get_model_lineage(
+  from = file.path("models", "onecmt", "run001.mod"),
+  to   = file.path("models", "onecmt", "run003b1.mod")
+)
+```
+
+<strong>Hyperion Model Tree</strong>
+
+⚠️ Empty tree - no models found

@@ -1,12 +1,14 @@
 ---
-title: "Gets model object"
-description: "Gets model object."
+title: "Read a NONMEM model from a .mod or .ctl file"
+description: "Read a NONMEM model from a. mod or. ctl file."
+sidebar:
+  label: "read_model"
 pagefind: true
 ---
 
 ## Description
 
-Gets model object
+Read a NONMEM model from a .mod or .ctl file
 
 
 
@@ -29,7 +31,7 @@ read_model(path)
 <tbody>
 <tr>
 <td><code>path</code></td>
-<td>path to mod or ctl file.</td>
+<td>path to a .mod or .ctl file.</td>
 </tr>
 </tbody>
 </table>
@@ -38,7 +40,10 @@ read_model(path)
 
 ## Value
 
-hyperion_nonmem_model S3 object with `model_source` and `run_status` attributes
+A `hyperion_nonmem_model` S3 object with attributes:
+- `filename`: the model stem (e.g. `"run001"`)
+- `model_source`: path to the source file, relative to the pharos config dir
+- `run_status`: `"run"`, `"running"`, or `"not_run"` determined from output files on disk
 
 
 

@@ -1,0 +1,74 @@
+---
+title: "Clear fields in a model's metadata file"
+description: "Selectively clears the `based_on`, `copied_from`, and/or `tags` fields in the metadata file associated with a model. Fields not selected are left unchanged."
+sidebar:
+  label: "clear_metadata_file"
+pagefind: true
+---
+
+## Description
+
+Selectively clears the `based_on`, `copied_from`, and/or `tags` fields in
+the metadata file associated with a model. Fields not selected are left
+unchanged.
+
+
+
+
+
+
+## Usage
+
+```r
+clear_metadata_file(
+  model_path,
+  based_on = FALSE,
+  copied_from = FALSE,
+  tags = FALSE
+)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr><th>Argument</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model_path</code></td>
+<td>Path to the NONMEM model file, or a hyperion_nonmem_model object</td>
+</tr>
+<tr>
+<td><code>based_on</code></td>
+<td>If TRUE, clear the based_on field. Default FALSE.</td>
+</tr>
+<tr>
+<td><code>copied_from</code></td>
+<td>If TRUE, clear the copied_from field. Default FALSE.</td>
+</tr>
+<tr>
+<td><code>tags</code></td>
+<td>If TRUE, clear the tags field. Default FALSE.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## Value
+
+Returns invisibly after updating the metadata file
+
+
+
+## Examples
+
+```r
+# Not run:
+clear_metadata_file("model/nonmem/run001.mod", tags = TRUE)
+model <- read_model("model/nonmem/run001.mod")
+clear_metadata_file(model, based_on = TRUE, copied_from = TRUE)
+```
+

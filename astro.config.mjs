@@ -143,7 +143,7 @@ export default defineConfig({
             { label: "init", slug: "reference/init" },
             { label: "get_pharos_config", slug: "reference/get_pharos_config" },
             { label: "get_comment_type", slug: "reference/get_comment_type" },
-            { label: "use_type1_comments", slug: "reference/use_type1_comments" }
+            { label: "use_comments", slug: "reference/use_comments" }
           ]
         },
         {
@@ -152,7 +152,8 @@ export default defineConfig({
           items: [
             { label: "set_metadata_file", slug: "reference/set_metadata_file" },
             { label: "update_metadata_file", slug: "reference/update_metadata_file" },
-            { label: "get_model_metadata", slug: "reference/get_model_metadata" }
+            { label: "get_model_metadata", slug: "reference/get_model_metadata" },
+            { label: "clear_metadata_file", slug: "reference/clear_metadata_file" }
           ]
         },
         {

@@ -1,5 +1,5 @@
 ---
-title: "Ext"
+title: "parameter-estimates"
 pagefind: true
 ---
 
@@ -19,21 +19,21 @@ library(hyperion)
 #> 
 #> 
 #> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos.toml found: /data/user-homes/matthews/Packages/hyperion/vignettes/pharos.toml
+#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
+#> ✔ pharos.toml found: hyperion/pharos.toml
+#>     └ hyperion.config_dir : (unset)
 #> ── hyperion options ────────────────────────────────────────────────────────────
 #> ✔ hyperion.significant_number_display : 4
 #> ── hyperion nonmem object options ──────────────────────────────────────────────
 #> ✔ hyperion.nonmem_model.show_included_columns : FALSE
 #> ✔ hyperion.nonmem_summary.rse_threshold : 50
 #> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
-
-test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 
 ## get parameter estimates
 
 ``` r
-get_parameters(file.path(test_data_dir, "models", "onecmt", "run002"))
+get_parameters(file.path("models", "onecmt", "run002"))
 #>    kind       name random_effect    estimate        sd corr    stderr
 #> 1 THETA       TVCL          <NA>  1.24679000        NA   NA 0.1288330
 #> 2 THETA        TVV          <NA> 40.84820000        NA   NA 3.0272100
@@ -53,7 +53,7 @@ get_parameters(file.path(test_data_dir, "models", "onecmt", "run002"))
 #> 7  31.155088   15.4384 FALSE     TRUE
 #> 8 422.578634   15.4384 FALSE     TRUE
 
-get_parameters(file.path(test_data_dir, "models", "onecmt", "run002.mod"))
+get_parameters(file.path("models", "onecmt", "run002.mod"))
 #>    kind       name random_effect    estimate        sd corr    stderr
 #> 1 THETA       TVCL          <NA>  1.24679000        NA   NA 0.1288330
 #> 2 THETA        TVV          <NA> 40.84820000        NA   NA 3.0272100
@@ -73,7 +73,7 @@ get_parameters(file.path(test_data_dir, "models", "onecmt", "run002.mod"))
 #> 7  31.155088   15.4384 FALSE     TRUE
 #> 8 422.578634   15.4384 FALSE     TRUE
 
-get_parameters(file.path(test_data_dir, "models", "onecmt", "run002", "run002.ext"))
+get_parameters(file.path("models", "onecmt", "run002", "run002.ext"))
 #>    kind       name random_effect    estimate        sd corr    stderr
 #> 1 THETA       TVCL          <NA>  1.24679000        NA   NA 0.1288330
 #> 2 THETA        TVV          <NA> 40.84820000        NA   NA 3.0272100
@@ -93,7 +93,7 @@ get_parameters(file.path(test_data_dir, "models", "onecmt", "run002", "run002.ex
 #> 7  31.155088   15.4384 FALSE     TRUE
 #> 8 422.578634   15.4384 FALSE     TRUE
 
-get_parameters(file.path(test_data_dir, "models", "onecmt", "run002_metadata.json"))
+get_parameters(file.path("models", "onecmt", "run002_metadata.json"))
 #>    kind       name random_effect    estimate        sd corr    stderr
 #> 1 THETA       TVCL          <NA>  1.24679000        NA   NA 0.1288330
 #> 2 THETA        TVV          <NA> 40.84820000        NA   NA 3.0272100
@@ -116,7 +116,7 @@ get_parameters(file.path(test_data_dir, "models", "onecmt", "run002_metadata.jso
 
 ``` r
 get_parameters(
-  file.path(test_data_dir, "models", "onecmt", "run002")
+  file.path("models", "onecmt", "run002")
 ) |> 
   mutate(
     `95% CI` = paste0(
@@ -148,7 +148,7 @@ get_parameters(
 
 ``` r
 untransformed_df <- get_parameters(
-  file.path(test_data_dir, "models", "onecmt", "run002")
+  file.path("models", "onecmt", "run002")
 )
 
 transformed_df <- untransformed_df |> 
@@ -200,20 +200,20 @@ transformed_df
 
 ``` r
 read_ext_file(
-  file.path(test_data_dir, "ext", "bql.ext"),
+  file.path("ext", "bql.ext"),
   line_prefixes = "-1000000000",
   parameters_only = TRUE
 )
 #>     iteration method  THETA1  THETA2  THETA3  THETA4  THETA5 THETA6 THETA7
 #> 1 -1000000000   FOCE 26.4911 282.616 297.044 58.7497 1.50949   0.75      1
-#>   THETA8 THETA9 SIGMA.1.1. OMEGA.1.1. OMEGA.2.1. OMEGA.2.2. OMEGA.3.1.
-#> 1      1   0.75 0.00245104   0.100615          0  0.0360015          0
-#>   OMEGA.3.2. OMEGA.3.3.
-#> 1          0  0.0111728
+#>   THETA8 THETA9  SIGMA_1_1 OMEGA_1_1 OMEGA_2_1 OMEGA_2_2 OMEGA_3_1 OMEGA_3_2
+#> 1      1   0.75 0.00245104  0.100615         0 0.0360015         0         0
+#>   OMEGA_3_3
+#> 1 0.0111728
 ```
 
 ``` r
-read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its") |> 
+read_ext_file(file.path("ext", "itsimp.ext"), only_method = "its") |> 
   filter(iteration > 0) |> 
   pivot_longer(
     cols = starts_with("THETA"),
@@ -231,10 +231,10 @@ read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its"
   theme_bw()
 ```
 
-![](/figures/ext/unnamed-chunk-6-1.png)
+![]()
 
 ``` r
-read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its") |> 
+read_ext_file(file.path("ext", "itsimp.ext"), only_method = "its") |> 
   filter(iteration > 0) |> 
   pivot_longer(
     cols = starts_with("OMEGA"),
@@ -252,10 +252,10 @@ read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its"
   theme_bw()
 ```
 
-![](/figures/ext/unnamed-chunk-7-1.png)
+![]()
 
 ``` r
-read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its") |> 
+read_ext_file(file.path("ext", "itsimp.ext"), only_method = "its") |> 
   filter(iteration > 0) |> 
   pivot_longer(
     cols = starts_with("SIGMA"),
@@ -273,26 +273,26 @@ read_ext_file(file.path(test_data_dir, "ext", "itsimp.ext"), only_method = "its"
   theme_bw()
 ```
 
-![](/figures/ext/unnamed-chunk-8-1.png)
+![]()
 
 ``` r
 
-read_ext_file(file.path(test_data_dir, "ext", "example6.txt.ext")) |> 
+read_ext_file(file.path("ext", "example6.txt.ext")) |> 
   filter(iteration == -1000000000)
 #>     iteration method ITERATION  THETA1   THETA2   THETA3    THETA4  THETA5
 #> 1 -1000000000  Bayes    -1e+09 3.90686 -2.21701 0.552837 -0.183461 2.26824
-#>     THETA6  THETA7    THETA8 SIGMA.1.1. SIGMA.2.1. SIGMA.2.2. OMEGA.1.1.
-#> 1 0.238698 3.71188 -0.703886 0.00931609          0  0.0223709   0.281875
-#>   OMEGA.2.1. OMEGA.2.2. OMEGA.3.1.  OMEGA.3.2. OMEGA.3.3. OMEGA.4.1. OMEGA.4.2.
-#> 1 -0.0347915   0.213765  0.0451677 -0.00980444    0.14051   0.030207  0.0548359
-#>   OMEGA.4.3. OMEGA.4.4. OMEGA.5.1. OMEGA.5.2.   OMEGA.5.3. OMEGA.5.4.
-#> 1 -0.0143056    0.26165  0.0272446  0.0164947 -0.000745322 -0.0322041
-#>   OMEGA.5.5. OMEGA.6.1. OMEGA.6.2. OMEGA.6.3. OMEGA.6.4. OMEGA.6.5. OMEGA.6.6.
-#> 1   0.206086 -0.0268258 0.00474677  0.0158401  0.0146191 -0.0737751   0.234941
-#>   OMEGA.7.1. OMEGA.7.2. OMEGA.7.3. OMEGA.7.4. OMEGA.7.5.   OMEGA.7.6.
-#> 1  0.0297134 -0.0475722  0.0318595 -0.0738601  0.0236572 -0.000315573
-#>   OMEGA.7.7. OMEGA.8.1. OMEGA.8.2. OMEGA.8.3. OMEGA.8.4. OMEGA.8.5. OMEGA.8.6.
-#> 1   0.247069  0.0958203  0.0735577  0.0413009  0.0461165 0.00398651  -0.051391
-#>   OMEGA.8.7. OMEGA.8.8.  MCMCOBJ
-#> 1  0.0573565   0.237051 -6490.95
+#>     THETA6  THETA7    THETA8  SIGMA_1_1 SIGMA_2_1 SIGMA_2_2 OMEGA_1_1
+#> 1 0.238698 3.71188 -0.703886 0.00931609         0 0.0223709  0.281875
+#>    OMEGA_2_1 OMEGA_2_2 OMEGA_3_1   OMEGA_3_2 OMEGA_3_3 OMEGA_4_1 OMEGA_4_2
+#> 1 -0.0347915  0.213765 0.0451677 -0.00980444   0.14051  0.030207 0.0548359
+#>    OMEGA_4_3 OMEGA_4_4 OMEGA_5_1 OMEGA_5_2    OMEGA_5_3  OMEGA_5_4 OMEGA_5_5
+#> 1 -0.0143056   0.26165 0.0272446 0.0164947 -0.000745322 -0.0322041  0.206086
+#>    OMEGA_6_1  OMEGA_6_2 OMEGA_6_3 OMEGA_6_4  OMEGA_6_5 OMEGA_6_6 OMEGA_7_1
+#> 1 -0.0268258 0.00474677 0.0158401 0.0146191 -0.0737751  0.234941 0.0297134
+#>    OMEGA_7_2 OMEGA_7_3  OMEGA_7_4 OMEGA_7_5    OMEGA_7_6 OMEGA_7_7 OMEGA_8_1
+#> 1 -0.0475722 0.0318595 -0.0738601 0.0236572 -0.000315573  0.247069 0.0958203
+#>   OMEGA_8_2 OMEGA_8_3 OMEGA_8_4  OMEGA_8_5 OMEGA_8_6 OMEGA_8_7 OMEGA_8_8
+#> 1 0.0735577 0.0413009 0.0461165 0.00398651 -0.051391 0.0573565  0.237051
+#>    MCMCOBJ
+#> 1 -6490.95
 ```

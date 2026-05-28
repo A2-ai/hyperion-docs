@@ -1,12 +1,18 @@
 ---
-title: "Get's model lineage"
-description: "Get's model lineage."
+title: "Show model lineage and relationships."
+description: "With no arguments, returns the full project lineage tree. Supplying a model path returns that model's full lineage (ancestors and descendants). The `from` and `"
+sidebar:
+  label: "get_model_lineage"
 pagefind: true
 ---
 
 ## Description
 
-Get's model lineage
+With no arguments, returns the full project lineage tree. Supplying a
+model path returns that model's full lineage (ancestors and descendants).
+The `from` and `to` arguments filter the tree from a model downward, up
+to a model, or to the slice between two models. The project is always
+rooted at the directory containing `pharos.toml`.
 
 
 
@@ -16,7 +22,9 @@ Get's model lineage
 ## Usage
 
 ```r
-get_model_lineage(model_dir)
+get_model_lineage(model = NULL, from = NULL, to = NULL, verbose = FALSE)
+
+get_model_lineage(model = NULL, from = NULL, to = NULL, verbose = FALSE)
 ```
 
 ## Arguments
@@ -28,8 +36,20 @@ get_model_lineage(model_dir)
 </thead>
 <tbody>
 <tr>
-<td><code>model_dir</code></td>
-<td>path to directory containing all models, or a hyperion_nonmem_model object (uses the model's parent directory)</td>
+<td><code>model</code></td>
+<td>Optional `hyperion_nonmem_model` object or model file path. Returns the model's full lineage (ancestors and descendants). Conflicts with `from`/`to`.</td>
+</tr>
+<tr>
+<td><code>from</code></td>
+<td>Filter the tree to this model and everything downstream. Accepts a `hyperion_nonmem_model` object or a model file path.</td>
+</tr>
+<tr>
+<td><code>to</code></td>
+<td>Filter the tree to this model and everything upstream. Accepts a `hyperion_nonmem_model` object or a model file path.</td>
+</tr>
+<tr>
+<td><code>verbose</code></td>
+<td>Logical; if `TRUE`, the returned tree carries a `"verbose"` attribute that causes `print()` and `knit_print()` to render a flat 6-column table (Model, Parent, Description, Tags, Model Hash, Dataset Hash) instead of the tree view.</td>
 </tr>
 </tbody>
 </table>
@@ -46,8 +66,11 @@ hyperion_nonmem_tree S3 object
 
 ```r
 # Not run:
-get_model_lineage("model/nonmem/")
-model <- read_model("model/nonmem/run001.mod")
-get_model_lineage(model)
+get_model_lineage()                                            # whole project
+get_model_lineage("model/nonmem/run003.mod")                   # full lineage of run003
+get_model_lineage(from = "model/nonmem/run001.mod")            # run001 and descendants
+get_model_lineage(to = "model/nonmem/run003.mod")              # run003 and ancestors
+get_model_lineage(from = "model/nonmem/run001.mod",
+                  to   = "model/nonmem/run003.mod")            # slice between two models
 ```
 

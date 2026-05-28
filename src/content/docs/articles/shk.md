@@ -1,5 +1,5 @@
 ---
-title: "Shk"
+title: "shrinkage"
 pagefind: true
 ---
 
@@ -8,19 +8,19 @@ library(hyperion)
 #> 
 #> 
 #> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos.toml found: /data/user-homes/matthews/Packages/hyperion/vignettes/pharos.toml
+#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
+#> ✔ pharos.toml found: hyperion/pharos.toml
+#>     └ hyperion.config_dir : (unset)
 #> ── hyperion options ────────────────────────────────────────────────────────────
 #> ✔ hyperion.significant_number_display : 4
 #> ── hyperion nonmem object options ──────────────────────────────────────────────
 #> ✔ hyperion.nonmem_model.show_included_columns : FALSE
 #> ✔ hyperion.nonmem_summary.rse_threshold : 50
 #> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
-
-test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 
 ``` r
-get_eta_shrinkage(file.path(test_data_dir, "shk", "3068.shk"))
+get_eta_shrinkage(file.path("shk", "3068.shk"))
 #>   method subpop eta_number     etabar etabar_se etabar_pval shrinkage_sd
 #> 1   FOCE      1          1  0.0000000 0.0000000          -1  0.00000e+00
 #> 2   FOCE      1          2  0.0237710 0.0913935          -1  4.31620e+00
@@ -42,7 +42,7 @@ get_eta_shrinkage(file.path(test_data_dir, "shk", "3068.shk"))
 ```
 
 ``` r
-get_eps_shrinkage(file.path(test_data_dir, "shk", "3068.shk"))
+get_eps_shrinkage(file.path("shk", "3068.shk"))
 #>   method subpop eps_number shrinkage_sd shrinkage_vr n_individuals
 #> 1   FOCE      1          1     0.690562      1.37636            15
 #> 2   FOCE      1          2   100.000000    100.00000            15
@@ -51,7 +51,7 @@ get_eps_shrinkage(file.path(test_data_dir, "shk", "3068.shk"))
 ```
 
 ``` r
-get_eta_shrinkage(file.path(test_data_dir, "shk", "bql.shk"))
+get_eta_shrinkage(file.path("shk", "bql.shk"))
 #>   method subpop eta_number       etabar  etabar_se etabar_pval shrinkage_sd
 #> 1   FOCE      1          1  0.000801602 0.02268020    0.971806     0.666197
 #> 2   FOCE      1          2 -0.000218944 0.01334130    0.986906     2.317320
@@ -63,13 +63,13 @@ get_eta_shrinkage(file.path(test_data_dir, "shk", "bql.shk"))
 ```
 
 ``` r
-get_eps_shrinkage(file.path(test_data_dir, "shk", "bql.shk"))
+get_eps_shrinkage(file.path("shk", "bql.shk"))
 #>   method subpop eps_number shrinkage_sd shrinkage_vr n_individuals
 #> 1   FOCE      1          1      9.70268      18.4639           193
 ```
 
 ``` r
-get_eta_shrinkage(file.path(test_data_dir, "shk", "itsimp.shk"))
+get_eta_shrinkage(file.path("shk", "itsimp.shk"))
 #>   method subpop eta_number       etabar  etabar_se etabar_pval shrinkage_sd
 #> 1    ITS      1          1 -4.25284e-08 0.00471323    0.999993      6.91515
 #> 2    ITS      1          2 -5.31037e-08 0.00298829    0.999986     32.91140
@@ -91,7 +91,7 @@ get_eta_shrinkage(file.path(test_data_dir, "shk", "itsimp.shk"))
 ```
 
 ``` r
-get_eps_shrinkage(file.path(test_data_dir, "shk", "itsimp.shk"))
+get_eps_shrinkage(file.path("shk", "itsimp.shk"))
 #>   method subpop eps_number shrinkage_sd shrinkage_vr n_individuals
 #> 1    ITS      1          1      26.1873      45.5168           400
 #> 2    IMP      1          1      26.3813      45.8028           400

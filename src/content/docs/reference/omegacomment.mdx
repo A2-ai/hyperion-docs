@@ -1,6 +1,8 @@
 ---
 title: "Omega parameter comment class"
 description: "Represents parsed comments for OMEGA parameters."
+sidebar:
+  label: "OmegaComment"
 pagefind: true
 ---
 
@@ -19,6 +21,7 @@ Represents parsed comments for OMEGA parameters.
 OmegaComment(
   nonmem_name = character(0),
   name = NULL,
+  raw_name = NULL,
   display = NULL,
   description = NULL,
   parameterization = NULL,
@@ -41,6 +44,10 @@ OmegaComment(
 <tr>
 <td><code>name</code></td>
 <td>Character or NULL. User-defined parameter name (e.g., "IIV-CL").</td>
+</tr>
+<tr>
+<td><code>raw_name</code></td>
+<td>Character or NULL. Raw user label before pharos composition; e.g. `"IIV"` when `name` is `"IIV (CL)"`.</td>
 </tr>
 <tr>
 <td><code>display</code></td>
@@ -68,6 +75,7 @@ OmegaComment(
 
 - **nonmem_name**: The NONMEM parameter identifier.
 - **name**: User-friendly name parsed from comments.
+- **raw_name**: Raw user label before pharos composition; e.g. `"IIV"` when `name` is `"IIV (CL)"`.
 - **display**: Display name for tables. Falls back to `name` if NULL.
 - **description**: Longer description of what the parameter represents.
 - **parameterization**: Transformation type. Valid values: "LogNormal", "Logit", "AddErr", "LogAddErr", "Proportional", "Identity".

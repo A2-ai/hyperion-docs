@@ -1,5 +1,5 @@
 ---
-title: "Lst"
+title: "lst"
 pagefind: true
 ---
 
@@ -8,15 +8,15 @@ library(hyperion)
 #> 
 #> 
 #> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos.toml found: /data/user-homes/matthews/Packages/hyperion/vignettes/pharos.toml
+#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
+#> ✔ pharos.toml found: hyperion/pharos.toml
+#>     └ hyperion.config_dir : (unset)
 #> ── hyperion options ────────────────────────────────────────────────────────────
 #> ✔ hyperion.significant_number_display : 4
 #> ── hyperion nonmem object options ──────────────────────────────────────────────
 #> ✔ hyperion.nonmem_model.show_included_columns : FALSE
 #> ✔ hyperion.nonmem_summary.rse_threshold : 50
 #> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
-
-test_data_dir <- system.file("extdata", package = "hyperion")
 ```
 
 # Parse lst
@@ -24,7 +24,7 @@ test_data_dir <- system.file("extdata", package = "hyperion")
 ``` r
 get_run_info(
     read_model( 
-        file.path(test_data_dir, "models", "onecmt", "run001.mod")
+        file.path("models", "onecmt", "run001.mod")
     )
 )
 #> $run_details
@@ -51,7 +51,7 @@ get_run_info(
 ``` r
 get_run_info(
     read_model( 
-        file.path(test_data_dir, "models", "onecmt", "run003b1.mod")
+        file.path("models", "onecmt", "run003b1.mod")
     )
 )
 #> $run_details
@@ -78,7 +78,7 @@ get_run_info(
 ``` r
 mod_sum <- summary(
     read_model(
-        file.path(test_data_dir, "models", "onecmt", "run002.mod")
+        file.path("models", "onecmt", "run002.mod")
     )
 )
 
@@ -544,7 +544,7 @@ No
 ``` r
 mod_sum <- summary(
     read_model(
-        file.path(test_data_dir, "models", "onecmt", "run003b1.mod")
+        file.path("models", "onecmt", "run003b1.mod")
     )
 )
 
@@ -757,7 +757,7 @@ No
 
 <td style="text-align:left;">
 
-OMEGA(2,1)
+OM1,2 (TVCL, TVV)
 </td>
 
 <td style="text-align:left;">

@@ -1,0 +1,61 @@
+---
+title: "Set comment parsing type in pharos.toml"
+description: "Writes `type = <value>` under the `[nonmem. comments]` section of `pharos. toml`."
+sidebar:
+  label: "use_comments"
+pagefind: true
+---
+
+## Description
+
+Writes `type = <value>` under the `[nonmem.comments]` section of
+`pharos.toml`.
+
+
+
+
+
+
+
+## Usage
+
+```r
+use_comments(type = c("type1", "type2"), path = NULL)
+
+use_type1_comments(path = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr><th>Argument</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>Comment parsing type. One of `"type1"` (strict structured) or `"type2"` (flexible structured grammar).</td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>Path to pharos.toml. If NULL, finds it automatically.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## Value
+
+The path to the modified pharos.toml file (invisibly).
+
+
+
+## Examples
+
+```r
+# Not run:
+use_comments("type2")
+```
+

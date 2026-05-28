@@ -1,12 +1,14 @@
 ---
 title: "Get a model's descendants"
-description: "Find all models whose based_on chain includes the given model."
+description: "Get a model's descendants."
+sidebar:
+  label: "get_model_descendants"
 pagefind: true
 ---
 
 ## Description
 
-Find all models whose based_on chain includes the given model.
+Get a model's descendants
 
 
 
@@ -16,7 +18,7 @@ Find all models whose based_on chain includes the given model.
 ## Usage
 
 ```r
-get_model_descendants(lineage, model_name)
+get_model_descendants(mod)
 ```
 
 ## Arguments
@@ -28,12 +30,8 @@ get_model_descendants(lineage, model_name)
 </thead>
 <tbody>
 <tr>
-<td><code>lineage</code></td>
-<td>A hyperion_nonmem_tree object from `get_model_lineage()`</td>
-</tr>
-<tr>
-<td><code>model_name</code></td>
-<td>Character, model name (e.g., "run001" or "run001.mod")</td>
+<td><code>mod</code></td>
+<td>A `hyperion_nonmem_model` object or a path to a `.mod`/`.ctl` file.</td>
 </tr>
 </tbody>
 </table>
@@ -42,7 +40,9 @@ get_model_descendants(lineage, model_name)
 
 ## Value
 
-Character vector of descendant names (without .mod suffix)
+Character vector of descendant project-relative paths (with
+extension, e.g., `"models/onecmt/run002.mod"`). Does not include
+`mod` itself.
 
 
 

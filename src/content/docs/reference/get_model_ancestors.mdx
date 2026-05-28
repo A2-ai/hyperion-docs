@@ -1,12 +1,14 @@
 ---
 title: "Get a model's ancestors"
-description: "Walk up the based_on chain to find all ancestors of a model."
+description: "Get a model's ancestors."
+sidebar:
+  label: "get_model_ancestors"
 pagefind: true
 ---
 
 ## Description
 
-Walk up the based_on chain to find all ancestors of a model.
+Get a model's ancestors
 
 
 
@@ -16,7 +18,7 @@ Walk up the based_on chain to find all ancestors of a model.
 ## Usage
 
 ```r
-get_model_ancestors(lineage, model_name)
+get_model_ancestors(mod)
 ```
 
 ## Arguments
@@ -28,12 +30,8 @@ get_model_ancestors(lineage, model_name)
 </thead>
 <tbody>
 <tr>
-<td><code>lineage</code></td>
-<td>A hyperion_nonmem_tree object from `get_model_lineage()`</td>
-</tr>
-<tr>
-<td><code>model_name</code></td>
-<td>Character, model name (e.g., "run001" or "run001.mod")</td>
+<td><code>mod</code></td>
+<td>A `hyperion_nonmem_model` object or a path to a `.mod`/`.ctl` file.</td>
 </tr>
 </tbody>
 </table>
@@ -42,8 +40,10 @@ get_model_ancestors(lineage, model_name)
 
 ## Value
 
-Character vector of ancestor names (without .mod suffix),
-ordered from parent to root. Returns empty vector if no ancestors.
+Character vector of ancestor project-relative paths (with
+extension, e.g., `"models/onecmt/run001.mod"`). Includes `mod` itself
+alongside its ancestors. Returns empty vector if the lineage has no
+ancestors.
 
 
 
