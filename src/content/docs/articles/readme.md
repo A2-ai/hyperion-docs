@@ -22,6 +22,10 @@ modelling software.
 
 ## Installation
 
+to install the latest release
+
+    install.packages("hyperion", repos = c("hyperion" = "https://prism.dev.a2-ai.cloud/rpkgs/hyperion-eco/v2", getOption("repos")))
+
 You can install the development version of hyperion from
 [GitHub](https://github.com/) with:
 
@@ -37,18 +41,6 @@ create a `pharos.toml` configuration file
 
 ``` r
 library(hyperion)
-#> 
-#> 
-#> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
-#> ✔ pharos.toml found: hyperion/pharos.toml
-#>     └ hyperion.config_dir : (unset)
-#> ── hyperion options ────────────────────────────────────────────────────────────
-#> ✔ hyperion.significant_number_display : 4
-#> ── hyperion nonmem object options ──────────────────────────────────────────────
-#> ✔ hyperion.nonmem_model.show_included_columns : FALSE
-#> ✔ hyperion.nonmem_summary.rse_threshold : 50
-#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
 
 if (!file.exists("pharos.toml")) {
   hyperion::init(".")
@@ -468,6 +460,8 @@ summary(run002)
 <strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
+
+\[<span style="color:green">OK</span>\] No Objective Function Failure
 
 \[<span style="color:green">OK</span>\] Covariance Step Successful
 

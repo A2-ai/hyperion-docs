@@ -19,7 +19,7 @@ The label uses the associated_theta name if available, otherwise the omega name.
 ## Usage
 
 ```r
-get_eta_labels(model_comments)
+get_eta_labels(model_comments, mask = character())
 ```
 
 ## Arguments
@@ -33,6 +33,10 @@ get_eta_labels(model_comments)
 <tr>
 <td><code>model_comments</code></td>
 <td>A ModelComments object</td>
+</tr>
+<tr>
+<td><code>mask</code></td>
+<td>Character vector of omegas to leave out, keyed by NONMEM name, user name, or display name. Surviving labels keep their original ETA number.</td>
 </tr>
 </tbody>
 </table>

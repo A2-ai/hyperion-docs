@@ -5,18 +5,6 @@ pagefind: true
 
 ``` r
 library(hyperion)
-#> 
-#> 
-#> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
-#> ✔ pharos.toml found: hyperion/pharos.toml
-#>     └ hyperion.config_dir : (unset)
-#> ── hyperion options ────────────────────────────────────────────────────────────
-#> ✔ hyperion.significant_number_display : 4
-#> ── hyperion nonmem object options ──────────────────────────────────────────────
-#> ✔ hyperion.nonmem_model.show_included_columns : FALSE
-#> ✔ hyperion.nonmem_summary.rse_threshold : 50
-#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
 ```
 
 # Parse lst
@@ -33,19 +21,20 @@ get_run_info(
 #>   number_subjects number_obs postprocess_time function_evaluations
 #> 1              30        210             0.04                  123
 #>   significant_digits only_sim
-#> 1                  0    FALSE
+#> 1                4.5    FALSE
 #>                                     estimation_method estimation_time
 #> 1 First Order Conditional Estimation with Interaction            0.18
 #>   covariance_time
 #> 1            0.14
 #> 
 #> $run_heuristics
-#>            heuristic_name value
-#> 1 covariance_step_aborted FALSE
-#> 2       eigenvalue_issues FALSE
-#> 3 parameter_near_boundary FALSE
-#> 4           hessian_reset FALSE
-#> 5 minimization_terminated FALSE
+#>              heuristic_name value
+#> 1   covariance_step_aborted FALSE
+#> 2         eigenvalue_issues FALSE
+#> 3   parameter_near_boundary FALSE
+#> 4             hessian_reset FALSE
+#> 5   minimization_terminated FALSE
+#> 6 program_terminated_by_obj FALSE
 ```
 
 ``` r
@@ -60,19 +49,20 @@ get_run_info(
 #>   number_data_records number_subjects number_obs postprocess_time
 #> 1                 240              30        210             0.04
 #>   function_evaluations significant_digits only_sim
-#> 1                  297                  0    FALSE
+#> 1                  297                3.2    FALSE
 #>                                     estimation_method estimation_time
 #> 1 First Order Conditional Estimation with Interaction            0.39
 #>   covariance_time
 #> 1              NA
 #> 
 #> $run_heuristics
-#>            heuristic_name value
-#> 1 covariance_step_aborted    NA
-#> 2       eigenvalue_issues    NA
-#> 3 parameter_near_boundary  TRUE
-#> 4           hessian_reset FALSE
-#> 5 minimization_terminated FALSE
+#>              heuristic_name value
+#> 1   covariance_step_aborted    NA
+#> 2         eigenvalue_issues    NA
+#> 3   parameter_near_boundary  TRUE
+#> 4             hessian_reset FALSE
+#> 5   minimization_terminated FALSE
+#> 6 program_terminated_by_obj FALSE
 ```
 
 ``` r
@@ -101,6 +91,8 @@ mod_sum
 <strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
+
+\[<span style="color:green">OK</span>\] No Objective Function Failure
 
 \[<span style="color:green">OK</span>\] Covariance Step Successful
 
@@ -567,6 +559,8 @@ created from pharos see run003b1_metadata.json for details.
 <strong>Heuristic Checks</strong>
 
 \[<span style="color:green">OK</span>\] Minimization Successful
+
+\[<span style="color:green">OK</span>\] No Objective Function Failure
 
 \[<span style="color:orange">⚠</span>\] Covariance Step Not Run
 

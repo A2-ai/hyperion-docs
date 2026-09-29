@@ -5,18 +5,6 @@ pagefind: true
 
 ``` r
 library(hyperion)
-#> 
-#> 
-#> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
-#> ✔ pharos.toml found: hyperion/pharos.toml
-#>     └ hyperion.config_dir : (unset)
-#> ── hyperion options ────────────────────────────────────────────────────────────
-#> ✔ hyperion.significant_number_display : 4
-#> ── hyperion nonmem object options ──────────────────────────────────────────────
-#> ✔ hyperion.nonmem_model.show_included_columns : FALSE
-#> ✔ hyperion.nonmem_summary.rse_threshold : 50
-#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
 ```
 
 # Hyperion Model object
@@ -3883,6 +3871,8 @@ created from pharos see run003_metadata.json for details.
 
 \[<span style="color:green">OK</span>\] Minimization Successful
 
+\[<span style="color:green">OK</span>\] No Objective Function Failure
+
 \[<span style="color:green">OK</span>\] Covariance Step Successful
 
 \[<span style="color:green">OK</span>\] No Eigenvalue Issues
@@ -5399,7 +5389,61 @@ set_metadata_file(
   tags = c("base", "key"),
   based_on = c("run002.mod")
 )
-#> NULL
+```
+
+<strong>Model Metadata</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Description
+</td>
+
+<td style="text-align:left;">
+
+Base one-compartment oral absorption model
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Tags
+</td>
+
+<td style="text-align:left;">
+
+base, key
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Based On
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run002.mod
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+``` r
 
 read_model(file.path("models", "onecmt", "run003.mod")) |>
   get_model_metadata()
@@ -5486,8 +5530,59 @@ clear_metadata_file(
   file.path("models", "onecmt", "run003b2.mod"),
   tags = TRUE
 )
-#> NULL
 ```
+
+<strong>Model Metadata</strong>
+
+<table>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Description
+</td>
+
+<td style="text-align:left;">
+
+run003 with jittered params, exploring WT on V
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Tags
+</td>
+
+<td style="text-align:left;">
+
+(none)
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Based On
+</td>
+
+<td style="text-align:left;">
+
+models/onecmt/run003.mod
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## Lineage queries
 

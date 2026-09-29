@@ -101,6 +101,7 @@ export default defineConfig({
             { label: "get_parameter_unit", slug: "reference/get_parameter_unit" },
             { label: "get_theta_names", slug: "reference/get_theta_names" },
             { label: "get_eta_labels", slug: "reference/get_eta_labels" },
+            { label: "get_fixed_parameters", slug: "reference/get_fixed_parameters" },
             { label: "update_param_info", slug: "reference/update_param_info" },
             { label: "audit_parameter_info", slug: "reference/audit_parameter_info" }
           ]
@@ -143,7 +144,8 @@ export default defineConfig({
             { label: "init", slug: "reference/init" },
             { label: "get_pharos_config", slug: "reference/get_pharos_config" },
             { label: "get_comment_type", slug: "reference/get_comment_type" },
-            { label: "use_comments", slug: "reference/use_comments" }
+            { label: "use_comments", slug: "reference/use_comments" },
+            { label: "migrate_run_start_files", slug: "reference/migrate_run_start_files" }
           ]
         },
         {

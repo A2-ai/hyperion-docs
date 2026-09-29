@@ -1,0 +1,57 @@
+---
+title: "Migrate pharos run start files to project-relative model paths"
+description: "Rewrites every `pharos_start. json` under the project root, replacing the absolute `model_canonical_path` written by older pharos versions with a `model_path` r"
+sidebar:
+  label: "migrate_run_start_files"
+pagefind: true
+---
+
+## Description
+
+Rewrites every `pharos_start.json` under the project root, replacing the
+absolute `model_canonical_path` written by older pharos versions with a
+`model_path` relative to the project root. Files already in the current
+format are left untouched. `.git` and `rv` directories are skipped.
+
+
+
+
+
+
+## Usage
+
+```r
+migrate_run_start_files(base_path = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr><th>Argument</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code>base_path</code></td>
+<td>Project root the runs were originally recorded under. Only needed when the recorded absolute paths fall outside the current project root, for example runs executed from another user's home directory.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## Value
+
+nothing
+
+
+
+## Examples
+
+```r
+# Not run:
+migrate_run_start_files()
+migrate_run_start_files(base_path = "/data/user-homes/analyst1/project-root")
+```
+

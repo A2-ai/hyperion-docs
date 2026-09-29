@@ -5,18 +5,6 @@ pagefind: true
 
 ``` r
 library(hyperion)
-#> 
-#> 
-#> ── pharos configuration ────────────────────────────────────────────────────────
-#> ✔ pharos CLI: 0.5.1 (/Users/mattsmith/.cargo/bin/pharos)
-#> ✔ pharos.toml found: hyperion/pharos.toml
-#>     └ hyperion.config_dir : (unset)
-#> ── hyperion options ────────────────────────────────────────────────────────────
-#> ✔ hyperion.significant_number_display : 4
-#> ── hyperion nonmem object options ──────────────────────────────────────────────
-#> ✔ hyperion.nonmem_model.show_included_columns : FALSE
-#> ✔ hyperion.nonmem_summary.rse_threshold : 50
-#> ✔ hyperion.nonmem_summary.shrinkage_threshold : 30
 ```
 
 ``` r

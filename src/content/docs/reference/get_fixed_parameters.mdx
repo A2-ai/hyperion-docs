@@ -1,0 +1,60 @@
+---
+title: "Gets names of parameters declared FIX in the model"
+description: "Fixed status is read from the control stream, so it is available before a run completes. Omega and sigma are fixed per record, so a fixed BLOCK contributes its "
+sidebar:
+  label: "get_fixed_parameters"
+pagefind: true
+---
+
+## Description
+
+Fixed status is read from the control stream, so it is available before a run
+completes. Omega and sigma are fixed per record, so a fixed BLOCK contributes
+its off-diagonal names as well as its diagonals.
+
+
+
+
+
+
+## Usage
+
+```r
+get_fixed_parameters(model, kind = NULL)
+```
+
+## Arguments
+
+<div class="arg-table">
+<table>
+<thead>
+<tr><th>Argument</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><code>model</code></td>
+<td>hyperion_nonmem_model object from read_model()</td>
+</tr>
+<tr>
+<td><code>kind</code></td>
+<td>character, restrict to "THETA", "OMEGA" or "SIGMA". NULL returns every kind, ordered theta, omega, sigma.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## Value
+
+character vector of NONMEM parameter names
+
+
+
+## Examples
+
+```r
+# Not run:
+model <- read_model("model/nonmem/run001.mod")
+get_fixed_parameters(model, kind = "OMEGA")
+```
+
