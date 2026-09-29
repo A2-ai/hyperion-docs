@@ -168,7 +168,8 @@ export default defineConfig({
           ]
         }
       ]
-    }
+    },
+    { label: "Changelog", slug: "news" }
   ]
     })
   ]
